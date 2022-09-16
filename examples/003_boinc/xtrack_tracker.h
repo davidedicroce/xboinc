@@ -4,5074 +4,6 @@
     #define NULL 0
 #endif
 #include <stdint.h>
-#ifndef XOBJ_TYPEDEF_RecordIdentifier
-#define XOBJ_TYPEDEF_RecordIdentifier
-typedef   struct RecordIdentifier_s * RecordIdentifier;
- static inline RecordIdentifier RecordIdentifier_getp(RecordIdentifier  obj){
-  int64_t offset=0;
-  return (RecordIdentifier)(( char*) obj+offset);
-}
- static inline int64_t RecordIdentifier_get_buffer_id(const RecordIdentifier  obj){
-  int64_t offset=0;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void RecordIdentifier_set_buffer_id(RecordIdentifier  obj, int64_t value){
-  int64_t offset=0;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* RecordIdentifier_getp_buffer_id(RecordIdentifier  obj){
-  int64_t offset=0;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t RecordIdentifier_get_offset(const RecordIdentifier  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void RecordIdentifier_set_offset(RecordIdentifier  obj, int64_t value){
-  int64_t offset=0;
-  offset+=8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* RecordIdentifier_getp_offset(RecordIdentifier  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( int64_t*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_ArrNInt64
-#define XOBJ_TYPEDEF_ArrNInt64
-typedef   struct ArrNInt64_s * ArrNInt64;
- static inline ArrNInt64 ArrNInt64_getp(ArrNInt64  obj){
-  int64_t offset=0;
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ArrNInt64_len(ArrNInt64  obj){
-  int64_t offset=0;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ArrNInt64_get(const ArrNInt64  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ArrNInt64_set(ArrNInt64  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ArrNInt64_getp1(ArrNInt64  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_ElensData
-#define XOBJ_TYPEDEF_ElensData
-typedef   struct ElensData_s * ElensData;
- static inline ElensData ElensData_getp(ElensData  obj){
-  int64_t offset=0;
-  return (ElensData)(( char*) obj+offset);
-}
- static inline double ElensData_get_current(const ElensData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ElensData_set_current(ElensData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ElensData_getp_current(ElensData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ElensData_get_inner_radius(const ElensData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ElensData_set_inner_radius(ElensData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ElensData_getp_inner_radius(ElensData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ElensData_get_outer_radius(const ElensData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ElensData_set_outer_radius(ElensData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ElensData_getp_outer_radius(ElensData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ElensData_get_elens_length(const ElensData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ElensData_set_elens_length(ElensData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ElensData_getp_elens_length(ElensData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ElensData_get_voltage(const ElensData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ElensData_set_voltage(ElensData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ElensData_getp_voltage(ElensData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ElensData_get_residual_kick_x(const ElensData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ElensData_set_residual_kick_x(ElensData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ElensData_getp_residual_kick_x(ElensData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ElensData_get_residual_kick_y(const ElensData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ElensData_set_residual_kick_y(ElensData  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ElensData_getp_residual_kick_y(ElensData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_XYShiftData
-#define XOBJ_TYPEDEF_XYShiftData
-typedef   struct XYShiftData_s * XYShiftData;
- static inline XYShiftData XYShiftData_getp(XYShiftData  obj){
-  int64_t offset=0;
-  return (XYShiftData)(( char*) obj+offset);
-}
- static inline double XYShiftData_get_dx(const XYShiftData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void XYShiftData_set_dx(XYShiftData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* XYShiftData_getp_dx(XYShiftData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double XYShiftData_get_dy(const XYShiftData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void XYShiftData_set_dy(XYShiftData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* XYShiftData_getp_dy(XYShiftData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_ReferenceEnergyIncreaseData
-#define XOBJ_TYPEDEF_ReferenceEnergyIncreaseData
-typedef   struct ReferenceEnergyIncreaseData_s * ReferenceEnergyIncreaseData;
- static inline ReferenceEnergyIncreaseData ReferenceEnergyIncreaseData_getp(ReferenceEnergyIncreaseData  obj){
-  int64_t offset=0;
-  return (ReferenceEnergyIncreaseData)(( char*) obj+offset);
-}
- static inline double ReferenceEnergyIncreaseData_get_Delta_p0c(const ReferenceEnergyIncreaseData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ReferenceEnergyIncreaseData_set_Delta_p0c(ReferenceEnergyIncreaseData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ReferenceEnergyIncreaseData_getp_Delta_p0c(ReferenceEnergyIncreaseData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_WireData
-#define XOBJ_TYPEDEF_WireData
-typedef   struct WireData_s * WireData;
- static inline WireData WireData_getp(WireData  obj){
-  int64_t offset=0;
-  return (WireData)(( char*) obj+offset);
-}
- static inline double WireData_get_L_phy(const WireData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void WireData_set_L_phy(WireData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* WireData_getp_L_phy(WireData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double WireData_get_L_int(const WireData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void WireData_set_L_int(WireData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* WireData_getp_L_int(WireData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double WireData_get_current(const WireData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void WireData_set_current(WireData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* WireData_getp_current(WireData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double WireData_get_xma(const WireData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void WireData_set_xma(WireData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* WireData_getp_xma(WireData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double WireData_get_yma(const WireData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void WireData_set_yma(WireData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* WireData_getp_yma(WireData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_LinearTransferMatrixData
-#define XOBJ_TYPEDEF_LinearTransferMatrixData
-typedef   struct LinearTransferMatrixData_s * LinearTransferMatrixData;
- static inline LinearTransferMatrixData LinearTransferMatrixData_getp(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  return (LinearTransferMatrixData)(( char*) obj+offset);
-}
- static inline int64_t LinearTransferMatrixData_get_no_detuning(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_no_detuning(LinearTransferMatrixData  obj, int64_t value){
-  int64_t offset=0;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* LinearTransferMatrixData_getp_no_detuning(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_q_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_q_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_q_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_q_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_q_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_q_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_cos_s(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_cos_s(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_cos_s(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_sin_s(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_sin_s(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_sin_s(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_beta_x_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_beta_x_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_beta_x_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_beta_y_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_beta_y_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_beta_y_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_beta_ratio_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_beta_ratio_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=56;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_beta_ratio_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_beta_prod_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_beta_prod_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=64;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_beta_prod_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_beta_ratio_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_beta_ratio_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=72;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_beta_ratio_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_beta_prod_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_beta_prod_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=80;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_beta_prod_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_alpha_x_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_alpha_x_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=88;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_alpha_x_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_alpha_x_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_alpha_x_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=96;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_alpha_x_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_alpha_y_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_alpha_y_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=104;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_alpha_y_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_alpha_y_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_alpha_y_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=112;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_alpha_y_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_disp_x_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_disp_x_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=120;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_disp_x_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_disp_x_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=128;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_disp_x_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=128;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_disp_x_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=128;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_disp_y_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=136;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_disp_y_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=136;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_disp_y_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=136;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_disp_y_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=144;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_disp_y_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=144;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_disp_y_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=144;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_beta_s(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=152;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_beta_s(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=152;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_beta_s(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=152;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_energy_ref_increment(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=160;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_energy_ref_increment(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=160;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_energy_ref_increment(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=160;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_energy_increment(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=168;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_energy_increment(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=168;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_energy_increment(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=168;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_chroma_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=176;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_chroma_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=176;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_chroma_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=176;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_chroma_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=184;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_chroma_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=184;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_chroma_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=184;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_detx_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=192;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_detx_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=192;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_detx_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=192;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_detx_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=200;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_detx_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=200;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_detx_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=200;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_dety_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=208;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_dety_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=208;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_dety_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=208;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_dety_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=216;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_dety_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=216;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_dety_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=216;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_x_ref_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=224;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_x_ref_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=224;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_x_ref_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=224;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_px_ref_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=232;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_px_ref_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=232;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_px_ref_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=232;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_y_ref_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=240;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_y_ref_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=240;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_y_ref_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=240;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_py_ref_0(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=248;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_py_ref_0(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=248;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_py_ref_0(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=248;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_x_ref_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=256;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_x_ref_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=256;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_x_ref_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=256;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_px_ref_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=264;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_px_ref_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=264;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_px_ref_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=264;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_y_ref_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=272;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_y_ref_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=272;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_y_ref_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=272;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_py_ref_1(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=280;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_py_ref_1(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=280;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_py_ref_1(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=280;
-  return ( double*)(( char*) obj+offset);
-}
- static inline int64_t LinearTransferMatrixData_get_uncorrelated_rad_damping(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=288;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_uncorrelated_rad_damping(LinearTransferMatrixData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=288;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* LinearTransferMatrixData_getp_uncorrelated_rad_damping(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=288;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_damping_factor_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=296;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_damping_factor_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=296;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_damping_factor_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=296;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_damping_factor_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=304;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_damping_factor_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=304;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_damping_factor_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=304;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_damping_factor_s(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=312;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_damping_factor_s(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=312;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_damping_factor_s(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=312;
-  return ( double*)(( char*) obj+offset);
-}
- static inline int64_t LinearTransferMatrixData_get_uncorrelated_gauss_noise(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=320;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_uncorrelated_gauss_noise(LinearTransferMatrixData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=320;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* LinearTransferMatrixData_getp_uncorrelated_gauss_noise(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=320;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_gauss_noise_ampl_x(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=328;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_gauss_noise_ampl_x(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=328;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_gauss_noise_ampl_x(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=328;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_gauss_noise_ampl_y(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=336;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_gauss_noise_ampl_y(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=336;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_gauss_noise_ampl_y(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=336;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LinearTransferMatrixData_get_gauss_noise_ampl_s(const LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=344;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LinearTransferMatrixData_set_gauss_noise_ampl_s(LinearTransferMatrixData  obj, double value){
-  int64_t offset=0;
-  offset+=344;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LinearTransferMatrixData_getp_gauss_noise_ampl_s(LinearTransferMatrixData  obj){
-  int64_t offset=0;
-  offset+=344;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_CavityData
-#define XOBJ_TYPEDEF_CavityData
-typedef   struct CavityData_s * CavityData;
- static inline CavityData CavityData_getp(CavityData  obj){
-  int64_t offset=0;
-  return (CavityData)(( char*) obj+offset);
-}
- static inline double CavityData_get_voltage(const CavityData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void CavityData_set_voltage(CavityData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* CavityData_getp_voltage(CavityData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double CavityData_get_frequency(const CavityData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void CavityData_set_frequency(CavityData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* CavityData_getp_frequency(CavityData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double CavityData_get_lag(const CavityData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void CavityData_set_lag(CavityData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* CavityData_getp_lag(CavityData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_DriftData
-#define XOBJ_TYPEDEF_DriftData
-typedef   struct DriftData_s * DriftData;
- static inline DriftData DriftData_getp(DriftData  obj){
-  int64_t offset=0;
-  return (DriftData)(( char*) obj+offset);
-}
- static inline double DriftData_get_length(const DriftData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void DriftData_set_length(DriftData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* DriftData_getp_length(DriftData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_SRotationData
-#define XOBJ_TYPEDEF_SRotationData
-typedef   struct SRotationData_s * SRotationData;
- static inline SRotationData SRotationData_getp(SRotationData  obj){
-  int64_t offset=0;
-  return (SRotationData)(( char*) obj+offset);
-}
- static inline double SRotationData_get_cos_z(const SRotationData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SRotationData_set_cos_z(SRotationData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SRotationData_getp_cos_z(SRotationData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SRotationData_get_sin_z(const SRotationData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SRotationData_set_sin_z(SRotationData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SRotationData_getp_sin_z(SRotationData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_DipoleEdgeData
-#define XOBJ_TYPEDEF_DipoleEdgeData
-typedef   struct DipoleEdgeData_s * DipoleEdgeData;
- static inline DipoleEdgeData DipoleEdgeData_getp(DipoleEdgeData  obj){
-  int64_t offset=0;
-  return (DipoleEdgeData)(( char*) obj+offset);
-}
- static inline double DipoleEdgeData_get_r21(const DipoleEdgeData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void DipoleEdgeData_set_r21(DipoleEdgeData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* DipoleEdgeData_getp_r21(DipoleEdgeData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double DipoleEdgeData_get_r43(const DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void DipoleEdgeData_set_r43(DipoleEdgeData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* DipoleEdgeData_getp_r43(DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double DipoleEdgeData_get_hgap(const DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void DipoleEdgeData_set_hgap(DipoleEdgeData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* DipoleEdgeData_getp_hgap(DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double DipoleEdgeData_get_h(const DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void DipoleEdgeData_set_h(DipoleEdgeData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* DipoleEdgeData_getp_h(DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double DipoleEdgeData_get_e1(const DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void DipoleEdgeData_set_e1(DipoleEdgeData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* DipoleEdgeData_getp_e1(DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double DipoleEdgeData_get_fint(const DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void DipoleEdgeData_set_fint(DipoleEdgeData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* DipoleEdgeData_getp_fint(DipoleEdgeData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_ArrNFloat64
-#define XOBJ_TYPEDEF_ArrNFloat64
-typedef   struct ArrNFloat64_s * ArrNFloat64;
- static inline ArrNFloat64 ArrNFloat64_getp(ArrNFloat64  obj){
-  int64_t offset=0;
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ArrNFloat64_len(ArrNFloat64  obj){
-  int64_t offset=0;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ArrNFloat64_get(const ArrNFloat64  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ArrNFloat64_set(ArrNFloat64  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ArrNFloat64_getp1(ArrNFloat64  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_LongitudinalProfileQGaussianData
-#define XOBJ_TYPEDEF_LongitudinalProfileQGaussianData
-typedef   struct LongitudinalProfileQGaussianData_s * LongitudinalProfileQGaussianData;
- static inline LongitudinalProfileQGaussianData LongitudinalProfileQGaussianData_getp(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  return (LongitudinalProfileQGaussianData)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get_number_of_particles(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set_number_of_particles(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp_number_of_particles(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__q_tol(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__q_tol(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__q_tol(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__z0(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__z0(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__z0(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__sigma_z(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__sigma_z(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__sigma_z(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__q_param(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__q_param(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__q_param(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__cq_param(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__cq_param(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__cq_param(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__beta_param(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__beta_param(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__beta_param(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__sqrt_beta_param(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__sqrt_beta_param(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=56;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__sqrt_beta_param(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__support_min(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__support_min(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=64;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__support_min(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double LongitudinalProfileQGaussianData_get__support_max(const LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void LongitudinalProfileQGaussianData_set__support_max(LongitudinalProfileQGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=72;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* LongitudinalProfileQGaussianData_getp__support_max(LongitudinalProfileQGaussianData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_BiGaussianFieldMapData
-#define XOBJ_TYPEDEF_BiGaussianFieldMapData
-typedef   struct BiGaussianFieldMapData_s * BiGaussianFieldMapData;
- static inline BiGaussianFieldMapData BiGaussianFieldMapData_getp(BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  return (BiGaussianFieldMapData)(( char*) obj+offset);
-}
- static inline double BiGaussianFieldMapData_get_mean_x(const BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BiGaussianFieldMapData_set_mean_x(BiGaussianFieldMapData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BiGaussianFieldMapData_getp_mean_x(BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BiGaussianFieldMapData_get_mean_y(const BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BiGaussianFieldMapData_set_mean_y(BiGaussianFieldMapData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BiGaussianFieldMapData_getp_mean_y(BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BiGaussianFieldMapData_get_sigma_x(const BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BiGaussianFieldMapData_set_sigma_x(BiGaussianFieldMapData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BiGaussianFieldMapData_getp_sigma_x(BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BiGaussianFieldMapData_get_sigma_y(const BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BiGaussianFieldMapData_set_sigma_y(BiGaussianFieldMapData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BiGaussianFieldMapData_getp_sigma_y(BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BiGaussianFieldMapData_get_min_sigma_diff(const BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BiGaussianFieldMapData_set_min_sigma_diff(BiGaussianFieldMapData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BiGaussianFieldMapData_getp_min_sigma_diff(BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline int64_t BiGaussianFieldMapData_get__updatable(const BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void BiGaussianFieldMapData_set__updatable(BiGaussianFieldMapData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=40;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* BiGaussianFieldMapData_getp__updatable(BiGaussianFieldMapData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( int64_t*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_BoostParameters
-#define XOBJ_TYPEDEF_BoostParameters
-typedef   struct BoostParameters_s * BoostParameters;
- static inline BoostParameters BoostParameters_getp(BoostParameters  obj){
-  int64_t offset=0;
-  return (BoostParameters)(( char*) obj+offset);
-}
- static inline double BoostParameters_get_sphi(const BoostParameters  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BoostParameters_set_sphi(BoostParameters  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BoostParameters_getp_sphi(BoostParameters  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BoostParameters_get_cphi(const BoostParameters  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BoostParameters_set_cphi(BoostParameters  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BoostParameters_getp_cphi(BoostParameters  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BoostParameters_get_tphi(const BoostParameters  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BoostParameters_set_tphi(BoostParameters  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BoostParameters_getp_tphi(BoostParameters  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BoostParameters_get_salpha(const BoostParameters  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BoostParameters_set_salpha(BoostParameters  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BoostParameters_getp_salpha(BoostParameters  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BoostParameters_get_calpha(const BoostParameters  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BoostParameters_set_calpha(BoostParameters  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BoostParameters_getp_calpha(BoostParameters  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_Sigmas
-#define XOBJ_TYPEDEF_Sigmas
-typedef   struct Sigmas_s * Sigmas;
- static inline Sigmas Sigmas_getp(Sigmas  obj){
-  int64_t offset=0;
-  return (Sigmas)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_11(const Sigmas  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_11(Sigmas  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_11(Sigmas  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_12(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_12(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_12(Sigmas  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_13(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_13(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_13(Sigmas  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_14(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_14(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_14(Sigmas  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_22(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_22(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_22(Sigmas  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_23(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_23(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_23(Sigmas  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_24(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_24(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_24(Sigmas  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_33(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_33(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=56;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_33(Sigmas  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_34(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_34(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=64;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_34(Sigmas  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double Sigmas_get_Sig_44(const Sigmas  obj){
-  int64_t offset=0;
-  offset+=72;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void Sigmas_set_Sig_44(Sigmas  obj, double value){
-  int64_t offset=0;
-  offset+=72;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* Sigmas_getp_Sig_44(Sigmas  obj){
-  int64_t offset=0;
-  offset+=72;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_ArrNUint32
-#define XOBJ_TYPEDEF_ArrNUint32
-typedef   struct ArrNUint32_s * ArrNUint32;
- static inline ArrNUint32 ArrNUint32_getp(ArrNUint32  obj){
-  int64_t offset=0;
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ArrNUint32_len(ArrNUint32  obj){
-  int64_t offset=0;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ArrNUint32_get(const ArrNUint32  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ArrNUint32_set(ArrNUint32  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ArrNUint32_getp1(ArrNUint32  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_MultipoleData
-#define XOBJ_TYPEDEF_MultipoleData
-typedef   struct MultipoleData_s * MultipoleData;
- static inline MultipoleData MultipoleData_getp(MultipoleData  obj){
-  int64_t offset=0;
-  return (MultipoleData)(( char*) obj+offset);
-}
- static inline int64_t MultipoleData_get_order(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_order(MultipoleData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* MultipoleData_getp_order(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double MultipoleData_get_inv_factorial_order(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_inv_factorial_order(MultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* MultipoleData_getp_inv_factorial_order(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double MultipoleData_get_length(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_length(MultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* MultipoleData_getp_length(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double MultipoleData_get_hxl(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_hxl(MultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* MultipoleData_getp_hxl(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double MultipoleData_get_hyl(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_hyl(MultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* MultipoleData_getp_hyl(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline int64_t MultipoleData_get_radiation_flag(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_radiation_flag(MultipoleData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=48;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* MultipoleData_getp_radiation_flag(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 MultipoleData_getp_knl(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t MultipoleData_len_knl(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=80;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double MultipoleData_get_knl(const MultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=80;
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_knl(MultipoleData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=80;
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* MultipoleData_getp1_knl(MultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=80;
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 MultipoleData_getp_ksl(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t MultipoleData_len_ksl(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double MultipoleData_get_ksl(const MultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set_ksl(MultipoleData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* MultipoleData_getp1_ksl(MultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline RecordIdentifier MultipoleData_getp__internal_record_id(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return (RecordIdentifier)(( char*) obj+offset);
-}
- static inline int64_t MultipoleData_get__internal_record_id_buffer_id(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set__internal_record_id_buffer_id(MultipoleData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=56;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* MultipoleData_getp__internal_record_id_buffer_id(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t MultipoleData_get__internal_record_id_offset(const MultipoleData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void MultipoleData_set__internal_record_id_offset(MultipoleData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=64;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* MultipoleData_getp__internal_record_id_offset(MultipoleData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( int64_t*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_RFMultipoleData
-#define XOBJ_TYPEDEF_RFMultipoleData
-typedef   struct RFMultipoleData_s * RFMultipoleData;
- static inline RFMultipoleData RFMultipoleData_getp(RFMultipoleData  obj){
-  int64_t offset=0;
-  return (RFMultipoleData)(( char*) obj+offset);
-}
- static inline int64_t RFMultipoleData_get_order(const RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_order(RFMultipoleData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* RFMultipoleData_getp_order(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double RFMultipoleData_get_inv_factorial_order(const RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_inv_factorial_order(RFMultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp_inv_factorial_order(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double RFMultipoleData_get_voltage(const RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_voltage(RFMultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp_voltage(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double RFMultipoleData_get_frequency(const RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_frequency(RFMultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp_frequency(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double RFMultipoleData_get_lag(const RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_lag(RFMultipoleData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp_lag(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 RFMultipoleData_getp_knl(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t RFMultipoleData_len_knl(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=72;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double RFMultipoleData_get_knl(const RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_knl(RFMultipoleData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp1_knl(RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 RFMultipoleData_getp_ksl(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t RFMultipoleData_len_ksl(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double RFMultipoleData_get_ksl(const RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_ksl(RFMultipoleData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp1_ksl(RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 RFMultipoleData_getp_pn(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t RFMultipoleData_len_pn(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double RFMultipoleData_get_pn(const RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_pn(RFMultipoleData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp1_pn(RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 RFMultipoleData_getp_ps(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t RFMultipoleData_len_ps(RFMultipoleData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double RFMultipoleData_get_ps(const RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void RFMultipoleData_set_ps(RFMultipoleData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* RFMultipoleData_getp1_ps(RFMultipoleData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_SpaceChargeBiGaussianData
-#define XOBJ_TYPEDEF_SpaceChargeBiGaussianData
-typedef   struct SpaceChargeBiGaussianData_s * SpaceChargeBiGaussianData;
- static inline SpaceChargeBiGaussianData SpaceChargeBiGaussianData_getp(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  return (SpaceChargeBiGaussianData)(( char*) obj+offset);
-}
- static inline LongitudinalProfileQGaussianData SpaceChargeBiGaussianData_getp_longitudinal_profile(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  return (LongitudinalProfileQGaussianData)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile_number_of_particles(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile_number_of_particles(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile_number_of_particles(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__q_tol(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__q_tol(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__q_tol(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__z0(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__z0(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__z0(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__sigma_z(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__sigma_z(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__sigma_z(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__q_param(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__q_param(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__q_param(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__cq_param(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__cq_param(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__cq_param(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__beta_param(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__beta_param(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__beta_param(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__sqrt_beta_param(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__sqrt_beta_param(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=56;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__sqrt_beta_param(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__support_min(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__support_min(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=64;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__support_min(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__support_max(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__support_max(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=72;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__support_max(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return ( double*)(( char*) obj+offset);
-}
- static inline BiGaussianFieldMapData SpaceChargeBiGaussianData_getp_fieldmap(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return (BiGaussianFieldMapData)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_fieldmap_mean_x(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_fieldmap_mean_x(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=80;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_mean_x(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_fieldmap_mean_y(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_fieldmap_mean_y(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=88;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_mean_y(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_fieldmap_sigma_x(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_fieldmap_sigma_x(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=96;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_sigma_x(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_fieldmap_sigma_y(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_fieldmap_sigma_y(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=104;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_sigma_y(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_fieldmap_min_sigma_diff(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_fieldmap_min_sigma_diff(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=112;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_min_sigma_diff(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return ( double*)(( char*) obj+offset);
-}
- static inline int64_t SpaceChargeBiGaussianData_get_fieldmap__updatable(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_fieldmap__updatable(SpaceChargeBiGaussianData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=120;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* SpaceChargeBiGaussianData_getp_fieldmap__updatable(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double SpaceChargeBiGaussianData_get_length(const SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=128;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void SpaceChargeBiGaussianData_set_length(SpaceChargeBiGaussianData  obj, double value){
-  int64_t offset=0;
-  offset+=128;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* SpaceChargeBiGaussianData_getp_length(SpaceChargeBiGaussianData  obj){
-  int64_t offset=0;
-  offset+=128;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_BeamBeamBiGaussian2DData
-#define XOBJ_TYPEDEF_BeamBeamBiGaussian2DData
-typedef   struct BeamBeamBiGaussian2DData_s * BeamBeamBiGaussian2DData;
- static inline BeamBeamBiGaussian2DData BeamBeamBiGaussian2DData_getp(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  return (BeamBeamBiGaussian2DData)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_n_particles(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_n_particles(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_n_particles(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_q0(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_q0(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_q0(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_beta0(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_beta0(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_beta0(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline BiGaussianFieldMapData BeamBeamBiGaussian2DData_getp_fieldmap(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return (BiGaussianFieldMapData)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_fieldmap_mean_x(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_fieldmap_mean_x(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_fieldmap_mean_x(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_fieldmap_mean_y(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_fieldmap_mean_y(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_fieldmap_mean_y(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_fieldmap_sigma_x(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_fieldmap_sigma_x(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_fieldmap_sigma_x(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_fieldmap_sigma_y(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_fieldmap_sigma_y(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_fieldmap_sigma_y(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_fieldmap_min_sigma_diff(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_fieldmap_min_sigma_diff(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=56;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_fieldmap_min_sigma_diff(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( double*)(( char*) obj+offset);
-}
- static inline int64_t BeamBeamBiGaussian2DData_get_fieldmap__updatable(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_fieldmap__updatable(BeamBeamBiGaussian2DData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=64;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* BeamBeamBiGaussian2DData_getp_fieldmap__updatable(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_d_px(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_d_px(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=72;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_d_px(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian2DData_get_d_py(const BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian2DData_set_d_py(BeamBeamBiGaussian2DData  obj, double value){
-  int64_t offset=0;
-  offset+=80;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian2DData_getp_d_py(BeamBeamBiGaussian2DData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_BeamBeamBiGaussian3DData
-#define XOBJ_TYPEDEF_BeamBeamBiGaussian3DData
-typedef   struct BeamBeamBiGaussian3DData_s * BeamBeamBiGaussian3DData;
- static inline BeamBeamBiGaussian3DData BeamBeamBiGaussian3DData_getp(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  return (BeamBeamBiGaussian3DData)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_q0(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_q0(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_q0(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline BoostParameters BeamBeamBiGaussian3DData_getp_boost_parameters(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return (BoostParameters)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_boost_parameters_sphi(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_boost_parameters_sphi(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=16;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_boost_parameters_sphi(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_boost_parameters_cphi(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_boost_parameters_cphi(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=24;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_boost_parameters_cphi(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_boost_parameters_tphi(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_boost_parameters_tphi(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=32;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_boost_parameters_tphi(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_boost_parameters_salpha(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_boost_parameters_salpha(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_boost_parameters_salpha(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_boost_parameters_calpha(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_boost_parameters_calpha(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_boost_parameters_calpha(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
- static inline Sigmas BeamBeamBiGaussian3DData_getp_Sigmas_0_star(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return (Sigmas)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_11(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_11(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=56;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_11(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_12(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_12(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=64;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_12(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_13(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_13(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=72;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_13(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_14(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_14(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=80;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_14(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_22(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_22(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=88;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_22(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_23(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_23(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=96;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_23(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_24(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_24(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=104;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_24(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_33(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_33(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=112;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_33(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_34(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_34(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=120;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_34(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Sigmas_0_star_Sig_44(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=128;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Sigmas_0_star_Sig_44(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=128;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Sigmas_0_star_Sig_44(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=128;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_min_sigma_diff(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=136;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_min_sigma_diff(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=136;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_min_sigma_diff(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=136;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_threshold_singular(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=144;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_threshold_singular(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=144;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_threshold_singular(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=144;
-  return ( double*)(( char*) obj+offset);
-}
- static inline int64_t BeamBeamBiGaussian3DData_get_num_slices(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=152;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_num_slices(BeamBeamBiGaussian3DData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=152;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* BeamBeamBiGaussian3DData_getp_num_slices(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=152;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_delta_x(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=160;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_delta_x(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=160;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_delta_x(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=160;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_delta_y(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=168;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_delta_y(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=168;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_delta_y(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=168;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_x_CO(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=176;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_x_CO(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=176;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_x_CO(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=176;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_px_CO(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=184;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_px_CO(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=184;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_px_CO(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=184;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_y_CO(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=192;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_y_CO(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=192;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_y_CO(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=192;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_py_CO(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=200;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_py_CO(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=200;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_py_CO(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=200;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_sigma_CO(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=208;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_sigma_CO(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=208;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_sigma_CO(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=208;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_delta_CO(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=216;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_delta_CO(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=216;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_delta_CO(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=216;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Dx_sub(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=224;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Dx_sub(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=224;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Dx_sub(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=224;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Dpx_sub(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=232;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Dpx_sub(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=232;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Dpx_sub(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=232;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Dy_sub(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=240;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Dy_sub(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=240;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Dy_sub(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=240;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Dpy_sub(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=248;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Dpy_sub(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=248;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Dpy_sub(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=248;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Dsigma_sub(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=256;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Dsigma_sub(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=256;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Dsigma_sub(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=256;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double BeamBeamBiGaussian3DData_get_Ddelta_sub(const BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=264;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_Ddelta_sub(BeamBeamBiGaussian3DData  obj, double value){
-  int64_t offset=0;
-  offset+=264;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp_Ddelta_sub(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=264;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_N_part_per_slice(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=296;
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t BeamBeamBiGaussian3DData_len_N_part_per_slice(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=296;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double BeamBeamBiGaussian3DData_get_N_part_per_slice(const BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=296;
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_N_part_per_slice(BeamBeamBiGaussian3DData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=296;
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp1_N_part_per_slice(BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=296;
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_x_slices_star(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+272);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t BeamBeamBiGaussian3DData_len_x_slices_star(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+272);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double BeamBeamBiGaussian3DData_get_x_slices_star(const BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+272);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_x_slices_star(BeamBeamBiGaussian3DData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+272);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp1_x_slices_star(BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+272);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_y_slices_star(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+280);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t BeamBeamBiGaussian3DData_len_y_slices_star(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+280);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double BeamBeamBiGaussian3DData_get_y_slices_star(const BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+280);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_y_slices_star(BeamBeamBiGaussian3DData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+280);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp1_y_slices_star(BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+280);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_sigma_slices_star(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+288);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t BeamBeamBiGaussian3DData_len_sigma_slices_star(BeamBeamBiGaussian3DData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+288);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double BeamBeamBiGaussian3DData_get_sigma_slices_star(const BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+288);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void BeamBeamBiGaussian3DData_set_sigma_slices_star(BeamBeamBiGaussian3DData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+288);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* BeamBeamBiGaussian3DData_getp1_sigma_slices_star(BeamBeamBiGaussian3DData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+288);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_ParticlesData
-#define XOBJ_TYPEDEF_ParticlesData
-typedef   struct ParticlesData_s * ParticlesData;
- static inline ParticlesData ParticlesData_getp(ParticlesData  obj){
-  int64_t offset=0;
-  return (ParticlesData)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_get__capacity(const ParticlesData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set__capacity(ParticlesData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp__capacity(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_get__num_active_particles(const ParticlesData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set__num_active_particles(ParticlesData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=16;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp__num_active_particles(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_get__num_lost_particles(const ParticlesData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set__num_lost_particles(ParticlesData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=24;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp__num_lost_particles(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_get_start_tracking_at_element(const ParticlesData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_start_tracking_at_element(ParticlesData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=32;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp_start_tracking_at_element(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double ParticlesData_get_q0(const ParticlesData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_q0(ParticlesData  obj, double value){
-  int64_t offset=0;
-  offset+=40;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp_q0(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ParticlesData_get_mass0(const ParticlesData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_mass0(ParticlesData  obj, double value){
-  int64_t offset=0;
-  offset+=48;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp_mass0(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_p0c(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=248;
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_p0c(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=248;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_p0c(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=248;
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_p0c(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=248;
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_p0c(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=248;
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_gamma0(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_gamma0(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_gamma0(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_gamma0(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_gamma0(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_beta0(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_beta0(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_beta0(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_beta0(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_beta0(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_s(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_s(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_s(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_s(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_s(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_x(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_x(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_x(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_x(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_x(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_y(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_y(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_y(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_y(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_y(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_px(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_px(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_px(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_px(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_px(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_py(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_py(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_py(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_py(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_py(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_zeta(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_zeta(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_zeta(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_zeta(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_zeta(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_ptau(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_ptau(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_ptau(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_ptau(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_ptau(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_delta(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_delta(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_delta(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_delta(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_delta(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_rpp(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_rpp(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_rpp(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_rpp(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_rpp(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_rvv(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_rvv(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_rvv(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_rvv(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_rvv(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_chi(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_chi(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_chi(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_chi(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_chi(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_charge_ratio(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_charge_ratio(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_charge_ratio(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_charge_ratio(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_charge_ratio(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesData_getp_weight(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_weight(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesData_get_weight(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_weight(ParticlesData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesData_getp1_weight(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesData_getp_particle_id(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_particle_id(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesData_get_particle_id(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_particle_id(ParticlesData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp1_particle_id(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesData_getp_at_element(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_at_element(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesData_get_at_element(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_at_element(ParticlesData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp1_at_element(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesData_getp_at_turn(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_at_turn(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesData_get_at_turn(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_at_turn(ParticlesData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp1_at_turn(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesData_getp_state(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_state(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesData_get_state(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_state(ParticlesData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp1_state(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesData_getp_parent_particle_id(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len_parent_particle_id(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesData_get_parent_particle_id(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set_parent_particle_id(ParticlesData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesData_getp1_parent_particle_id(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesData_getp__rng_s1(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len__rng_s1(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesData_get__rng_s1(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set__rng_s1(ParticlesData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesData_getp1__rng_s1(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesData_getp__rng_s2(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len__rng_s2(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesData_get__rng_s2(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set__rng_s2(ParticlesData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesData_getp1__rng_s2(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesData_getp__rng_s3(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len__rng_s3(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesData_get__rng_s3(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set__rng_s3(ParticlesData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesData_getp1__rng_s3(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesData_getp__rng_s4(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesData_len__rng_s4(ParticlesData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesData_get__rng_s4(const ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesData_set__rng_s4(ParticlesData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesData_getp1__rng_s4(ParticlesData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
-#endif
-#ifndef XOBJ_TYPEDEF_ParticlesMonitorData
-#define XOBJ_TYPEDEF_ParticlesMonitorData
-typedef   struct ParticlesMonitorData_s * ParticlesMonitorData;
- static inline ParticlesMonitorData ParticlesMonitorData_getp(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  return (ParticlesMonitorData)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_start_at_turn(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_start_at_turn(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_start_at_turn(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_stop_at_turn(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_stop_at_turn(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=16;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_stop_at_turn(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=16;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_part_id_start(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_part_id_start(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=24;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_part_id_start(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=24;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_part_id_end(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_part_id_end(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=32;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_part_id_end(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=32;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_ebe_mode(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_ebe_mode(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=40;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_ebe_mode(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=40;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_n_records(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_n_records(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=48;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_n_records(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=48;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_n_repetitions(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_n_repetitions(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=56;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_n_repetitions(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=56;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_repetition_period(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_repetition_period(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=64;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_repetition_period(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=64;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ParticlesData ParticlesMonitorData_getp_data(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  return (ParticlesData)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_data__capacity(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data__capacity(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=80;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_data__capacity(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=80;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_data__num_active_particles(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data__num_active_particles(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=88;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_data__num_active_particles(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=88;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_data__num_lost_particles(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data__num_lost_particles(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=96;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_data__num_lost_particles(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=96;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_get_data_start_tracking_at_element(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_start_tracking_at_element(ParticlesMonitorData  obj, int64_t value){
-  int64_t offset=0;
-  offset+=104;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp_data_start_tracking_at_element(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=104;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline double ParticlesMonitorData_get_data_q0(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_q0(ParticlesMonitorData  obj, double value){
-  int64_t offset=0;
-  offset+=112;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp_data_q0(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=112;
-  return ( double*)(( char*) obj+offset);
-}
- static inline double ParticlesMonitorData_get_data_mass0(const ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_mass0(ParticlesMonitorData  obj, double value){
-  int64_t offset=0;
-  offset+=120;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp_data_mass0(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=120;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_p0c(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=320;
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_p0c(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=320;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_p0c(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=320;
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_p0c(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=320;
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_p0c(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=320;
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_gamma0(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_gamma0(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_gamma0(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_gamma0(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_gamma0(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+56);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_beta0(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_beta0(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_beta0(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_beta0(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_beta0(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+64);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_s(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_s(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_s(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_s(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_s(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+72);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_x(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_x(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_x(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_x(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_x(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+80);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_y(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_y(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_y(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_y(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_y(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+88);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_px(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_px(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_px(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_px(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_px(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+96);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_py(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_py(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_py(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_py(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_py(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+104);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_zeta(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_zeta(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_zeta(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_zeta(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_zeta(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+112);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_ptau(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_ptau(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_ptau(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_ptau(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_ptau(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+120);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_delta(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_delta(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_delta(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_delta(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_delta(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+128);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_rpp(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_rpp(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_rpp(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_rpp(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_rpp(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+136);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_rvv(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_rvv(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_rvv(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_rvv(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_rvv(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+144);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_chi(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_chi(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_chi(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_chi(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_chi(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+152);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_charge_ratio(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_charge_ratio(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_charge_ratio(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_charge_ratio(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_charge_ratio(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+160);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNFloat64 ParticlesMonitorData_getp_data_weight(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  return (ArrNFloat64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_weight(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline double ParticlesMonitorData_get_data_weight(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  offset+=16+i0*8;
-  return *( double*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_weight(ParticlesMonitorData  obj, int64_t i0, double value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  offset+=16+i0*8;
-  *( double*)(( char*) obj+offset)=value;
-}
- static inline  double* ParticlesMonitorData_getp1_data_weight(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+168);
-  offset+=16+i0*8;
-  return ( double*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesMonitorData_getp_data_particle_id(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_particle_id(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesMonitorData_get_data_particle_id(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_particle_id(ParticlesMonitorData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp1_data_particle_id(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+176);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesMonitorData_getp_data_at_element(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_at_element(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesMonitorData_get_data_at_element(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_at_element(ParticlesMonitorData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp1_data_at_element(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+184);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesMonitorData_getp_data_at_turn(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_at_turn(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesMonitorData_get_data_at_turn(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_at_turn(ParticlesMonitorData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp1_data_at_turn(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+192);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesMonitorData_getp_data_state(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_state(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesMonitorData_get_data_state(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_state(ParticlesMonitorData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp1_data_state(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+200);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 ParticlesMonitorData_getp_data_parent_particle_id(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data_parent_particle_id(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t ParticlesMonitorData_get_data_parent_particle_id(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data_parent_particle_id(ParticlesMonitorData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* ParticlesMonitorData_getp1_data_parent_particle_id(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+208);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s1(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data__rng_s1(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesMonitorData_get_data__rng_s1(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data__rng_s1(ParticlesMonitorData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s1(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+216);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s2(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data__rng_s2(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesMonitorData_get_data__rng_s2(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data__rng_s2(ParticlesMonitorData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s2(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+224);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s3(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data__rng_s3(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesMonitorData_get_data__rng_s3(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data__rng_s3(ParticlesMonitorData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s3(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+232);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
- static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s4(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  return (ArrNUint32)(( char*) obj+offset);
-}
- static inline int64_t ParticlesMonitorData_len_data__rng_s4(ParticlesMonitorData  obj){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline uint32_t ParticlesMonitorData_get_data__rng_s4(const ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  offset+=16+i0*4;
-  return *( uint32_t*)(( char*) obj+offset);
-}
- static inline void ParticlesMonitorData_set_data__rng_s4(ParticlesMonitorData  obj, int64_t i0, uint32_t value){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  offset+=16+i0*4;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s4(ParticlesMonitorData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=72;
-  offset+=*( int64_t*)(( char*) obj+offset+240);
-  offset+=16+i0*4;
-  return ( uint32_t*)(( char*) obj+offset);
-}
-#endif
 #define XTRACK_GLOBAL_POSLIMIT (1.0)
 // copyright ############################### //
 // This file is part of the Xtrack Package.  //
@@ -5114,6 +46,1624 @@ typedef   struct ParticlesMonitorData_s * ParticlesMonitorData;
 #endif /* !defined( QELEM ) */
 
 #endif /* XTRACK_CONSTANTS_H */
+
+#ifndef XOBJ_TYPEDEF_LongitudinalProfileQGaussianData
+#define XOBJ_TYPEDEF_LongitudinalProfileQGaussianData
+typedef   struct LongitudinalProfileQGaussianData_s * LongitudinalProfileQGaussianData;
+ static inline LongitudinalProfileQGaussianData LongitudinalProfileQGaussianData_getp(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  return (LongitudinalProfileQGaussianData)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get_number_of_particles(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set_number_of_particles(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp_number_of_particles(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__q_tol(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__q_tol(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__q_tol(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__z0(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__z0(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__z0(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__sigma_z(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__sigma_z(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__sigma_z(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__q_param(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__q_param(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__q_param(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__cq_param(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__cq_param(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__cq_param(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__beta_param(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__beta_param(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=48;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__beta_param(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__sqrt_beta_param(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__sqrt_beta_param(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=56;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__sqrt_beta_param(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__support_min(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__support_min(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=64;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__support_min(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LongitudinalProfileQGaussianData_get__support_max(const LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LongitudinalProfileQGaussianData_set__support_max(LongitudinalProfileQGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=72;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LongitudinalProfileQGaussianData_getp__support_max(LongitudinalProfileQGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_QGAUSSIAN 
+#define XFIELDS_QGAUSSIAN 
+
+ static inline
+double LongitudinalProfileQGaussian_line_density_scalar(
+		LongitudinalProfileQGaussianData prof, double z){
+
+    const double number_of_particles = 
+	    LongitudinalProfileQGaussianData_get_number_of_particles(prof);
+    const double q = LongitudinalProfileQGaussianData_get__q_param(prof);
+    const double cq = LongitudinalProfileQGaussianData_get__cq_param(prof);
+    const double q_tol = LongitudinalProfileQGaussianData_get__q_tol(prof);
+    const double z0 = LongitudinalProfileQGaussianData_get__z0(prof);
+    const double beta_param = LongitudinalProfileQGaussianData_get__beta_param(prof);
+    const double sqrt_beta_param = 
+	    LongitudinalProfileQGaussianData_get__sqrt_beta_param(prof);
+    const double z_min = LongitudinalProfileQGaussianData_get__support_min(prof);
+    const double z_max = LongitudinalProfileQGaussianData_get__support_max(prof);
+
+    const double factor = number_of_particles*sqrt_beta_param/cq; 
+
+
+    if (fabs(q-1.) < q_tol){
+	if (z<z_max && z>z_min){
+	    double z_m_z0 = z - z0;
+		return factor*exp(-beta_param*z_m_z0*z_m_z0 );
+	}
+	else{
+		return 0; 
+	}
+    }
+    else{
+    	double exponent = 1./(1.-q);
+	if (z<z_max && z>z_min){
+	    double z_m_z0 = z - z0;
+    		double q_exp_arg =  -(beta_param*z_m_z0*z_m_z0 );
+    		double q_exp_res = pow(
+	    	 (1.+(1.-q)*q_exp_arg), exponent );
+    		return factor*q_exp_res;
+	}
+	else{
+		return 0; 
+	}
+    }
+}
+
+
+
+ 
+void line_density_qgauss(LongitudinalProfileQGaussianData prof,
+		               const int64_t n,
+		    const double* z, 
+		          double* res){
+
+//   #pragma omp parallel for //only_for_context cpu_openmp 
+for (int ii=0; ii<n; ii++){ //autovectorized
+
+
+       res[ii] = LongitudinalProfileQGaussian_line_density_scalar(prof, z[ii]);
+  
+}//end autovectorized
+
+}
+
+#endif
+
+#ifndef XOBJ_TYPEDEF_ArrNFloat64
+#define XOBJ_TYPEDEF_ArrNFloat64
+typedef   struct ArrNFloat64_s * ArrNFloat64;
+ static inline ArrNFloat64 ArrNFloat64_getp(ArrNFloat64 restrict  obj){
+  int64_t offset=0;
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ArrNFloat64_len(ArrNFloat64 restrict  obj){
+  int64_t offset=0;
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ArrNFloat64_get(const ArrNFloat64 restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ArrNFloat64_set(ArrNFloat64 restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ArrNFloat64_getp1(ArrNFloat64 restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+#ifndef XOBJ_TYPEDEF_BiGaussianFieldMapData
+#define XOBJ_TYPEDEF_BiGaussianFieldMapData
+typedef   struct BiGaussianFieldMapData_s * BiGaussianFieldMapData;
+ static inline BiGaussianFieldMapData BiGaussianFieldMapData_getp(BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  return (BiGaussianFieldMapData)(( char*) obj+offset);
+}
+ static inline double BiGaussianFieldMapData_get_mean_x(const BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BiGaussianFieldMapData_set_mean_x(BiGaussianFieldMapData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BiGaussianFieldMapData_getp_mean_x(BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BiGaussianFieldMapData_get_mean_y(const BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BiGaussianFieldMapData_set_mean_y(BiGaussianFieldMapData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BiGaussianFieldMapData_getp_mean_y(BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BiGaussianFieldMapData_get_sigma_x(const BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BiGaussianFieldMapData_set_sigma_x(BiGaussianFieldMapData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BiGaussianFieldMapData_getp_sigma_x(BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BiGaussianFieldMapData_get_sigma_y(const BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BiGaussianFieldMapData_set_sigma_y(BiGaussianFieldMapData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BiGaussianFieldMapData_getp_sigma_y(BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BiGaussianFieldMapData_get_min_sigma_diff(const BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BiGaussianFieldMapData_set_min_sigma_diff(BiGaussianFieldMapData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BiGaussianFieldMapData_getp_min_sigma_diff(BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline int64_t BiGaussianFieldMapData_get__updatable(const BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void BiGaussianFieldMapData_set__updatable(BiGaussianFieldMapData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=40;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* BiGaussianFieldMapData_getp__updatable(BiGaussianFieldMapData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( int64_t*)(( char*) obj+offset);
+}
+#endif
+#ifndef XOBJ_TYPEDEF_ArrNInt64
+#define XOBJ_TYPEDEF_ArrNInt64
+typedef   struct ArrNInt64_s * ArrNInt64;
+ static inline ArrNInt64 ArrNInt64_getp(ArrNInt64 restrict  obj){
+  int64_t offset=0;
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ArrNInt64_len(ArrNInt64 restrict  obj){
+  int64_t offset=0;
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ArrNInt64_get(const ArrNInt64 restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ArrNInt64_set(ArrNInt64 restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ArrNInt64_getp1(ArrNInt64 restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+#endif
+#ifndef XOBJ_TYPEDEF_RecordIndex
+#define XOBJ_TYPEDEF_RecordIndex
+typedef   struct RecordIndex_s * RecordIndex;
+ static inline RecordIndex RecordIndex_getp(RecordIndex restrict  obj){
+  int64_t offset=0;
+  return (RecordIndex)(( char*) obj+offset);
+}
+ static inline int64_t RecordIndex_get_capacity(const RecordIndex restrict  obj){
+  int64_t offset=0;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void RecordIndex_set_capacity(RecordIndex restrict  obj, int64_t value){
+  int64_t offset=0;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* RecordIndex_getp_capacity(RecordIndex restrict  obj){
+  int64_t offset=0;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline uint32_t RecordIndex_get_num_recorded(const RecordIndex restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void RecordIndex_set_num_recorded(RecordIndex restrict  obj, uint32_t value){
+  int64_t offset=0;
+  offset+=8;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* RecordIndex_getp_num_recorded(RecordIndex restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline uint32_t RecordIndex_get__dummy(const RecordIndex restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void RecordIndex_set__dummy(RecordIndex restrict  obj, uint32_t value){
+  int64_t offset=0;
+  offset+=16;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* RecordIndex_getp__dummy(RecordIndex restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline int64_t RecordIndex_get_buffer_id(const RecordIndex restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void RecordIndex_set_buffer_id(RecordIndex restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=24;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* RecordIndex_getp_buffer_id(RecordIndex restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( int64_t*)(( char*) obj+offset);
+}
+#endif
+
+
+ static inline
+int64_t RecordIndex_get_slot(RecordIndex record_index){
+
+    if (record_index == NULL){
+        return -2;
+    }
+    int64_t capacity = RecordIndex_get_capacity(record_index);
+      uint32_t* num_recorded = RecordIndex_getp_num_recorded(record_index);
+
+    if(*num_recorded >= capacity){
+        return -1;}
+
+//    uint32_t slot = atomic_add(num_recorded, 1);   //only_for_context opencl
+//    uint32_t slot = atomicAdd(num_recorded, 1);    //only_for_context cuda
+    uint32_t slot = *num_recorded;                 //only_for_context cpu_serial
+    *num_recorded = slot + 1;                      //only_for_context cpu_serial
+
+    if (slot >= capacity){
+        *num_recorded = capacity;
+        return -1;
+        }
+
+    return (int64_t) slot;
+    }
+
+#ifndef XOBJ_TYPEDEF_ArrNUint32
+#define XOBJ_TYPEDEF_ArrNUint32
+typedef   struct ArrNUint32_s * ArrNUint32;
+ static inline ArrNUint32 ArrNUint32_getp(ArrNUint32 restrict  obj){
+  int64_t offset=0;
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ArrNUint32_len(ArrNUint32 restrict  obj){
+  int64_t offset=0;
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ArrNUint32_get(const ArrNUint32 restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ArrNUint32_set(ArrNUint32 restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ArrNUint32_getp1(ArrNUint32 restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+#endif
+#ifndef XOBJ_TYPEDEF_SynchrotronRadiationRecordData
+#define XOBJ_TYPEDEF_SynchrotronRadiationRecordData
+typedef   struct SynchrotronRadiationRecordData_s * SynchrotronRadiationRecordData;
+ static inline SynchrotronRadiationRecordData SynchrotronRadiationRecordData_getp(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  return (SynchrotronRadiationRecordData)(( char*) obj+offset);
+}
+ static inline RecordIndex SynchrotronRadiationRecordData_getp__index(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return (RecordIndex)(( char*) obj+offset);
+}
+ static inline int64_t SynchrotronRadiationRecordData_get__index_capacity(const SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set__index_capacity(SynchrotronRadiationRecordData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* SynchrotronRadiationRecordData_getp__index_capacity(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline uint32_t SynchrotronRadiationRecordData_get__index_num_recorded(const SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set__index_num_recorded(SynchrotronRadiationRecordData restrict  obj, uint32_t value){
+  int64_t offset=0;
+  offset+=16;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* SynchrotronRadiationRecordData_getp__index_num_recorded(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline uint32_t SynchrotronRadiationRecordData_get__index__dummy(const SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set__index__dummy(SynchrotronRadiationRecordData restrict  obj, uint32_t value){
+  int64_t offset=0;
+  offset+=24;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* SynchrotronRadiationRecordData_getp__index__dummy(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline int64_t SynchrotronRadiationRecordData_get__index_buffer_id(const SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set__index_buffer_id(SynchrotronRadiationRecordData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=32;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* SynchrotronRadiationRecordData_getp__index_buffer_id(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 SynchrotronRadiationRecordData_getp_photon_energy(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t SynchrotronRadiationRecordData_len_photon_energy(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double SynchrotronRadiationRecordData_get_photon_energy(const SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set_photon_energy(SynchrotronRadiationRecordData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SynchrotronRadiationRecordData_getp1_photon_energy(SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 SynchrotronRadiationRecordData_getp_at_element(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+40);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t SynchrotronRadiationRecordData_len_at_element(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+40);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t SynchrotronRadiationRecordData_get_at_element(const SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+40);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set_at_element(SynchrotronRadiationRecordData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+40);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* SynchrotronRadiationRecordData_getp1_at_element(SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+40);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 SynchrotronRadiationRecordData_getp_at_turn(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t SynchrotronRadiationRecordData_len_at_turn(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t SynchrotronRadiationRecordData_get_at_turn(const SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set_at_turn(SynchrotronRadiationRecordData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* SynchrotronRadiationRecordData_getp1_at_turn(SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 SynchrotronRadiationRecordData_getp_particle_id(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t SynchrotronRadiationRecordData_len_particle_id(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t SynchrotronRadiationRecordData_get_particle_id(const SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set_particle_id(SynchrotronRadiationRecordData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* SynchrotronRadiationRecordData_getp1_particle_id(SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 SynchrotronRadiationRecordData_getp_particle_delta(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t SynchrotronRadiationRecordData_len_particle_delta(SynchrotronRadiationRecordData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double SynchrotronRadiationRecordData_get_particle_delta(const SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SynchrotronRadiationRecordData_set_particle_delta(SynchrotronRadiationRecordData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SynchrotronRadiationRecordData_getp1_particle_delta(SynchrotronRadiationRecordData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+#ifndef XOBJ_TYPEDEF_ParticlesData
+#define XOBJ_TYPEDEF_ParticlesData
+typedef   struct ParticlesData_s * ParticlesData;
+ static inline ParticlesData ParticlesData_getp(ParticlesData restrict  obj){
+  int64_t offset=0;
+  return (ParticlesData)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_get__capacity(const ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set__capacity(ParticlesData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp__capacity(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_get__num_active_particles(const ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set__num_active_particles(ParticlesData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=16;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp__num_active_particles(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_get__num_lost_particles(const ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set__num_lost_particles(ParticlesData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=24;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp__num_lost_particles(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_get_start_tracking_at_element(const ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_start_tracking_at_element(ParticlesData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=32;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp_start_tracking_at_element(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline double ParticlesData_get_q0(const ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_q0(ParticlesData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp_q0(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ParticlesData_get_mass0(const ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_mass0(ParticlesData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=48;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp_mass0(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_p0c(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=248;
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_p0c(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=248;
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_p0c(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=248;
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_p0c(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=248;
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_p0c(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=248;
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_gamma0(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_gamma0(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_gamma0(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_gamma0(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_gamma0(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_beta0(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_beta0(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_beta0(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_beta0(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_beta0(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_s(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_s(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_s(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_s(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_s(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_x(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_x(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_x(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_x(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_x(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_y(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_y(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_y(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_y(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_y(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_px(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_px(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_px(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_px(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_px(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_py(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_py(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_py(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_py(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_py(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_zeta(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_zeta(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_zeta(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_zeta(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_zeta(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_ptau(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_ptau(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_ptau(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_ptau(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_ptau(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_delta(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_delta(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_delta(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_delta(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_delta(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_rpp(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_rpp(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_rpp(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_rpp(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_rpp(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_rvv(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_rvv(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_rvv(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_rvv(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_rvv(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_chi(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_chi(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_chi(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_chi(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_chi(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_charge_ratio(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_charge_ratio(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_charge_ratio(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_charge_ratio(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_charge_ratio(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesData_getp_weight(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_weight(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesData_get_weight(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_weight(ParticlesData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesData_getp1_weight(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesData_getp_particle_id(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_particle_id(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesData_get_particle_id(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_particle_id(ParticlesData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp1_particle_id(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesData_getp_at_element(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_at_element(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesData_get_at_element(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_at_element(ParticlesData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp1_at_element(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesData_getp_at_turn(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_at_turn(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesData_get_at_turn(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_at_turn(ParticlesData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp1_at_turn(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesData_getp_state(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_state(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesData_get_state(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_state(ParticlesData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp1_state(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesData_getp_parent_particle_id(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len_parent_particle_id(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesData_get_parent_particle_id(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set_parent_particle_id(ParticlesData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesData_getp1_parent_particle_id(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesData_getp__rng_s1(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len__rng_s1(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesData_get__rng_s1(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set__rng_s1(ParticlesData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesData_getp1__rng_s1(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesData_getp__rng_s2(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len__rng_s2(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesData_get__rng_s2(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set__rng_s2(ParticlesData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesData_getp1__rng_s2(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesData_getp__rng_s3(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len__rng_s3(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesData_get__rng_s3(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set__rng_s3(ParticlesData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesData_getp1__rng_s3(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesData_getp__rng_s4(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesData_len__rng_s4(ParticlesData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesData_get__rng_s4(const ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesData_set__rng_s4(ParticlesData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesData_getp1__rng_s4(ParticlesData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xpart Package.   //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_RNG_H
+#define XTRACK_RNG_H
+
+//#include <stdint.h> //only_for_context none
+
+ static inline
+double rng_get (uint32_t *s1, uint32_t *s2, uint32_t *s3 )
+{
+#define MASK 0xffffffffUL
+#define TAUSWORTHE(s,a,b,c,d) ((((s) &c) <<d) &MASK) ^ (((((s) <<a) &MASK)^(s)) >>b)
+
+  *s1 = TAUSWORTHE (*s1, 13, 19, 4294967294UL, 12);
+  *s2 = TAUSWORTHE (*s2, 2, 25, 4294967288UL, 4);
+  *s3 = TAUSWORTHE (*s3, 3, 11, 4294967280UL, 17);
+
+  return ((*s1) ^ (*s2) ^ (*s3)) / 4294967296.0 ;
+}
+
+ static inline
+void rng_set (uint32_t *s1, uint32_t *s2, uint32_t *s3, uint32_t s )
+{
+  if (s == 0)
+    s = 1;      /* default seed is 1 */
+
+#define LCG(n) ((69069 * (n)) & 0xffffffffUL)
+  *s1 = LCG (s);
+  if (*s1 < 2) *s1 += 2UL;
+  *s2 = LCG (*s1);
+  if (*s2 < 8) *s2 += 8UL;
+  *s3 = LCG (*s2);
+  if (*s3 < 16) *s3 += 16UL;
+
+  /* "warm it up" */
+  rng_get (s1, s2, s3);
+  rng_get (s1, s2, s3);
+  rng_get (s1, s2, s3);
+  rng_get (s1, s2, s3);
+  rng_get (s1, s2, s3);
+  rng_get (s1, s2, s3);
+  return;
+}
+
+#endif /* XTRACK_RNG_H */
+
+// copyright ############################### //
+// This file is part of the Xpart Package.   //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_PARTICLES_RNG_H
+#define XTRACK_PARTICLES_RNG_H
+
+ 
+void Particles_initialize_rand_gen(ParticlesData particles,
+	  uint32_t* seeds, int n_init){
+
+for (int ii=0; ii<n_init; ii++){ //autovectorized
+
+
+	 uint32_t s1, s2, s3, s;
+	 s = seeds[ii];
+
+	 rng_set(&s1, &s2, &s3, s);
+
+	 ParticlesData_set__rng_s1(particles, ii, s1);
+	 ParticlesData_set__rng_s2(particles, ii, s2);
+	 ParticlesData_set__rng_s3(particles, ii, s3);
+
+}//end autovectorized
+
+
+}
+
+#endif
 
 typedef struct{
                  int64_t  _capacity;
@@ -6036,13 +2586,6 @@ void LocalParticle_update_pzeta(LocalParticle* part, double new_pzeta_value){
 
 }
 
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_TRACKER_H
-#define XTRACK_TRACKER_H
 
 #ifdef XTRACK_GLOBAL_POSLIMIT
 
@@ -6186,156 +2729,277 @@ int64_t check_is_active(LocalParticle* part) {
 
 #undef CPUIMPLEM //only_for_context cpu_serial cpu_openmp
 
-#endif
-#ifndef XOBJ_TYPEDEF_RecordIdentifier
-#define XOBJ_TYPEDEF_RecordIdentifier
-typedef   struct RecordIdentifier_s * RecordIdentifier;
- static inline RecordIdentifier RecordIdentifier_getp(RecordIdentifier  obj){
-  int64_t offset=0;
-  return (RecordIdentifier)(( char*) obj+offset);
-}
- static inline int64_t RecordIdentifier_get_buffer_id(const RecordIdentifier  obj){
-  int64_t offset=0;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void RecordIdentifier_set_buffer_id(RecordIdentifier  obj, int64_t value){
-  int64_t offset=0;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* RecordIdentifier_getp_buffer_id(RecordIdentifier  obj){
-  int64_t offset=0;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline int64_t RecordIdentifier_get_offset(const RecordIdentifier  obj){
-  int64_t offset=0;
-  offset+=8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void RecordIdentifier_set_offset(RecordIdentifier  obj, int64_t value){
-  int64_t offset=0;
-  offset+=8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* RecordIdentifier_getp_offset(RecordIdentifier  obj){
-  int64_t offset=0;
-  offset+=8;
-  return ( int64_t*)(( char*) obj+offset);
-}
-#endif
-
- static inline
-  int8_t* RecordIdentifier_getp_record(RecordIdentifier record_id, LocalParticle* part){
-      int8_t* io_buffer = LocalParticle_get_io_buffer(part);
-    if (io_buffer == NULL){
-        return NULL;
-    }
-
-    int64_t buffer_id = RecordIdentifier_get_buffer_id(record_id);
-      int64_t* found_id = (  int64_t*)io_buffer;
-    if (buffer_id != (*found_id)){
-        printf("Error: buffer_id mismatch!\n");
-        return NULL;
-    }
-
-    int64_t offset = RecordIdentifier_get_offset(record_id);
-
-    return io_buffer + offset;
-    }
 
 
-#ifndef XOBJ_TYPEDEF_RecordIndex
-#define XOBJ_TYPEDEF_RecordIndex
-typedef   struct RecordIndex_s * RecordIndex;
- static inline RecordIndex RecordIndex_getp(RecordIndex  obj){
+#ifndef XOBJ_TYPEDEF_SpaceChargeBiGaussianData
+#define XOBJ_TYPEDEF_SpaceChargeBiGaussianData
+typedef   struct SpaceChargeBiGaussianData_s * SpaceChargeBiGaussianData;
+ static inline SpaceChargeBiGaussianData SpaceChargeBiGaussianData_getp(SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
-  return (RecordIndex)(( char*) obj+offset);
+  return (SpaceChargeBiGaussianData)(( char*) obj+offset);
 }
- static inline int64_t RecordIndex_get_capacity(const RecordIndex  obj){
+ static inline LongitudinalProfileQGaussianData SpaceChargeBiGaussianData_getp_longitudinal_profile(SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
-  return *( int64_t*)(( char*) obj+offset);
+  return (LongitudinalProfileQGaussianData)(( char*) obj+offset);
 }
- static inline void RecordIndex_set_capacity(RecordIndex  obj, int64_t value){
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile_number_of_particles(const SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
-  *( int64_t*)(( char*) obj+offset)=value;
+  return *( double*)(( char*) obj+offset);
 }
- static inline  int64_t* RecordIndex_getp_capacity(RecordIndex  obj){
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile_number_of_particles(SpaceChargeBiGaussianData restrict  obj, double value){
   int64_t offset=0;
-  return ( int64_t*)(( char*) obj+offset);
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline uint32_t RecordIndex_get_num_recorded(const RecordIndex  obj){
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile_number_of_particles(SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
-  offset+=8;
-  return *( uint32_t*)(( char*) obj+offset);
+  return ( double*)(( char*) obj+offset);
 }
- static inline void RecordIndex_set_num_recorded(RecordIndex  obj, uint32_t value){
-  int64_t offset=0;
-  offset+=8;
-  *( uint32_t*)(( char*) obj+offset)=value;
-}
- static inline  uint32_t* RecordIndex_getp_num_recorded(RecordIndex  obj){
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__q_tol(const SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
   offset+=8;
-  return ( uint32_t*)(( char*) obj+offset);
+  return *( double*)(( char*) obj+offset);
 }
- static inline uint32_t RecordIndex_get__dummy(const RecordIndex  obj){
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__q_tol(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__q_tol(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__z0(const SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
   offset+=16;
-  return *( uint32_t*)(( char*) obj+offset);
+  return *( double*)(( char*) obj+offset);
 }
- static inline void RecordIndex_set__dummy(RecordIndex  obj, uint32_t value){
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__z0(SpaceChargeBiGaussianData restrict  obj, double value){
   int64_t offset=0;
   offset+=16;
-  *( uint32_t*)(( char*) obj+offset)=value;
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline  uint32_t* RecordIndex_getp__dummy(RecordIndex  obj){
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__z0(SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
   offset+=16;
-  return ( uint32_t*)(( char*) obj+offset);
+  return ( double*)(( char*) obj+offset);
 }
- static inline int64_t RecordIndex_get_buffer_id(const RecordIndex  obj){
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__sigma_z(const SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
   offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__sigma_z(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__sigma_z(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__q_param(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__q_param(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__q_param(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__cq_param(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__cq_param(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__cq_param(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__beta_param(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__beta_param(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=48;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__beta_param(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__sqrt_beta_param(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__sqrt_beta_param(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=56;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__sqrt_beta_param(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__support_min(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__support_min(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=64;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__support_min(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_longitudinal_profile__support_max(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_longitudinal_profile__support_max(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=72;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_longitudinal_profile__support_max(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline BiGaussianFieldMapData SpaceChargeBiGaussianData_getp_fieldmap(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return (BiGaussianFieldMapData)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_fieldmap_mean_x(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_fieldmap_mean_x(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=80;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_mean_x(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_fieldmap_mean_y(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_fieldmap_mean_y(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=88;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_mean_y(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_fieldmap_sigma_x(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_fieldmap_sigma_x(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=96;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_sigma_x(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_fieldmap_sigma_y(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_fieldmap_sigma_y(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=104;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_sigma_y(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SpaceChargeBiGaussianData_get_fieldmap_min_sigma_diff(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_fieldmap_min_sigma_diff(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=112;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_fieldmap_min_sigma_diff(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline int64_t SpaceChargeBiGaussianData_get_fieldmap__updatable(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=120;
   return *( int64_t*)(( char*) obj+offset);
 }
- static inline void RecordIndex_set_buffer_id(RecordIndex  obj, int64_t value){
+ static inline void SpaceChargeBiGaussianData_set_fieldmap__updatable(SpaceChargeBiGaussianData restrict  obj, int64_t value){
   int64_t offset=0;
-  offset+=24;
+  offset+=120;
   *( int64_t*)(( char*) obj+offset)=value;
 }
- static inline  int64_t* RecordIndex_getp_buffer_id(RecordIndex  obj){
+ static inline  int64_t* SpaceChargeBiGaussianData_getp_fieldmap__updatable(SpaceChargeBiGaussianData restrict  obj){
   int64_t offset=0;
-  offset+=24;
+  offset+=120;
   return ( int64_t*)(( char*) obj+offset);
 }
+ static inline double SpaceChargeBiGaussianData_get_length(const SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=128;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SpaceChargeBiGaussianData_set_length(SpaceChargeBiGaussianData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=128;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SpaceChargeBiGaussianData_getp_length(SpaceChargeBiGaussianData restrict  obj){
+  int64_t offset=0;
+  offset+=128;
+  return ( double*)(( char*) obj+offset);
+}
 #endif
-
-
- static inline
-int64_t RecordIndex_get_slot(RecordIndex record_index){
-
-    if (record_index == NULL){
-        return -2;
-    }
-    int64_t capacity = RecordIndex_get_capacity(record_index);
-      uint32_t* num_recorded = RecordIndex_getp_num_recorded(record_index);
-
-    if(*num_recorded >= capacity){
-        return -1;}
-
-//    uint32_t slot = atomic_add(num_recorded, 1);   //only_for_context opencl
-//    uint32_t slot = atomicAdd(num_recorded, 1);    //only_for_context cuda
-    uint32_t slot = *num_recorded;                 //only_for_context cpu_serial
-    *num_recorded = slot + 1;                      //only_for_context cpu_serial
-
-    if (slot >= capacity){
-        *num_recorded = capacity;
-        return -1;
-        }
-
-    return (int64_t) slot;
-    }
-
-
 // copyright ################################# //
 // This file is part of the Xfields Package.   //
 // Copyright (c) CERN, 2021.                   //
@@ -6403,7 +3067,7 @@ int64_t RecordIndex_get_slot(RecordIndex record_index){
 
 #if ( !defined( XSUITE_NO_SINCOS ) ) && ( defined( __OPENCL_C_VERSION__ ) )
  static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
     *sin_result = sincos( arg, cos_result ); }
 
 #elif ( !defined( XSUITE_NO_SINCOS ) ) && \
@@ -6412,12 +3076,12 @@ int64_t RecordIndex_get_slot(RecordIndex record_index){
          !defined( __STRICT_ANSI__ ) && !defined( __INTEL_COMPILER ) && \
          defined( __NO_MATH_ERRNO__ ) ) )
  static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
     sincos( arg, sin_result, cos_result ); }
 
 #else
  static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
     *sin_result = sin( arg );
     *cos_result = cos( arg ); }
 
@@ -6591,8 +3255,8 @@ int64_t RecordIndex_get_slot(RecordIndex record_index){
 
  static inline void cerrf_q1(
     double const x, double const y,
-    double*   out_x,
-    double*   out_y )
+    double*  restrict  out_x,
+    double*  restrict  out_y )
 {
     /* This implementation corresponds closely to the previously used
      * "CERNLib C" version, translated from the FORTRAN function written at
@@ -6726,7 +3390,7 @@ int64_t RecordIndex_get_slot(RecordIndex record_index){
  */
 
  static inline void cerrf( double x, double y,
-    double*   out_x, double*   out_y )
+    double*  restrict  out_x, double*  restrict  out_y )
 {
     double const sign_x = ( double )( ( x >= ( double )0. ) - ( x < ( double )0. ) );
     double const sign_y = ( double )( ( y >= ( double )0. ) - ( y < ( double )0. ) );
@@ -6884,7 +3548,50 @@ void get_Ex_Ey_gauss(
 	}
 }
 
+
+ static inline void compute_Gx_Gy(
+        const double  x,
+        const double  y,
+        const double  sigma_x,
+        const double  sigma_y,
+        const double  min_sigma_diff,
+        const double  Ex,
+        const double  Ey,
+        double* Gx_ptr,
+        double* Gy_ptr){
+
+    double Gx, Gy;
+
+    if (fabs(sigma_x-sigma_y) < min_sigma_diff){
+
+        const double sigma = 0.5*(sigma_x+sigma_y);
+        Gx = 1/(2.*(x*x+y*y))*(y*Ey-x*Ex+1./(2*PI*EPSILON_0*sigma*sigma)
+                            *x*x*exp(-(x*x+y*y)/(2.*sigma*sigma)));
+        Gy = 1./(2*(x*x+y*y))*(x*Ex-y*Ey+1./(2*PI*EPSILON_0*sigma*sigma)
+                            *y*y*exp(-(x*x+y*y)/(2.*sigma*sigma)));
+    }
+    else{
+
+        const double Sig_11 = sigma_x*sigma_x;
+        const double Sig_33 = sigma_y*sigma_y;
+
+        Gx =-1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)
+                   *(sigma_y/sigma_x*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
+        Gy =1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)*
+                      (sigma_x/sigma_y*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
+
+    }
+
+    *Gx_ptr = Gx;
+    *Gy_ptr = Gy;
+}
+
+#endif
+
 #ifndef NOFIELDMAP
+
+#ifndef XFIEDLS_BIGUASSIIAN_H_FIELDMAP
+#define XFIEDLS_BIGUASSIIAN_H_FIELDMAP
 
  static inline
 void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
@@ -6914,6 +3621,76 @@ void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
     *dphi_dy = -Ey;
 }
 #endif
+#endif
+
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_QGAUSSIAN 
+#define XFIELDS_QGAUSSIAN 
+
+ static inline
+double LongitudinalProfileQGaussian_line_density_scalar(
+		LongitudinalProfileQGaussianData prof, double z){
+
+    const double number_of_particles = 
+	    LongitudinalProfileQGaussianData_get_number_of_particles(prof);
+    const double q = LongitudinalProfileQGaussianData_get__q_param(prof);
+    const double cq = LongitudinalProfileQGaussianData_get__cq_param(prof);
+    const double q_tol = LongitudinalProfileQGaussianData_get__q_tol(prof);
+    const double z0 = LongitudinalProfileQGaussianData_get__z0(prof);
+    const double beta_param = LongitudinalProfileQGaussianData_get__beta_param(prof);
+    const double sqrt_beta_param = 
+	    LongitudinalProfileQGaussianData_get__sqrt_beta_param(prof);
+    const double z_min = LongitudinalProfileQGaussianData_get__support_min(prof);
+    const double z_max = LongitudinalProfileQGaussianData_get__support_max(prof);
+
+    const double factor = number_of_particles*sqrt_beta_param/cq; 
+
+
+    if (fabs(q-1.) < q_tol){
+	if (z<z_max && z>z_min){
+	    double z_m_z0 = z - z0;
+		return factor*exp(-beta_param*z_m_z0*z_m_z0 );
+	}
+	else{
+		return 0; 
+	}
+    }
+    else{
+    	double exponent = 1./(1.-q);
+	if (z<z_max && z>z_min){
+	    double z_m_z0 = z - z0;
+    		double q_exp_arg =  -(beta_param*z_m_z0*z_m_z0 );
+    		double q_exp_res = pow(
+	    	 (1.+(1.-q)*q_exp_arg), exponent );
+    		return factor*q_exp_res;
+	}
+	else{
+		return 0; 
+	}
+    }
+}
+
+
+
+ 
+void line_density_qgauss(LongitudinalProfileQGaussianData prof,
+		               const int64_t n,
+		    const double* z, 
+		          double* res){
+
+//   #pragma omp parallel for //only_for_context cpu_openmp 
+for (int ii=0; ii<n; ii++){ //autovectorized
+
+
+       res[ii] = LongitudinalProfileQGaussian_line_density_scalar(prof, z[ii]);
+  
+}//end autovectorized
+
+}
 
 #endif
 
@@ -6922,20 +3699,18 @@ void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
 // Copyright (c) CERN, 2021.                   //
 // ########################################### //
 
-#ifndef XFIELDS_BEAMBEAM_H
-#define XFIELDS_BEAMBEAM_H
+#ifndef XFIELDS_SPACECHARGEBIGAUSSIAN_H
+#define XFIELDS_SPACECHARGEBIGAUSSIAN_H
 
  static inline
-void BeamBeamBiGaussian2D_track_local_particle(
-		BeamBeamBiGaussian2DData el, LocalParticle* part0){
+void SpaceChargeBiGaussian_track_local_particle(
+		 SpaceChargeBiGaussianData el, LocalParticle* part0){
 
-    BiGaussianFieldMapData fmap = BeamBeamBiGaussian2DData_getp_fieldmap(el);
-    double const bb_q0 = BeamBeamBiGaussian2DData_get_q0(el);
-    double const bb_n_particles = BeamBeamBiGaussian2DData_get_n_particles(el);
-    double const bb_beta0 = BeamBeamBiGaussian2DData_get_beta0(el); 
-    double const bb_d_px = BeamBeamBiGaussian2DData_get_d_px(el);
-    double const bb_d_py = BeamBeamBiGaussian2DData_get_d_py(el);
- 
+    const double length = SpaceChargeBiGaussianData_get_length(el);
+    BiGaussianFieldMapData fmap = SpaceChargeBiGaussianData_getp_fieldmap(el);
+    LongitudinalProfileQGaussianData prof = 
+	    SpaceChargeBiGaussianData_getp_longitudinal_profile(el);
+
 
    int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
 //   #pragma omp parallel for                                       //only_for_context cpu_openmp
@@ -6953,34 +3728,974 @@ void BeamBeamBiGaussian2D_track_local_particle(
 
 	double const x = LocalParticle_get_x(part);
 	double const y = LocalParticle_get_y(part);
-	double const part_q0 = LocalParticle_get_q0(part);
-	double const part_mass0 = LocalParticle_get_mass0(part);
-	double const part_chi = LocalParticle_get_chi(part);
-	double const part_beta0 = LocalParticle_get_beta0(part);
-	double const part_gamma0 = LocalParticle_get_gamma0(part);
+	double const z = LocalParticle_get_zeta(part);
 
+	double const q0 = LocalParticle_get_q0(part);
+	double const mass0 = LocalParticle_get_mass0(part);
+	double const chi = LocalParticle_get_chi(part);
+	double const beta0 = LocalParticle_get_beta0(part);
+	double const gamma0 = LocalParticle_get_gamma0(part);
+	
    	double dphi_dx, dphi_dy;
-
 	BiGaussianFieldMap_get_dphi_dx_dphi_dy(fmap, x, y,
                           &dphi_dx, &dphi_dy);
 
-        const double charge_mass_ratio = part_chi*QELEM*part_q0
-                    /(part_mass0*QELEM/(C_LIGHT*C_LIGHT));
-        const double factor = -(charge_mass_ratio*bb_n_particles*bb_q0* QELEM
-                    /(part_gamma0*part_beta0*C_LIGHT*C_LIGHT)
-                    *(1+bb_beta0*part_beta0)/(bb_beta0 + part_beta0));
+	const double lambda_z = 
+		LongitudinalProfileQGaussian_line_density_scalar(prof, z);
 
-	LocalParticle_add_to_px(part, factor*dphi_dx-bb_d_px);
-	LocalParticle_add_to_py(part, factor*dphi_dy-bb_d_py);
+        const double charge_mass_ratio = 
+		             chi*QELEM*q0/(mass0*QELEM/(C_LIGHT*C_LIGHT));
+        const double factor = -(charge_mass_ratio*q0*QELEM
+                                *length*(1.-beta0*beta0)
+                                /(gamma0*beta0*beta0*C_LIGHT*C_LIGHT));
+
+	LocalParticle_add_to_px(part, factor*lambda_z*dphi_dx);
+	LocalParticle_add_to_py(part, factor*lambda_z*dphi_dy);
 
 
      } //only_for_context cpu_serial cpu_openmp
     }  //only_for_context cpu_serial cpu_openmp
    }   //only_for_context cpu_serial cpu_openmp
 
-
 }
 
+
+#endif
+
+
+             
+            void SpaceChargeBiGaussian_track_particles(
+               SpaceChargeBiGaussianData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      SpaceChargeBiGaussian_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_BeamBeamBiGaussian3DData
+#define XOBJ_TYPEDEF_BeamBeamBiGaussian3DData
+typedef   struct BeamBeamBiGaussian3DData_s * BeamBeamBiGaussian3DData;
+ static inline BeamBeamBiGaussian3DData BeamBeamBiGaussian3DData_getp(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  return (BeamBeamBiGaussian3DData)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get__sin_phi(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set__sin_phi(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp__sin_phi(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get__cos_phi(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set__cos_phi(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp__cos_phi(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get__tan_phi(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set__tan_phi(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp__tan_phi(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get__sin_alpha(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set__sin_alpha(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp__sin_alpha(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get__cos_alpha(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set__cos_alpha(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp__cos_alpha(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_ref_shift_x(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_ref_shift_x(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=48;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_ref_shift_x(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_ref_shift_px(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_ref_shift_px(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=56;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_ref_shift_px(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_ref_shift_y(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_ref_shift_y(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=64;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_ref_shift_y(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_ref_shift_py(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_ref_shift_py(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=72;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_ref_shift_py(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_ref_shift_zeta(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_ref_shift_zeta(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=80;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_ref_shift_zeta(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_ref_shift_pzeta(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_ref_shift_pzeta(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=88;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_ref_shift_pzeta(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_other_beam_shift_x(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_other_beam_shift_x(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=96;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_other_beam_shift_x(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_other_beam_shift_px(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_other_beam_shift_px(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=104;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_other_beam_shift_px(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_other_beam_shift_y(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_other_beam_shift_y(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=112;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_other_beam_shift_y(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_other_beam_shift_py(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=120;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_other_beam_shift_py(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=120;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_other_beam_shift_py(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=120;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_other_beam_shift_zeta(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=128;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_other_beam_shift_zeta(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=128;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_other_beam_shift_zeta(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=128;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_other_beam_shift_pzeta(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=136;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_other_beam_shift_pzeta(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=136;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_other_beam_shift_pzeta(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=136;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_post_subtract_x(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=144;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_post_subtract_x(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=144;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_post_subtract_x(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=144;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_post_subtract_px(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=152;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_post_subtract_px(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=152;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_post_subtract_px(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=152;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_post_subtract_y(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=160;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_post_subtract_y(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=160;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_post_subtract_y(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=160;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_post_subtract_py(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=168;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_post_subtract_py(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=168;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_post_subtract_py(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=168;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_post_subtract_zeta(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=176;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_post_subtract_zeta(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=176;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_post_subtract_zeta(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=176;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_post_subtract_pzeta(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=184;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_post_subtract_pzeta(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=184;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_post_subtract_pzeta(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=184;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_other_beam_q0(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=192;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_other_beam_q0(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=192;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_other_beam_q0(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=192;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_get_num_slices_other_beam(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=200;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_num_slices_other_beam(BeamBeamBiGaussian3DData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=200;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* BeamBeamBiGaussian3DData_getp_num_slices_other_beam(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=200;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_num_particles(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=352;
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_num_particles(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=352;
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_num_particles(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=352;
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_num_particles(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=352;
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_num_particles(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=352;
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_x_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_x_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_x_center_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_x_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_x_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_px_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_px_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_px_center_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_px_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_px_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_y_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_y_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_y_center_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_y_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_y_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_py_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+248);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_py_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+248);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_py_center_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+248);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_py_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+248);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_py_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+248);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_zeta_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+256);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_zeta_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+256);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_zeta_center_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+256);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_zeta_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+256);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_zeta_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+256);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_pzeta_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+264);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_pzeta_center_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+264);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_pzeta_center_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+264);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_pzeta_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+264);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_pzeta_center_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+264);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_11_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+272);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_11_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+272);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_11_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+272);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_11_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+272);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_11_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+272);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_12_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+280);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_12_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+280);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_12_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+280);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_12_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+280);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_12_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+280);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_13_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+288);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_13_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+288);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_13_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+288);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_13_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+288);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_13_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+288);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_14_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+296);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_14_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+296);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_14_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+296);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_14_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+296);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_14_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+296);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_22_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+304);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_22_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+304);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_22_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+304);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_22_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+304);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_22_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+304);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_23_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+312);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_23_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+312);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_23_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+312);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_23_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+312);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_23_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+312);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_24_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+320);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_24_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+320);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_24_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+320);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_24_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+320);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_24_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+320);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_33_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+328);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_33_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+328);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_33_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+328);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_33_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+328);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_33_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+328);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_34_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+336);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_34_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+336);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_34_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+336);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_34_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+336);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_34_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+336);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 BeamBeamBiGaussian3DData_getp_slices_other_beam_Sigma_44_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+344);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t BeamBeamBiGaussian3DData_len_slices_other_beam_Sigma_44_star(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+344);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_44_star(const BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+344);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_slices_other_beam_Sigma_44_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+344);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp1_slices_other_beam_Sigma_44_star(BeamBeamBiGaussian3DData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+344);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_min_sigma_diff(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=208;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_min_sigma_diff(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=208;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_min_sigma_diff(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=208;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian3DData_get_threshold_singular(const BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=216;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian3DData_set_threshold_singular(BeamBeamBiGaussian3DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=216;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian3DData_getp_threshold_singular(BeamBeamBiGaussian3DData restrict  obj){
+  int64_t offset=0;
+  offset+=216;
+  return ( double*)(( char*) obj+offset);
+}
 #endif
 // copyright ################################# //
 // This file is part of the Xfields Package.   //
@@ -7049,7 +4764,7 @@ void BeamBeamBiGaussian2D_track_local_particle(
 
 #if ( !defined( XSUITE_NO_SINCOS ) ) && ( defined( __OPENCL_C_VERSION__ ) )
  static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
     *sin_result = sincos( arg, cos_result ); }
 
 #elif ( !defined( XSUITE_NO_SINCOS ) ) && \
@@ -7058,12 +4773,12 @@ void BeamBeamBiGaussian2D_track_local_particle(
          !defined( __STRICT_ANSI__ ) && !defined( __INTEL_COMPILER ) && \
          defined( __NO_MATH_ERRNO__ ) ) )
  static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
     sincos( arg, sin_result, cos_result ); }
 
 #else
  static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
     *sin_result = sin( arg );
     *cos_result = cos( arg ); }
 
@@ -7237,8 +4952,8 @@ void BeamBeamBiGaussian2D_track_local_particle(
 
  static inline void cerrf_q1(
     double const x, double const y,
-    double*   out_x,
-    double*   out_y )
+    double*  restrict  out_x,
+    double*  restrict  out_y )
 {
     /* This implementation corresponds closely to the previously used
      * "CERNLib C" version, translated from the FORTRAN function written at
@@ -7372,7 +5087,7 @@ void BeamBeamBiGaussian2D_track_local_particle(
  */
 
  static inline void cerrf( double x, double y,
-    double*   out_x, double*   out_y )
+    double*  restrict  out_x, double*  restrict  out_y )
 {
     double const sign_x = ( double )( ( x >= ( double )0. ) - ( x < ( double )0. ) );
     double const sign_y = ( double )( ( y >= ( double )0. ) - ( y < ( double )0. ) );
@@ -7531,7 +5246,50 @@ void get_Ex_Ey_gauss(
 	}
 }
 
+
+ static inline void compute_Gx_Gy(
+        const double  x,
+        const double  y,
+        const double  sigma_x,
+        const double  sigma_y,
+        const double  min_sigma_diff,
+        const double  Ex,
+        const double  Ey,
+        double* Gx_ptr,
+        double* Gy_ptr){
+
+    double Gx, Gy;
+
+    if (fabs(sigma_x-sigma_y) < min_sigma_diff){
+
+        const double sigma = 0.5*(sigma_x+sigma_y);
+        Gx = 1/(2.*(x*x+y*y))*(y*Ey-x*Ex+1./(2*PI*EPSILON_0*sigma*sigma)
+                            *x*x*exp(-(x*x+y*y)/(2.*sigma*sigma)));
+        Gy = 1./(2*(x*x+y*y))*(x*Ex-y*Ey+1./(2*PI*EPSILON_0*sigma*sigma)
+                            *y*y*exp(-(x*x+y*y)/(2.*sigma*sigma)));
+    }
+    else{
+
+        const double Sig_11 = sigma_x*sigma_x;
+        const double Sig_33 = sigma_y*sigma_y;
+
+        Gx =-1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)
+                   *(sigma_y/sigma_x*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
+        Gy =1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)*
+                      (sigma_x/sigma_y*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
+
+    }
+
+    *Gx_ptr = Gx;
+    *Gy_ptr = Gy;
+}
+
+#endif
+
 #ifndef NOFIELDMAP
+
+#ifndef XFIEDLS_BIGUASSIIAN_H_FIELDMAP
+#define XFIEDLS_BIGUASSIIAN_H_FIELDMAP
 
  static inline
 void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
@@ -7561,16 +5319,16 @@ void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
     *dphi_dy = -Ey;
 }
 #endif
-
 #endif
 
+#undef NOFIELDMAP
 // copyright ################################# //
 // This file is part of the Xfields Package.   //
 // Copyright (c) CERN, 2021.                   //
 // ########################################### //
 
-#ifndef XFIELDS_BEAMBEAM3D_H
-#define XFIELDS_BEAMBEAM3D_H
+#ifndef XFIELDS_BEAMBEAM3D_TRASPORT_SIGMAS_H
+#define XFIELDS_BEAMBEAM3D_TRASPORT_SIGMAS_H
 
 #if !defined(mysign)
     #define mysign(a) (((a) >= 0) - ((a) < 0))
@@ -7578,9 +5336,18 @@ void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
 
  static inline
 void Sigmas_propagate(
-	Sigmas sigmas_0,
+        double const Sig_11_0,
+        double const Sig_12_0,
+        double const Sig_13_0,
+        double const Sig_14_0,
+        double const Sig_22_0,
+        double const Sig_23_0,
+        double const Sig_24_0,
+        double const Sig_33_0,
+        double const Sig_34_0,
+        double const Sig_44_0,
         double const S,
-	double const threshold_singular,
+        double const threshold_singular,
         int64_t const handle_singularities,
         double* Sig_11_hat_ptr,
         double* Sig_33_hat_ptr,
@@ -7591,16 +5358,6 @@ void Sigmas_propagate(
         double* dS_costheta_ptr,
         double* dS_sintheta_ptr)
 {
-    double const Sig_11_0 = Sigmas_get_Sig_11(sigmas_0);
-    double const Sig_12_0 = Sigmas_get_Sig_12(sigmas_0);
-    double const Sig_13_0 = Sigmas_get_Sig_13(sigmas_0);
-    double const Sig_14_0 = Sigmas_get_Sig_14(sigmas_0);
-    double const Sig_22_0 = Sigmas_get_Sig_22(sigmas_0);
-    double const Sig_23_0 = Sigmas_get_Sig_23(sigmas_0);
-    double const Sig_24_0 = Sigmas_get_Sig_24(sigmas_0);
-    double const Sig_33_0 = Sigmas_get_Sig_33(sigmas_0);
-    double const Sig_34_0 = Sigmas_get_Sig_34(sigmas_0);
-    double const Sig_44_0 = Sigmas_get_Sig_44(sigmas_0);
 
     // Propagate sigma matrix
     double const Sig_11 = Sig_11_0 + 2.*Sig_12_0*S+Sig_22_0*S*S;
@@ -7727,21 +5484,30 @@ void Sigmas_propagate(
 
 }
 
- static inline
-void BoostParameters_boost_coordinates(
-    const BoostParameters bp,
-    double* x_star,
-    double* px_star,
-    double* y_star,
-    double* py_star,
-    double* sigma_star,
-    double* delta_star){
+#endif
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
 
-    double const sphi = BoostParameters_get_sphi(bp);
-    double const cphi = BoostParameters_get_cphi(bp);
-    double const tphi = BoostParameters_get_tphi(bp);
-    double const salpha = BoostParameters_get_salpha(bp);
-    double const calpha = BoostParameters_get_calpha(bp);
+#ifndef XFIELDS_BEAMBEAM3D_REF_FRAME_CHANGES_H
+#define XFIELDS_BEAMBEAM3D_REF_FRAME_CHANGES_H
+
+
+ static inline
+void boost_coordinates(
+        double const sphi,
+        double const cphi,
+        double const tphi,
+        double const salpha,
+        double const calpha,
+        double* x_star,
+        double* px_star,
+        double* y_star,
+        double* py_star,
+        double* sigma_star,
+        double* delta_star){
+
 
     double const x = *x_star;
     double const px = *px_star;
@@ -7790,20 +5556,18 @@ void BoostParameters_boost_coordinates(
 }
 
  static inline
-void BoostParameters_boost_coordinates_inv(
-    	const BoostParameters bp,
-    	double* x,
-    	double* px,
-    	double* y,
-    	double* py,
-    	double* sigma,
-    	double* delta){
-
-    double const sphi = BoostParameters_get_sphi(bp);
-    double const cphi = BoostParameters_get_cphi(bp);
-    double const tphi = BoostParameters_get_tphi(bp);
-    double const salpha = BoostParameters_get_salpha(bp);
-    double const calpha = BoostParameters_get_calpha(bp);
+void boost_coordinates_inv(
+        double const sphi,
+        double const cphi,
+        double const tphi,
+        double const salpha,
+        double const calpha,
+        double* x,
+        double* px,
+        double* y,
+        double* py,
+        double* sigma,
+        double* delta){
 
     double const x_st = *x;
     double const px_st = *px;
@@ -7863,82 +5627,223 @@ void BoostParameters_boost_coordinates_inv(
 
 }
 
- static inline void compute_Gx_Gy(
-             const double  x, 
-             const double  y,
-             const double  sigma_x, 
-             const double  sigma_y,
-             const double  min_sigma_diff, 
-	     const double  Ex,
-	     const double  Ey,
-                   double* Gx_ptr,
-                   double* Gy_ptr){
+ static inline
+void change_ref_frame_coordinates(
+        double* x, double* px, double* y, double* py, double* zeta, double* pzeta,
+        double const shift_x, double const shift_px,
+        double const shift_y, double const shift_py,
+        double const shift_zeta, double const shift_pzeta,
+        double const sin_phi, double const cos_phi, double const tan_phi,
+        double const sin_alpha, double const cos_alpha){
 
-    double Gx, Gy;
+    // Change reference frame
+    double x_star =     *x     - shift_x;
+    double px_star =    *px    - shift_px;
+    double y_star =     *y     - shift_y;
+    double py_star =    *py    - shift_py;
+    double zeta_star =  *zeta  - shift_zeta;
+    double pzeta_star = *pzeta - shift_pzeta;
 
-    if (fabs(sigma_x-sigma_y) < min_sigma_diff){
+    // Boost coordinates of the weak beam
+    boost_coordinates(
+        sin_phi, cos_phi, tan_phi, sin_alpha, cos_alpha,
+        &x_star, &px_star, &y_star, &py_star,
+        &zeta_star, &pzeta_star);
 
-        const double sigma = 0.5*(sigma_x+sigma_y);
-        Gx = 1/(2.*(x*x+y*y))*(y*Ey-x*Ex+1./(2*PI*EPSILON_0*sigma*sigma)
-                            *x*x*exp(-(x*x+y*y)/(2.*sigma*sigma)));
-        Gy = 1./(2*(x*x+y*y))*(x*Ex-y*Ey+1./(2*PI*EPSILON_0*sigma*sigma)
-                            *y*y*exp(-(x*x+y*y)/(2.*sigma*sigma)));
+    *x = x_star;
+    *px = px_star;
+    *y = y_star;
+    *py = py_star;
+    *zeta = zeta_star;
+    *pzeta = pzeta_star;
     }
-    else{
-
-        const double Sig_11 = sigma_x*sigma_x;
-        const double Sig_33 = sigma_y*sigma_y;
-
-	//printf("Inside Sig_11=%.10e\n", Sig_11);
-	//printf("Inside Sig_33=%.10e\n", Sig_33);
-
-        Gx =-1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)   
-                   *(sigma_y/sigma_x*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
-        Gy =1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)*
-                      (sigma_x/sigma_y*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
-
-	//printf("Inside Gx=%.10e\n", Gx);
-	//printf("Inside Gy=%.10e\n", Gy);
-    }
-
-    *Gx_ptr = Gx;
-    *Gy_ptr = Gy;
-}
 
  static inline
-void BeamBeamBiGaussian3D_track_local_particle(BeamBeamBiGaussian3DData el, 
-		 	   LocalParticle* part0){
-	
+void change_back_ref_frame_and_subtract_dipolar_coordinates(
+        double* x, double* px,
+        double* y, double* py,
+        double* zeta, double* pzeta,
+        double const shift_x, double const shift_px,
+        double const shift_y, double const shift_py,
+        double const shift_zeta, double const shift_pzeta,
+        double const post_subtract_x, double const post_subtract_px,
+        double const post_subtract_y, double const post_subtract_py,
+        double const post_subtract_zeta, double const post_subtract_pzeta,
+        double const sin_phi, double const cos_phi, double const tan_phi,
+        double const sin_alpha, double const cos_alpha){
+
+    // Inverse boost on the coordinates of the weak beam
+    boost_coordinates_inv(
+        sin_phi, cos_phi, tan_phi, sin_alpha, cos_alpha,
+        x, px, y, py, zeta, pzeta);
+
+    // Go back to original reference frame and remove dipolar effect
+    *x =     *x     + shift_x     - post_subtract_x;
+    *px =    *px    + shift_px    - post_subtract_px;
+    *y =     *y     + shift_y     - post_subtract_y;
+    *py =    *py    + shift_py    - post_subtract_py;
+    *zeta =  *zeta  + shift_zeta  - post_subtract_zeta;
+    *pzeta = *pzeta + shift_pzeta - post_subtract_pzeta;
+
+    }
+
+#endif
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_BEAMBEAM3D_H
+#define XFIELDS_BEAMBEAM3D_H
+
+
+ static inline
+void synchrobeam_kick(
+        BeamBeamBiGaussian3DData el, const int i_slice,
+        double const q0, double const p0c,
+        double* x_star,
+        double* px_star,
+        double* y_star,
+        double* py_star,
+        double* zeta_star,
+        double* pzeta_star){
+
     // Get data from memory
-    const double q0_bb  = BeamBeamBiGaussian3DData_get_q0(el);     
-    const BoostParameters bpar = BeamBeamBiGaussian3DData_getp_boost_parameters(el);
-    const Sigmas Sigmas_0_star = BeamBeamBiGaussian3DData_getp_Sigmas_0_star(el);
+    const double q0_bb  = BeamBeamBiGaussian3DData_get_other_beam_q0(el);
     const double min_sigma_diff = BeamBeamBiGaussian3DData_get_min_sigma_diff(el);
-    const double threshold_singular = 
-	    BeamBeamBiGaussian3DData_get_threshold_singular(el);
-    const int N_slices = BeamBeamBiGaussian3DData_get_num_slices(el);
-    const double delta_x = BeamBeamBiGaussian3DData_get_delta_x(el);
-    const double delta_y = BeamBeamBiGaussian3DData_get_delta_y(el);
-    const double x_CO  = BeamBeamBiGaussian3DData_get_x_CO(el);     
-    const double px_CO = BeamBeamBiGaussian3DData_get_px_CO(el);
-    const double y_CO = BeamBeamBiGaussian3DData_get_y_CO(el);
-    const double py_CO = BeamBeamBiGaussian3DData_get_py_CO(el);
-    const double sigma_CO = BeamBeamBiGaussian3DData_get_sigma_CO(el);
-    const double delta_CO = BeamBeamBiGaussian3DData_get_delta_CO(el);
-    const double Dx_sub = BeamBeamBiGaussian3DData_get_Dx_sub(el); 
-    const double Dpx_sub = BeamBeamBiGaussian3DData_get_Dpx_sub(el);
-    const double Dy_sub =BeamBeamBiGaussian3DData_get_Dy_sub(el);
-    const double Dpy_sub =BeamBeamBiGaussian3DData_get_Dpy_sub(el);
-    const double Dsigma_sub =BeamBeamBiGaussian3DData_get_Dsigma_sub(el);
-    const double Ddelta_sub =BeamBeamBiGaussian3DData_get_Ddelta_sub(el);
-      const double* N_part_per_slice_arr = 
-	    BeamBeamBiGaussian3DData_getp1_N_part_per_slice(el, 0);
-      const double* x_slices_star_arr = 
-	    BeamBeamBiGaussian3DData_getp1_x_slices_star(el, 0);
-      const double* y_slices_star_arr = 
-	    BeamBeamBiGaussian3DData_getp1_y_slices_star(el, 0);
-      const double* sigma_slices_star_arr = 
-	    BeamBeamBiGaussian3DData_getp1_sigma_slices_star(el, 0);
+    const double threshold_singular = BeamBeamBiGaussian3DData_get_threshold_singular(el);
+
+    double const Sig_11_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_11_star(el, i_slice);
+    double const Sig_12_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_12_star(el, i_slice);
+    double const Sig_13_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_13_star(el, i_slice);
+    double const Sig_14_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_14_star(el, i_slice);
+    double const Sig_22_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_22_star(el, i_slice);
+    double const Sig_23_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_23_star(el, i_slice);
+    double const Sig_24_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_24_star(el, i_slice);
+    double const Sig_33_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_33_star(el, i_slice);
+    double const Sig_34_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_34_star(el, i_slice);
+    double const Sig_44_0 = BeamBeamBiGaussian3DData_get_slices_other_beam_Sigma_44_star(el, i_slice);
+
+    double const num_part_slice = BeamBeamBiGaussian3DData_get_slices_other_beam_num_particles(el, i_slice);
+
+    const double x_slice_star = BeamBeamBiGaussian3DData_get_slices_other_beam_x_center_star(el, i_slice);
+    const double y_slice_star = BeamBeamBiGaussian3DData_get_slices_other_beam_y_center_star(el, i_slice);
+    double const zeta_slice_star = BeamBeamBiGaussian3DData_get_slices_other_beam_zeta_center_star(el, i_slice);
+
+    const double P0 = p0c/C_LIGHT*QELEM;
+
+    //Compute force scaling factor
+    const double Ksl = num_part_slice*QELEM*q0_bb*QELEM*q0/(P0 * C_LIGHT);
+
+    //Identify the Collision Point (CP)
+    const double S = 0.5*(*zeta_star - zeta_slice_star);
+
+    // Propagate sigma matrix
+    double Sig_11_hat_star, Sig_33_hat_star, costheta, sintheta;
+    double dS_Sig_11_hat_star, dS_Sig_33_hat_star, dS_costheta, dS_sintheta;
+
+    // Get strong beam shape at the CP
+    Sigmas_propagate(
+            Sig_11_0,
+            Sig_12_0,
+            Sig_13_0,
+            Sig_14_0,
+            Sig_22_0,
+            Sig_23_0,
+            Sig_24_0,
+            Sig_33_0,
+            Sig_34_0,
+            Sig_44_0,
+            S, threshold_singular, 1,
+            &Sig_11_hat_star, &Sig_33_hat_star,
+            &costheta, &sintheta,
+            &dS_Sig_11_hat_star, &dS_Sig_33_hat_star,
+            &dS_costheta, &dS_sintheta);
+
+    // Evaluate transverse coordinates of the weak baem w.r.t. the strong beam centroid
+    const double x_bar_star = *x_star + *px_star * S - x_slice_star;
+    const double y_bar_star = *y_star + *py_star * S - y_slice_star;
+
+    // Move to the uncoupled reference frame
+    const double x_bar_hat_star = x_bar_star*costheta +y_bar_star*sintheta;
+    const double y_bar_hat_star = -x_bar_star*sintheta +y_bar_star*costheta;
+
+    // Compute derivatives of the transformation
+    const double dS_x_bar_hat_star = x_bar_star*dS_costheta +y_bar_star*dS_sintheta;
+    const double dS_y_bar_hat_star = -x_bar_star*dS_sintheta +y_bar_star*dS_costheta;
+
+    // Get transverse fields
+    double Ex, Ey;
+    get_Ex_Ey_gauss(x_bar_hat_star, y_bar_hat_star,
+        sqrt(Sig_11_hat_star), sqrt(Sig_33_hat_star),
+        min_sigma_diff,
+        &Ex, &Ey);
+
+    //compute Gs
+    double Gx, Gy;
+    compute_Gx_Gy(x_bar_hat_star, y_bar_hat_star,
+          sqrt(Sig_11_hat_star), sqrt(Sig_33_hat_star),
+                      min_sigma_diff, Ex, Ey, &Gx, &Gy);
+
+    // Compute kicks
+    double Fx_hat_star = Ksl*Ex;
+    double Fy_hat_star = Ksl*Ey;
+    double Gx_hat_star = Ksl*Gx;
+    double Gy_hat_star = Ksl*Gy;
+
+    // Move kisks to coupled reference frame
+    double Fx_star = Fx_hat_star*costheta - Fy_hat_star*sintheta;
+    double Fy_star = Fx_hat_star*sintheta + Fy_hat_star*costheta;
+
+    // Compute longitudinal kick
+    double Fz_star = 0.5*(Fx_hat_star*dS_x_bar_hat_star  + Fy_hat_star*dS_y_bar_hat_star+
+                   Gx_hat_star*dS_Sig_11_hat_star + Gy_hat_star*dS_Sig_33_hat_star);
+
+    // Apply the kicks (Hirata's synchro-beam)
+    *pzeta_star = *pzeta_star + Fz_star+0.5*(
+                Fx_star*(*px_star+0.5*Fx_star)+
+                Fy_star*(*py_star+0.5*Fy_star));
+    *x_star = *x_star - S*Fx_star;
+    *px_star = *px_star + Fx_star;
+    *y_star = *y_star - S*Fy_star;
+    *py_star = *py_star + Fy_star;
+
+    }
+
+
+
+ static inline
+void BeamBeamBiGaussian3D_track_local_particle(BeamBeamBiGaussian3DData el,
+                LocalParticle* part0){
+
+    // Get data from memory
+    double const sin_phi = BeamBeamBiGaussian3DData_get__sin_phi(el);
+    double const cos_phi = BeamBeamBiGaussian3DData_get__cos_phi(el);
+    double const tan_phi = BeamBeamBiGaussian3DData_get__tan_phi(el);
+    double const sin_alpha = BeamBeamBiGaussian3DData_get__sin_alpha(el);
+    double const cos_alpha = BeamBeamBiGaussian3DData_get__cos_alpha(el);
+
+    const int N_slices = BeamBeamBiGaussian3DData_get_num_slices_other_beam(el);
+
+    const double shift_x = BeamBeamBiGaussian3DData_get_ref_shift_x(el)
+                           + BeamBeamBiGaussian3DData_get_other_beam_shift_x(el);
+    const double shift_px = BeamBeamBiGaussian3DData_get_ref_shift_px(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_px(el);
+    const double shift_y = BeamBeamBiGaussian3DData_get_ref_shift_y(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_y(el);
+    const double shift_py = BeamBeamBiGaussian3DData_get_ref_shift_py(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_py(el);
+    const double shift_zeta = BeamBeamBiGaussian3DData_get_ref_shift_zeta(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_zeta(el);
+    const double shift_pzeta = BeamBeamBiGaussian3DData_get_ref_shift_pzeta(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_pzeta(el);
+
+    const double post_subtract_x = BeamBeamBiGaussian3DData_get_post_subtract_x(el);
+    const double post_subtract_px = BeamBeamBiGaussian3DData_get_post_subtract_px(el);
+    const double post_subtract_y = BeamBeamBiGaussian3DData_get_post_subtract_y(el);
+    const double post_subtract_py = BeamBeamBiGaussian3DData_get_post_subtract_py(el);
+    const double post_subtract_zeta = BeamBeamBiGaussian3DData_get_post_subtract_zeta(el);
+    const double post_subtract_pzeta = BeamBeamBiGaussian3DData_get_post_subtract_pzeta(el);
 
 
    int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
@@ -7955,153 +5860,53 @@ void BeamBeamBiGaussian3D_track_local_particle(BeamBeamBiGaussian3DData el,
 
 //        LocalParticle* part = part0;//only_for_context opencl cuda
 
-    	double x = LocalParticle_get_x(part);
-    	double px = LocalParticle_get_px(part);
-    	double y = LocalParticle_get_y(part);
-    	double py = LocalParticle_get_py(part);
-    	double zeta = LocalParticle_get_zeta(part);
-    	double pzeta = LocalParticle_get_pzeta(part);
+        double x = LocalParticle_get_x(part);
+        double px = LocalParticle_get_px(part);
+        double y = LocalParticle_get_y(part);
+        double py = LocalParticle_get_py(part);
+        double zeta = LocalParticle_get_zeta(part);
+        double pzeta = LocalParticle_get_pzeta(part);
 
-    	const double q0 = LocalParticle_get_q0(part); 
-    	const double p0c = LocalParticle_get_p0c(part); // eV
-
-    	const double P0 = p0c/C_LIGHT*QELEM;
-
-    	// Change reference frame
-    	double x_star =     x     - x_CO    - delta_x;
-    	double px_star =    px    - px_CO;
-    	double y_star =     y     - y_CO    - delta_y;
-    	double py_star =    py    - py_CO;
-    	double sigma_star = zeta  - sigma_CO;
-    	double pzeta_star = pzeta - delta_CO; // TODO: could be fixed, in any case we assume beta=beta0=1
-	                                      //       in the synchrobeam
-
-    	// Boost coordinates of the weak beam
-	BoostParameters_boost_coordinates(bpar,
-    	    &x_star, &px_star, &y_star, &py_star,
-    	    &sigma_star, &pzeta_star);
-
-    	//printf("x_star=%.10e\n", x_star);
-	//printf("px_star=%.10e\n", px_star);
-	//printf("y_star=%.10e\n", y_star);
-	//printf("py_star=%.10e\n", py_star);
-    	//printf("sigma_star=%.10e\n", sigma_star);
-	//printf("delta_star=%.10e\n", delta_star);
-
-    	// Synchro beam
-    	for (int i_slice=0; i_slice<N_slices; i_slice++)
-    	{
-    	    const double sigma_slice_star = sigma_slices_star_arr[i_slice];
-    	    const double x_slice_star = x_slices_star_arr[i_slice];
-    	    const double y_slice_star = y_slices_star_arr[i_slice];
-
-    	    //Compute force scaling factor
-    	    const double Ksl = N_part_per_slice_arr[i_slice]*QELEM*q0_bb
-		               *QELEM*q0/(P0 * C_LIGHT);
-
-    	    //Identify the Collision Point (CP)
-    	    const double S = 0.5*(sigma_star - sigma_slice_star);
-
-    	    // Propagate sigma matrix
-    	    double Sig_11_hat_star, Sig_33_hat_star, costheta, sintheta;
-    	    double dS_Sig_11_hat_star, dS_Sig_33_hat_star, dS_costheta, dS_sintheta;
-
-    	    // Get strong beam shape at the CP
-	    Sigmas_propagate(Sigmas_0_star, S, threshold_singular, 1,
-    	        &Sig_11_hat_star, &Sig_33_hat_star,
-    	        &costheta, &sintheta,
-    	        &dS_Sig_11_hat_star, &dS_Sig_33_hat_star,
-    	        &dS_costheta, &dS_sintheta);
-
-    	    //printf("Sig_11_hat_star=%.10e\n",Sig_11_hat_star);
-	    //printf("Sig_33_hat_star=%.10e\n",Sig_33_hat_star);
-    	    //printf("costheta=%.10e\n",costheta);
-            //printf("sintheta=%.10e\n",sintheta);
-    	    //printf("dS_Sig_11_hat_star=%.10e\n",dS_Sig_11_hat_star);
-	    //printf("dS_Sig_33_hat_star=%.10e\n",dS_Sig_33_hat_star);
-    	    //printf("dS_costheta=%.10e\n",dS_costheta);
-            //printf("dS_sintheta=%.10e\n",dS_sintheta);
-
-    	    // Evaluate transverse coordinates of the weake baem w.r.t. the strong beam centroid
-    	    const double x_bar_star = x_star + px_star*S - x_slice_star;
-    	    const double y_bar_star = y_star + py_star*S - y_slice_star;
-
-    	    // Move to the uncoupled reference frame
-    	    const double x_bar_hat_star = x_bar_star*costheta +y_bar_star*sintheta;
-    	    const double y_bar_hat_star = -x_bar_star*sintheta +y_bar_star*costheta;
-
-    	    // Compute derivatives of the transformation
-    	    const double dS_x_bar_hat_star = x_bar_star*dS_costheta +y_bar_star*dS_sintheta;
-    	    const double dS_y_bar_hat_star = -x_bar_star*dS_sintheta +y_bar_star*dS_costheta;
-
-    	    // Get transverse fieds
-    	    double Ex, Ey;
-    	    get_Ex_Ey_gauss(x_bar_hat_star, y_bar_hat_star,
-    	        sqrt(Sig_11_hat_star), sqrt(Sig_33_hat_star),
-		min_sigma_diff,
-    	        &Ex, &Ey);
-
-	    //printf("Ex=%.10e\n", Ex);
-	    //printf("Ey=%.10e\n", Ey);
-	
-	    //compute Gs
-	    double Gx, Gy;
-	    compute_Gx_Gy(x_bar_hat_star, y_bar_hat_star,
-			  sqrt(Sig_11_hat_star), sqrt(Sig_33_hat_star), 
-                          min_sigma_diff, Ex, Ey, &Gx, &Gy);
-	    
-	    //printf("Gx=%.10e\n", Gx);
-	    //printf("Gy=%.10e\n", Gy);
-
-    	    // Compute kicks
-    	    double Fx_hat_star = Ksl*Ex;
-    	    double Fy_hat_star = Ksl*Ey;
-    	    double Gx_hat_star = Ksl*Gx;
-    	    double Gy_hat_star = Ksl*Gy;
-
-    	    // Move kisks to coupled reference frame
-    	    double Fx_star = Fx_hat_star*costheta - Fy_hat_star*sintheta;
-    	    double Fy_star = Fx_hat_star*sintheta + Fy_hat_star*costheta;
-
-    	    // Compute longitudinal kick
-    	    double Fz_star = 0.5*(Fx_hat_star*dS_x_bar_hat_star  + Fy_hat_star*dS_y_bar_hat_star+
-    	                   Gx_hat_star*dS_Sig_11_hat_star + Gy_hat_star*dS_Sig_33_hat_star);
-
-    	    // Apply the kicks (Hirata's synchro-beam)
-    	    pzeta_star = pzeta_star + Fz_star+0.5*(
-    	                Fx_star*(px_star+0.5*Fx_star)+
-    	                Fy_star*(py_star+0.5*Fy_star));
-	    //printf("pzeta_star=%.10f\n", pzeta_star);
-    	    x_star = x_star - S*Fx_star;
-    	    px_star = px_star + Fx_star;
-    	    y_star = y_star - S*Fy_star;
-    	    py_star = py_star + Fy_star;
-
-    	}
-
-    	// Inverse boost on the coordinates of the weak beam
-	BoostParameters_boost_coordinates_inv(bpar,
-    	    &x_star, &px_star, &y_star, &py_star,
-    	    &sigma_star, &pzeta_star);
-
-	//printf("pzeta_ret=%.10e\n", pzeta_star);
-
-    	// Go back to original reference frame and remove dipolar effect
-    	x =     x_star     + x_CO   + delta_x - Dx_sub;
-    	px =    px_star    + px_CO            - Dpx_sub;
-    	y =     y_star     + y_CO   + delta_y - Dy_sub;
-    	py =    py_star    + py_CO            - Dpy_sub;
-    	zeta =  sigma_star + sigma_CO         - Dsigma_sub;
-    	pzeta = pzeta_star + delta_CO         - Ddelta_sub;
+        const double q0 = LocalParticle_get_q0(part);
+        const double p0c = LocalParticle_get_p0c(part); // eV
 
 
-    	LocalParticle_set_x(part, x);
-    	LocalParticle_set_px(part, px);
-    	LocalParticle_set_y(part, y);
-    	LocalParticle_set_py(part, py);
-    	LocalParticle_set_zeta(part, zeta);
-    	LocalParticle_update_pzeta(part, pzeta);
-	
+        // Change reference frame
+        change_ref_frame_coordinates(
+            &x, &px, &y, &py, &zeta, &pzeta,
+            shift_x, shift_px, shift_y, shift_py, shift_zeta, shift_pzeta,
+            sin_phi, cos_phi, tan_phi, sin_alpha, cos_alpha);
+
+        // Synchro beam
+        for (int i_slice=0; i_slice<N_slices; i_slice++)
+        {
+            synchrobeam_kick(el, i_slice, q0, p0c,
+                             &x,
+                             &px,
+                             &y,
+                             &py,
+                             &zeta,
+                             &pzeta);
+
+        }
+
+        // Go back to original reference frame and remove dipolar effect
+        change_back_ref_frame_and_subtract_dipolar_coordinates(
+            &x, &px, &y, &py, &zeta, &pzeta,
+            shift_x, shift_px, shift_y, shift_py, shift_zeta, shift_pzeta,
+            post_subtract_x, post_subtract_px,
+            post_subtract_y, post_subtract_py,
+            post_subtract_zeta, post_subtract_pzeta,
+            sin_phi, cos_phi, tan_phi, sin_alpha, cos_alpha);
+
+        // Store
+        LocalParticle_set_x(part, x);
+        LocalParticle_set_px(part, px);
+        LocalParticle_set_y(part, y);
+        LocalParticle_set_py(part, py);
+        LocalParticle_set_zeta(part, zeta);
+        LocalParticle_update_pzeta(part, pzeta);
+
 
      } //only_for_context cpu_serial cpu_openmp
     }  //only_for_context cpu_serial cpu_openmp
@@ -8111,59 +5916,392 @@ void BeamBeamBiGaussian3D_track_local_particle(BeamBeamBiGaussian3DData el,
 }
 
 
+
+#endif
+
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_BEAMBEAM3D_METHODS_FOR_STRONGSTRONG_H
+#define XFIELDS_BEAMBEAM3D_METHODS_FOR_STRONGSTRONG_H
+
+
+ static inline
+void BeamBeamBiGaussian3D_change_ref_frame_local_particle(
+        BeamBeamBiGaussian3DData el, LocalParticle* part0){
+
+    // Get data from memory
+    double const sin_phi = BeamBeamBiGaussian3DData_get__sin_phi(el);
+    double const cos_phi = BeamBeamBiGaussian3DData_get__cos_phi(el);
+    double const tan_phi = BeamBeamBiGaussian3DData_get__tan_phi(el);
+    double const sin_alpha = BeamBeamBiGaussian3DData_get__sin_alpha(el);
+    double const cos_alpha = BeamBeamBiGaussian3DData_get__cos_alpha(el);
+
+    const double shift_x = BeamBeamBiGaussian3DData_get_ref_shift_x(el)
+                           + BeamBeamBiGaussian3DData_get_other_beam_shift_x(el);
+    const double shift_px = BeamBeamBiGaussian3DData_get_ref_shift_px(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_px(el);
+    const double shift_y = BeamBeamBiGaussian3DData_get_ref_shift_y(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_y(el);
+    const double shift_py = BeamBeamBiGaussian3DData_get_ref_shift_py(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_py(el);
+    const double shift_zeta = BeamBeamBiGaussian3DData_get_ref_shift_zeta(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_zeta(el);
+    const double shift_pzeta = BeamBeamBiGaussian3DData_get_ref_shift_pzeta(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_pzeta(el);
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+        double x = LocalParticle_get_x(part);
+        double px = LocalParticle_get_px(part);
+        double y = LocalParticle_get_y(part);
+        double py = LocalParticle_get_py(part);
+        double zeta = LocalParticle_get_zeta(part);
+        double pzeta = LocalParticle_get_pzeta(part);
+
+        // Change reference frame
+        change_ref_frame_coordinates(
+            &x, &px, &y, &py, &zeta, &pzeta,
+            shift_x, shift_px, shift_y, shift_py, shift_zeta, shift_pzeta,
+            sin_phi, cos_phi, tan_phi, sin_alpha, cos_alpha);
+
+        // Store
+        LocalParticle_set_x(part, x);
+        LocalParticle_set_px(part, px);
+        LocalParticle_set_y(part, y);
+        LocalParticle_set_py(part, py);
+        LocalParticle_set_zeta(part, zeta);
+        LocalParticle_update_pzeta(part, pzeta);
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+}
+
+ static inline
+void BeamBeamBiGaussian3D_change_back_ref_frame_and_subtract_dipolar_local_particle(
+        BeamBeamBiGaussian3DData el, LocalParticle* part0){
+
+    // Get data from memory
+    double const sin_phi = BeamBeamBiGaussian3DData_get__sin_phi(el);
+    double const cos_phi = BeamBeamBiGaussian3DData_get__cos_phi(el);
+    double const tan_phi = BeamBeamBiGaussian3DData_get__tan_phi(el);
+    double const sin_alpha = BeamBeamBiGaussian3DData_get__sin_alpha(el);
+    double const cos_alpha = BeamBeamBiGaussian3DData_get__cos_alpha(el);
+
+    const double shift_x = BeamBeamBiGaussian3DData_get_ref_shift_x(el)
+                           + BeamBeamBiGaussian3DData_get_other_beam_shift_x(el);
+    const double shift_px = BeamBeamBiGaussian3DData_get_ref_shift_px(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_px(el);
+    const double shift_y = BeamBeamBiGaussian3DData_get_ref_shift_y(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_y(el);
+    const double shift_py = BeamBeamBiGaussian3DData_get_ref_shift_py(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_py(el);
+    const double shift_zeta = BeamBeamBiGaussian3DData_get_ref_shift_zeta(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_zeta(el);
+    const double shift_pzeta = BeamBeamBiGaussian3DData_get_ref_shift_pzeta(el)
+                            + BeamBeamBiGaussian3DData_get_other_beam_shift_pzeta(el);
+
+    const double post_subtract_x = BeamBeamBiGaussian3DData_get_post_subtract_x(el);
+    const double post_subtract_px = BeamBeamBiGaussian3DData_get_post_subtract_px(el);
+    const double post_subtract_y = BeamBeamBiGaussian3DData_get_post_subtract_y(el);
+    const double post_subtract_py = BeamBeamBiGaussian3DData_get_post_subtract_py(el);
+    const double post_subtract_zeta = BeamBeamBiGaussian3DData_get_post_subtract_zeta(el);
+    const double post_subtract_pzeta = BeamBeamBiGaussian3DData_get_post_subtract_pzeta(el);
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+        double x = LocalParticle_get_x(part);
+        double px = LocalParticle_get_px(part);
+        double y = LocalParticle_get_y(part);
+        double py = LocalParticle_get_py(part);
+        double zeta = LocalParticle_get_zeta(part);
+        double pzeta = LocalParticle_get_pzeta(part);
+
+
+        // Go back to original reference frame and remove dipolar effect
+        change_back_ref_frame_and_subtract_dipolar_coordinates(
+            &x, &px, &y, &py, &zeta, &pzeta,
+            shift_x, shift_px, shift_y, shift_py, shift_zeta, shift_pzeta,
+            post_subtract_x, post_subtract_px,
+            post_subtract_y, post_subtract_py,
+            post_subtract_zeta, post_subtract_pzeta,
+            sin_phi, cos_phi, tan_phi, sin_alpha, cos_alpha);
+
+        // Store
+        LocalParticle_set_x(part, x);
+        LocalParticle_set_px(part, px);
+        LocalParticle_set_y(part, y);
+        LocalParticle_set_py(part, py);
+        LocalParticle_set_zeta(part, zeta);
+        LocalParticle_update_pzeta(part, pzeta);
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+}
+
+
+ static inline
+void BeamBeam3D_selective_apply_synchrobeam_kick_local_particle(BeamBeamBiGaussian3DData el,
+                LocalParticle* part0,
+                  int64_t* i_slice_for_particles){
+
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+
+        const int64_t i_slice = i_slice_for_particles[part->ipart];
+        const int64_t N_slices = BeamBeamBiGaussian3DData_get_num_slices_other_beam(el);
+
+        if (i_slice >= 0 && i_slice < N_slices){
+
+            double x_star = LocalParticle_get_x(part);
+            double px_star = LocalParticle_get_px(part);
+            double y_star = LocalParticle_get_y(part);
+            double py_star = LocalParticle_get_py(part);
+            double zeta_star = LocalParticle_get_zeta(part);
+            double pzeta_star = LocalParticle_get_pzeta(part);
+
+            const double q0 = LocalParticle_get_q0(part);
+            const double p0c = LocalParticle_get_p0c(part); // eV
+
+            synchrobeam_kick(
+                el, i_slice,
+                q0, p0c,
+                &x_star,
+                &px_star,
+                &y_star,
+                &py_star,
+                &zeta_star,
+                &pzeta_star);
+
+            LocalParticle_set_x(part, x_star);
+            LocalParticle_set_px(part, px_star);
+            LocalParticle_set_y(part, y_star);
+            LocalParticle_set_py(part, py_star);
+            LocalParticle_set_zeta(part, zeta_star);
+            LocalParticle_update_pzeta(part, pzeta_star);
+
+        }
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+}
+
+#endif
+
+             
+            void BeamBeamBiGaussian3D_track_particles(
+               BeamBeamBiGaussian3DData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      BeamBeamBiGaussian3D_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+
+             
+            void synchro_beam_kick(
+               BeamBeamBiGaussian3DData el,
+
+                             ParticlesData particles,
+    int64_t* i_slice_for_particles, 
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      BeamBeam3D_selective_apply_synchrobeam_kick_local_particle(el, &lpart, i_slice_for_particles);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+
+             
+            void change_ref_frame(
+               BeamBeamBiGaussian3DData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      BeamBeamBiGaussian3D_change_ref_frame_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+
+             
+            void change_back_ref_frame_and_subtract_dipolar(
+               BeamBeamBiGaussian3DData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      BeamBeamBiGaussian3D_change_back_ref_frame_and_subtract_dipolar_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_SRotationData
+#define XOBJ_TYPEDEF_SRotationData
+typedef   struct SRotationData_s * SRotationData;
+ static inline SRotationData SRotationData_getp(SRotationData restrict  obj){
+  int64_t offset=0;
+  return (SRotationData)(( char*) obj+offset);
+}
+ static inline double SRotationData_get_cos_z(const SRotationData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SRotationData_set_cos_z(SRotationData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SRotationData_getp_cos_z(SRotationData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double SRotationData_get_sin_z(const SRotationData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void SRotationData_set_sin_z(SRotationData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* SRotationData_getp_sin_z(SRotationData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
 #endif
 // copyright ############################### //
 // This file is part of the Xtrack Package.  //
 // Copyright (c) CERN, 2021.                 //
 // ######################################### //
 
-#ifndef XTRACK_CONSTANTS_H
-#define XTRACK_CONSTANTS_H
-
-#if !defined( C_LIGHT )
-    #define   C_LIGHT ( 299792458.0 )
-#endif /* !defined( C_LIGHT ) */
-
-#if !defined( EPSILON_0 )
-    #define   EPSILON_0 (8.854187817620e-12)
-#endif /* !defined( EPSILON_0 ) */
-
-#if !defined( PI )
-    #define PI (3.1415926535897932384626433832795028841971693993751)
-#endif /* !defined( PI ) */
-
-#if !defined( MU_0 )
-    #define MU_0 (PI*4.0e-7)
-#endif /* !defined( MU_0 ) */
-
-#if !defined( DEG2RAD )
-    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
-#endif /* !defiend( DEG2RAD ) */
-
-#if !defined( RAD2DEG )
-    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
-#endif /* !defiend( RAD2DEG ) */
-
-#if !defined( SQRT_PI )
-    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
-#endif /* !defined( SQRT_PI ) */
-
-#if !defined( QELEM )
-    #define QELEM (1.60217662e-19)
-#endif /* !defined( QELEM ) */
-
-#endif /* XTRACK_CONSTANTS_H */
-
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_CAVITY_H
-#define XTRACK_CAVITY_H
+#ifndef XTRACK_SROTATION_H
+#define XTRACK_SROTATION_H
 
  static inline
-void Cavity_track_local_particle(CavityData el, LocalParticle* part0){
+void SRotation_track_local_particle(SRotationData el, LocalParticle* part0){
 
 
    int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
@@ -8180,63 +6318,26 @@ void Cavity_track_local_particle(CavityData el, LocalParticle* part0){
 
 //        LocalParticle* part = part0;//only_for_context opencl cuda
 
-        double const K_FACTOR = ( ( double )2.0 *PI ) / C_LIGHT;
+    	double const sin_z = SRotationData_get_sin_z(el);
+    	double const cos_z = SRotationData_get_cos_z(el);
 
-        double const   beta0  = LocalParticle_get_beta0(part);
-        double const   zeta   = LocalParticle_get_zeta(part);
-        double const   q      = fabs(LocalParticle_get_q0(part))
-                		    * LocalParticle_get_charge_ratio(part);
-        double const   tau    = zeta / beta0;
+    	double const x  = LocalParticle_get_x(part);
+    	double const y  = LocalParticle_get_y(part);
+    	double const px = LocalParticle_get_px(part);
+    	double const py = LocalParticle_get_py(part);
 
-        double const   phase  = DEG2RAD  * CavityData_get_lag(el) -
-                                K_FACTOR * CavityData_get_frequency(el) * tau;
+    	double const x_hat  =  cos_z * x  + sin_z * y;
+    	double const y_hat  = -sin_z * x  + cos_z * y;
 
-        double const energy   = q * CavityData_get_voltage(el) * sin(phase);
+    	double const px_hat =  cos_z * px + sin_z * py;
+    	double const py_hat = -sin_z * px + cos_z * py;
 
-        LocalParticle_add_to_energy(part, energy, 1);
 
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
+    	LocalParticle_set_x(part, x_hat);
+    	LocalParticle_set_y(part, y_hat);
 
-}
-
-#endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_DIPOLEEDGE_H
-#define XTRACK_DIPOLEEDGE_H
-
- static inline
-void DipoleEdge_track_local_particle(DipoleEdgeData el, LocalParticle* part0){
-    
-    double const r21 = DipoleEdgeData_get_r21(el);
-    double const r43 = DipoleEdgeData_get_r43(el);
-	    
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-	double const x = LocalParticle_get_x(part);
-	double const y = LocalParticle_get_y(part);
-
-	LocalParticle_add_to_px(part, r21*x);
-	LocalParticle_add_to_py(part, r43*y);
-
+    	LocalParticle_set_px(part, px_hat);
+    	LocalParticle_set_py(part, py_hat);
 
      } //only_for_context cpu_serial cpu_openmp
     }  //only_for_context cpu_serial cpu_openmp
@@ -8246,224 +6347,700 @@ void DipoleEdge_track_local_particle(DipoleEdgeData el, LocalParticle* part0){
 }
 
 #endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_DRIFT_H
-#define XTRACK_DRIFT_H
-
- static inline
-void Drift_track_local_particle(DriftData el, LocalParticle* part0){
-
-    double const length = DriftData_get_length(el);
 
 
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+             
+            void SRotation_track_particles(
+               SRotationData el,
 
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+                             ParticlesData particles,
 
-//        LocalParticle* part = part0;//only_for_context opencl cuda
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
 
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
 
-        double const rpp    = LocalParticle_get_rpp(part);
-        double const rv0v    = 1./LocalParticle_get_rvv(part);
-        double const xp     = LocalParticle_get_px(part) * rpp;
-        double const yp     = LocalParticle_get_py(part) * rpp;
-        double const dzeta  = 1 - rv0v * ( 1. + ( xp*xp + yp*yp ) / 2. );
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      SRotation_track_local_particle(el, &lpart);
 
-        LocalParticle_add_to_x(part, xp * length );
-        LocalParticle_add_to_y(part, yp * length );
-        LocalParticle_add_to_s(part, length);
-        LocalParticle_add_to_zeta(part, length * dzeta );
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
 
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-
+#ifndef XOBJ_TYPEDEF_LinearTransferMatrixData
+#define XOBJ_TYPEDEF_LinearTransferMatrixData
+typedef   struct LinearTransferMatrixData_s * LinearTransferMatrixData;
+ static inline LinearTransferMatrixData LinearTransferMatrixData_getp(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  return (LinearTransferMatrixData)(( char*) obj+offset);
 }
-
-#endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_ELENS_H
-#define XTRACK_ELENS_H
-
- static inline
-void Elens_track_local_particle(ElensData el, LocalParticle* part0){
-
-    double const elens_length = ElensData_get_elens_length(el);
-    double const inner_radius = ElensData_get_inner_radius(el);
-    double const outer_radius = ElensData_get_outer_radius(el);
-    double const current = ElensData_get_current(el);
-    double const voltage = ElensData_get_voltage(el);
-    double const residual_kick_x = ElensData_get_residual_kick_x(el);
-    double const residual_kick_y = ElensData_get_residual_kick_y(el);
-
-
-    // double const cos_z = SRotationData_get_cos_z(el);
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-
-      // EPSILON_0, PI, C_LIGHT,
-
-        // electron mass
-        double const EMASS  = 510998.928;
-        // speed of light
-
-        #if !defined( C_LIGHT )
-            #define   C_LIGHT ( 299792458.0 )
-        #endif /* !defined( C_LIGHT ) */
-
-        #if !defined( EPSILON_0 )
-            #define   EPSILON_0 (8.854187817620e-12)
-        #endif /* !defined( EPSILON_0 ) */
-
-        #if !defined( PI )
-            #define PI (3.1415926535897932384626433832795028841971693993751)
-        #endif /* !defined( PI ) */
-
-        double x      = LocalParticle_get_x(part);
-        double y      = LocalParticle_get_y(part);
-
-        // delta
-        // double delta  = LocalParticle_get_delta(part);
-        // charge ratio: q/q0
-        // double qratio = LocalParticle_get_charge_ratio(part);
-        // chi = q/q0 * m0/m
-        double const chi    = LocalParticle_get_chi(part);
-        // reference particle momentum
-        double const p0c    = LocalParticle_get_p0c(part);
-        // particle momentum
-        // double pc     = (1+delta)*(chi/qratio)*(p0c);
-        // reference particle charge
-        double const q0     = LocalParticle_get_q0(part);
-
-        // rpp = P0/P
-        double const rpp     = LocalParticle_get_rpp(part);
-
-
-        // transverse radius
-        double r      = sqrt(x*x + y*y);
-
-        double rvv    = LocalParticle_get_rvv(part);
-        double beta0  = LocalParticle_get_beta0(part);
-
-        // # magnetic rigidity
-        double const Brho0  = p0c/(q0*C_LIGHT);
-
-        // # Electron properties
-        // total electron energy
-        double const etot_e       = voltage + EMASS;
-        // // electron momentum
-        double const p_e          = sqrt(etot_e*etot_e - EMASS*EMASS);
-        // // relativistic beta of electron
-        double const beta_e       = p_e/etot_e;
-        //
-        // // # relativistic beta  of protons
-        double beta_p = rvv*beta0;
-
-        // keep the formulas more compact
-        double const r1 = inner_radius;
-        double const r2 = outer_radius;
-
-        // # geometric factor frr uniform distribution
-        double frr = 0.;
-
-        //
-        if( r < r1 )
-        {
-          frr = 0.;
-        }
-        else if ( r > r2 )
-        {
-          frr = 1.;
-        }
-        else
-        {
-          frr = ((r*r - r1*r1)/(r2*r2 - r1*r1));
-        }
-
-
-        // # calculate the kick at r2 (maximum kick)
-        double theta_max = ((1.0/(4.0*PI*EPSILON_0)));
-        theta_max = theta_max*(2*elens_length*current);
-
-        // for the moment: e-beam in the opposite direction from proton beam
-        // generalize later
-        theta_max = theta_max*(1+beta_e*beta_p);
-
-        theta_max = theta_max/(outer_radius*Brho0*beta_e*beta_p);
-        theta_max = theta_max/(C_LIGHT*C_LIGHT);
-        // theta max is now completed
-        // theta_max = (-1)*theta_max/(rpp*chi);
-
-
-        // now the actual kick the particle receives
-
-        double theta_pxpy = 0.;
-        double dpx = 0.;
-        double dpy = 0.;
-        //
-
-
-        if ( r > r1 )
-        {
-          theta_pxpy = (-1)*frr*theta_max*(outer_radius/r)*(1/(rpp*chi));
-          dpx        = x*theta_pxpy/r;
-          dpy        = y*theta_pxpy/r;
-        }
-        else
-        {
-          // if the particle is not inside the e-beam, it will only
-          // be subject to the residual kick
-          dpx = residual_kick_x;
-          dpy = residual_kick_y;
-        }
-
-
-        LocalParticle_add_to_px(part, dpx );
-        LocalParticle_add_to_py(part, dpy );
-
-        // we can update the particle properties or add to the particle properties
-        // LocalParticle_add_to_px(part, dpx);
-        // LocalParticle_add_to_py(part, dpy);
-
-        // LocalParticle_set_py(part, py_hat);
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
+ static inline int64_t LinearTransferMatrixData_get_no_detuning(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  return *( int64_t*)(( char*) obj+offset);
 }
-
+ static inline void LinearTransferMatrixData_set_no_detuning(LinearTransferMatrixData restrict  obj, int64_t value){
+  int64_t offset=0;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* LinearTransferMatrixData_getp_no_detuning(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_q_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_q_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_q_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_q_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_q_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_q_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_cos_s(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_cos_s(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_cos_s(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_sin_s(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_sin_s(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_sin_s(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_beta_x_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_beta_x_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_beta_x_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_beta_y_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_beta_y_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=48;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_beta_y_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_beta_ratio_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_beta_ratio_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=56;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_beta_ratio_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_beta_prod_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_beta_prod_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=64;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_beta_prod_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_beta_ratio_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_beta_ratio_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=72;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_beta_ratio_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_beta_prod_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_beta_prod_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=80;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_beta_prod_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_alpha_x_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_alpha_x_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=88;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_alpha_x_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_alpha_x_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_alpha_x_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=96;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_alpha_x_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_alpha_y_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_alpha_y_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=104;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_alpha_y_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_alpha_y_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_alpha_y_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=112;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_alpha_y_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_disp_x_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=120;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_disp_x_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=120;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_disp_x_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=120;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_disp_x_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=128;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_disp_x_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=128;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_disp_x_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=128;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_disp_y_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=136;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_disp_y_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=136;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_disp_y_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=136;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_disp_y_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=144;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_disp_y_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=144;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_disp_y_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=144;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_beta_s(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=152;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_beta_s(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=152;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_beta_s(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=152;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_energy_ref_increment(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=160;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_energy_ref_increment(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=160;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_energy_ref_increment(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=160;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_energy_increment(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=168;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_energy_increment(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=168;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_energy_increment(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=168;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_chroma_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=176;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_chroma_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=176;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_chroma_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=176;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_chroma_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=184;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_chroma_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=184;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_chroma_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=184;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_detx_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=192;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_detx_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=192;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_detx_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=192;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_detx_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=200;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_detx_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=200;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_detx_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=200;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_dety_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=208;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_dety_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=208;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_dety_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=208;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_dety_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=216;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_dety_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=216;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_dety_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=216;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_x_ref_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=224;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_x_ref_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=224;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_x_ref_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=224;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_px_ref_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=232;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_px_ref_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=232;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_px_ref_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=232;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_y_ref_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=240;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_y_ref_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=240;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_y_ref_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=240;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_py_ref_0(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=248;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_py_ref_0(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=248;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_py_ref_0(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=248;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_x_ref_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=256;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_x_ref_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=256;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_x_ref_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=256;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_px_ref_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=264;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_px_ref_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=264;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_px_ref_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=264;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_y_ref_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=272;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_y_ref_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=272;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_y_ref_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=272;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_py_ref_1(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=280;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_py_ref_1(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=280;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_py_ref_1(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=280;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline int64_t LinearTransferMatrixData_get_uncorrelated_rad_damping(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=288;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_uncorrelated_rad_damping(LinearTransferMatrixData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=288;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* LinearTransferMatrixData_getp_uncorrelated_rad_damping(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=288;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_damping_factor_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=296;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_damping_factor_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=296;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_damping_factor_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=296;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_damping_factor_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=304;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_damping_factor_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=304;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_damping_factor_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=304;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_damping_factor_s(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=312;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_damping_factor_s(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=312;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_damping_factor_s(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=312;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline int64_t LinearTransferMatrixData_get_uncorrelated_gauss_noise(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=320;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_uncorrelated_gauss_noise(LinearTransferMatrixData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=320;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* LinearTransferMatrixData_getp_uncorrelated_gauss_noise(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=320;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_gauss_noise_ampl_x(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=328;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_gauss_noise_ampl_x(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=328;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_gauss_noise_ampl_x(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=328;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_gauss_noise_ampl_y(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=336;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_gauss_noise_ampl_y(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=336;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_gauss_noise_ampl_y(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=336;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double LinearTransferMatrixData_get_gauss_noise_ampl_s(const LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=344;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void LinearTransferMatrixData_set_gauss_noise_ampl_s(LinearTransferMatrixData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=344;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* LinearTransferMatrixData_getp_gauss_noise_ampl_s(LinearTransferMatrixData restrict  obj){
+  int64_t offset=0;
+  offset+=344;
+  return ( double*)(( char*) obj+offset);
+}
 #endif
 // copyright ############################### //
 // This file is part of the Xpart Package.   //
@@ -8822,343 +7399,3983 @@ void LinearTransferMatrix_track_local_particle(LinearTransferMatrixData el, Loca
 }
 
 #endif
-#ifndef XOBJ_TYPEDEF_ArrNInt64
-#define XOBJ_TYPEDEF_ArrNInt64
-typedef   struct ArrNInt64_s * ArrNInt64;
- static inline ArrNInt64 ArrNInt64_getp(ArrNInt64  obj){
+
+
+             
+            void LinearTransferMatrix_track_particles(
+               LinearTransferMatrixData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      LinearTransferMatrix_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_CavityData
+#define XOBJ_TYPEDEF_CavityData
+typedef   struct CavityData_s * CavityData;
+ static inline CavityData CavityData_getp(CavityData restrict  obj){
   int64_t offset=0;
-  return (ArrNInt64)(( char*) obj+offset);
+  return (CavityData)(( char*) obj+offset);
 }
- static inline int64_t ArrNInt64_len(ArrNInt64  obj){
+ static inline double CavityData_get_voltage(const CavityData restrict  obj){
   int64_t offset=0;
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
+  return *( double*)(( char*) obj+offset);
 }
- static inline int64_t ArrNInt64_get(const ArrNInt64  obj, int64_t i0){
+ static inline void CavityData_set_voltage(CavityData restrict  obj, double value){
   int64_t offset=0;
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline void ArrNInt64_set(ArrNInt64  obj, int64_t i0, int64_t value){
+ static inline  double* CavityData_getp_voltage(CavityData restrict  obj){
   int64_t offset=0;
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
+  return ( double*)(( char*) obj+offset);
 }
- static inline  int64_t* ArrNInt64_getp1(ArrNInt64  obj, int64_t i0){
+ static inline double CavityData_get_frequency(const CavityData restrict  obj){
   int64_t offset=0;
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void CavityData_set_frequency(CavityData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* CavityData_getp_frequency(CavityData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double CavityData_get_lag(const CavityData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void CavityData_set_lag(CavityData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* CavityData_getp_lag(CavityData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
 }
 #endif
-#ifndef XOBJ_TYPEDEF_RecordIndex
-#define XOBJ_TYPEDEF_RecordIndex
-typedef   struct RecordIndex_s * RecordIndex;
- static inline RecordIndex RecordIndex_getp(RecordIndex  obj){
-  int64_t offset=0;
-  return (RecordIndex)(( char*) obj+offset);
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_CONSTANTS_H
+#define XTRACK_CONSTANTS_H
+
+#if !defined( C_LIGHT )
+    #define   C_LIGHT ( 299792458.0 )
+#endif /* !defined( C_LIGHT ) */
+
+#if !defined( EPSILON_0 )
+    #define   EPSILON_0 (8.854187817620e-12)
+#endif /* !defined( EPSILON_0 ) */
+
+#if !defined( PI )
+    #define PI (3.1415926535897932384626433832795028841971693993751)
+#endif /* !defined( PI ) */
+
+#if !defined( MU_0 )
+    #define MU_0 (PI*4.0e-7)
+#endif /* !defined( MU_0 ) */
+
+#if !defined( DEG2RAD )
+    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
+#endif /* !defiend( DEG2RAD ) */
+
+#if !defined( RAD2DEG )
+    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
+#endif /* !defiend( RAD2DEG ) */
+
+#if !defined( SQRT_PI )
+    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
+#endif /* !defined( SQRT_PI ) */
+
+#if !defined( QELEM )
+    #define QELEM (1.60217662e-19)
+#endif /* !defined( QELEM ) */
+
+#endif /* XTRACK_CONSTANTS_H */
+
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_CAVITY_H
+#define XTRACK_CAVITY_H
+
+ static inline
+void Cavity_track_local_particle(CavityData el, LocalParticle* part0){
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+        double const K_FACTOR = ( ( double )2.0 *PI ) / C_LIGHT;
+
+        double const   beta0  = LocalParticle_get_beta0(part);
+        double const   zeta   = LocalParticle_get_zeta(part);
+        double const   q      = fabs(LocalParticle_get_q0(part))
+                		    * LocalParticle_get_charge_ratio(part);
+        double const   tau    = zeta / beta0;
+
+        double const   phase  = DEG2RAD  * CavityData_get_lag(el) -
+                                K_FACTOR * CavityData_get_frequency(el) * tau;
+
+        double const energy   = q * CavityData_get_voltage(el) * sin(phase);
+
+        LocalParticle_add_to_energy(part, energy, 1);
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
 }
- static inline int64_t RecordIndex_get_capacity(const RecordIndex  obj){
+
+#endif
+
+
+             
+            void Cavity_track_particles(
+               CavityData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      Cavity_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_BeamBeamBiGaussian2DData
+#define XOBJ_TYPEDEF_BeamBeamBiGaussian2DData
+typedef   struct BeamBeamBiGaussian2DData_s * BeamBeamBiGaussian2DData;
+ static inline BeamBeamBiGaussian2DData BeamBeamBiGaussian2DData_getp(BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
-  return *( int64_t*)(( char*) obj+offset);
+  return (BeamBeamBiGaussian2DData)(( char*) obj+offset);
 }
- static inline void RecordIndex_set_capacity(RecordIndex  obj, int64_t value){
+ static inline double BeamBeamBiGaussian2DData_get_ref_shift_x(const BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
-  *( int64_t*)(( char*) obj+offset)=value;
+  return *( double*)(( char*) obj+offset);
 }
- static inline  int64_t* RecordIndex_getp_capacity(RecordIndex  obj){
+ static inline void BeamBeamBiGaussian2DData_set_ref_shift_x(BeamBeamBiGaussian2DData restrict  obj, double value){
   int64_t offset=0;
-  return ( int64_t*)(( char*) obj+offset);
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline uint32_t RecordIndex_get_num_recorded(const RecordIndex  obj){
+ static inline  double* BeamBeamBiGaussian2DData_getp_ref_shift_x(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_ref_shift_y(const BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
   offset+=8;
-  return *( uint32_t*)(( char*) obj+offset);
+  return *( double*)(( char*) obj+offset);
 }
- static inline void RecordIndex_set_num_recorded(RecordIndex  obj, uint32_t value){
+ static inline void BeamBeamBiGaussian2DData_set_ref_shift_y(BeamBeamBiGaussian2DData restrict  obj, double value){
   int64_t offset=0;
   offset+=8;
-  *( uint32_t*)(( char*) obj+offset)=value;
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline  uint32_t* RecordIndex_getp_num_recorded(RecordIndex  obj){
+ static inline  double* BeamBeamBiGaussian2DData_getp_ref_shift_y(BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
   offset+=8;
-  return ( uint32_t*)(( char*) obj+offset);
+  return ( double*)(( char*) obj+offset);
 }
- static inline uint32_t RecordIndex_get__dummy(const RecordIndex  obj){
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_shift_x(const BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
   offset+=16;
-  return *( uint32_t*)(( char*) obj+offset);
+  return *( double*)(( char*) obj+offset);
 }
- static inline void RecordIndex_set__dummy(RecordIndex  obj, uint32_t value){
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_shift_x(BeamBeamBiGaussian2DData restrict  obj, double value){
   int64_t offset=0;
   offset+=16;
-  *( uint32_t*)(( char*) obj+offset)=value;
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline  uint32_t* RecordIndex_getp__dummy(RecordIndex  obj){
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_shift_x(BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
   offset+=16;
-  return ( uint32_t*)(( char*) obj+offset);
+  return ( double*)(( char*) obj+offset);
 }
- static inline int64_t RecordIndex_get_buffer_id(const RecordIndex  obj){
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_shift_y(const BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
   offset+=24;
-  return *( int64_t*)(( char*) obj+offset);
+  return *( double*)(( char*) obj+offset);
 }
- static inline void RecordIndex_set_buffer_id(RecordIndex  obj, int64_t value){
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_shift_y(BeamBeamBiGaussian2DData restrict  obj, double value){
   int64_t offset=0;
   offset+=24;
-  *( int64_t*)(( char*) obj+offset)=value;
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline  int64_t* RecordIndex_getp_buffer_id(RecordIndex  obj){
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_shift_y(BeamBeamBiGaussian2DData restrict  obj){
   int64_t offset=0;
   offset+=24;
-  return ( int64_t*)(( char*) obj+offset);
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_post_subtract_px(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_post_subtract_px(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_post_subtract_px(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_post_subtract_py(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_post_subtract_py(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_post_subtract_py(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_q0(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_q0(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=48;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_q0(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_beta0(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_beta0(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=56;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_beta0(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_num_particles(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_num_particles(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=64;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_num_particles(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_Sigma_11(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_Sigma_11(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=72;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_Sigma_11(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_Sigma_13(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_Sigma_13(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=80;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_Sigma_13(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_other_beam_Sigma_33(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_other_beam_Sigma_33(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=88;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_other_beam_Sigma_33(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double BeamBeamBiGaussian2DData_get_min_sigma_diff(const BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void BeamBeamBiGaussian2DData_set_min_sigma_diff(BeamBeamBiGaussian2DData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=96;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* BeamBeamBiGaussian2DData_getp_min_sigma_diff(BeamBeamBiGaussian2DData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return ( double*)(( char*) obj+offset);
 }
 #endif
-#ifndef XOBJ_TYPEDEF_ArrNFloat64
-#define XOBJ_TYPEDEF_ArrNFloat64
-typedef   struct ArrNFloat64_s * ArrNFloat64;
- static inline ArrNFloat64 ArrNFloat64_getp(ArrNFloat64  obj){
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#if !defined( C_LIGHT )
+    #define   C_LIGHT ( 299792458.0 )
+#endif
+
+#if !defined( EPSILON_0 )
+    #define   EPSILON_0 (8.854187817620e-12)
+#endif
+
+#if !defined( PI )
+    #define PI (3.1415926535897932384626433832795028841971693993751)
+#endif
+
+#if !defined( DEG2RAD )
+    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
+#endif
+
+#if !defined( RAD2DEG )
+    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
+#endif
+
+#if !defined( SQRT_PI )
+    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
+#endif
+
+#if !defined( QELEM )
+    #define QELEM (1.60217662e-19)
+#endif
+
+#if !defined( TWO_OVER_SQRT_PI )
+    #define TWO_OVER_SQRT_PI (1.128379167095512573896158903121545171688101258657997713688171443418)
+#endif
+
+#if !defined( SQRT_TWO )
+    #define SQRT_TWO (1.414213562373095048801688724209698078569671875376948073176679738)
+#endif
+
+#if !defined( REAL_EPSILON )
+    #define REAL_EPSILON 2.22044604925031e-16
+#endif /* !defined( REAL_EPSILON ) */
+
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_SINCOS_H__
+#define XFIELDS_SINCOS_H__
+
+#include <math.h> //only_for_context cpu_serial cpu_openmp
+
+/* Define XSUITE_NO_SINCOS as a compiler parameter to never use the inline
+ * wrapper function below (the compiler may still decide to use sincos - like
+ * intrinsic, but usually enforcing that math functions have to update
+ * errno should put an end to this.
+ *
+ * If XSUITE_NO_SINCOS is not set, then a best-effort attempt is made to
+ * use it on platforms that support it (i.e. gnu compiler, no ANSI standards,
+ * relaxed errno handling for math functions.
+ */
+
+#if ( !defined( XSUITE_NO_SINCOS ) ) && ( defined( __OPENCL_C_VERSION__ ) )
+ static inline void xsuite_sincos( double const arg,
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
+    *sin_result = sincos( arg, cos_result ); }
+
+#elif ( !defined( XSUITE_NO_SINCOS ) ) && \
+      ( ( defined( __CUDA_ARCH__ ) ) || \
+        ( defined( __GNUC__ ) && !defined( __clang__ ) && \
+         !defined( __STRICT_ANSI__ ) && !defined( __INTEL_COMPILER ) && \
+         defined( __NO_MATH_ERRNO__ ) ) )
+ static inline void xsuite_sincos( double const arg,
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
+    sincos( arg, sin_result, cos_result ); }
+
+#else
+ static inline void xsuite_sincos( double const arg,
+    double*  restrict  sin_result, double*  restrict  cos_result ) {
+    *sin_result = sin( arg );
+    *cos_result = cos( arg ); }
+
+#endif /* XSUITE_NO_SINCOS */
+#endif /* XFIELDS_SINCOS_H__ */
+
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_HEADERS_POWER_H_H__
+#define XFIELDS_HEADERS_POWER_H_H__
+
+/** \file power_n.h
+ *  \note always include constants first!!! */
+
+ static inline double power_n( double x, unsigned int n )
+{
+    #if defined( __OPENCL_VERSION__ )
+    return pown( x, n );
+    #else
+
+    double x_n = x;
+
+    unsigned int const n_div_16 = n >> 4u;
+    unsigned int const n_mod_16 = n - ( n_div_16 << 4u );
+
+    switch( n_mod_16 )
+    {
+        case  0u: { x_n = ( double )1.0; break; }
+        case  1u: { break; }
+        case  2u: { x_n *= x;                                       break; }
+        case  3u: { x_n *= x * x;                                   break; }
+        case  4u: { x_n *= x;     x_n *= x_n;                       break; }
+        case  5u: { x_n *= x;     x_n *= x_n * x;                   break; }
+        case  6u: { x_n *= x * x; x_n *= x_n;                       break; }
+        case  7u: { x_n *= x * x; x_n *= x_n * x;                   break; }
+        case  8u: { x_n *= x;     x_n *= x_n;     x_n *= x_n;       break; }
+        case  9u: { x_n *= x * x; x_n *= x_n * x_n;                 break; }
+        case 10u: { x_n *= x * x; x_n *= x_n * x_n * x;             break; }
+        case 11u: { x_n *= x;     x_n *= x_n * x; x_n *= x_n * x;   break; }
+        case 12u: { x_n *= x * x; x_n *= x_n;     x_n *= x_n;       break; }
+        case 13u: { x_n *= x * x; x_n *= x_n;     x_n *= x_n * x;   break; }
+        case 14u: { x_n *= x * x; x_n *= x_n * x; x_n *= x_n;       break; }
+        case 15u: { x_n *= x;     x_n *= x_n * x; x_n *= x_n * x_n; break; }
+        default:  { x_n = ( double )0.0; }
+    };
+
+    if( n_div_16 > 0u ){ x *= x; x *= x; x *= x; x *= x; }
+
+    switch( n_div_16 )
+    {
+        case  0u: { x_n  = ( n_mod_16 != 0u ) ? x_n : ( double )1.0; break; }
+        case  1u: { x_n *= x;                                           break; }
+        case  2u: { x   *= x; x_n *= x;                                 break; }
+        case  3u: { x_n *= x * x * x;                                   break; }
+        case  4u: { x   *= x; x *= x; x_n *= x;                         break; }
+        case  5u: { x_n *= x; x *= x; x *= x; x_n *= x;                 break; }
+        case  6u: { x   *= x * x; x *= x; x_n *= x;                     break; }
+        case  7u: { x_n *= x; x *= x * x; x *= x; x_n *= x;             break; }
+        case  8u: { x *= x; x *= x; x*= x; x_n *= x;                    break; }
+        case  9u: { x *= x * x; x *= x * x; x_n *= x;                   break; }
+        case 10u: { x_n *= x; x *= x * x; x *= x * x; x_n *= x;         break; }
+        case 11u: { x_n *= x * x; x *= x * x; x *= x * x; x_n *= x;     break; }
+        case 12u: { x *= x; x *= x; x_n *= x; x *= x; x_n *= x;         break; }
+        case 13u: { x_n *= x; x *= x; x *= x; x_n *= x; x *= x;
+                    x_n *= x; break; }
+
+        case 14u: { x_n *= x * x; x *= x; x *= x; x_n *= x; x *= x;
+                    x_n *= x; break; }
+
+        case 15u: { x *= x * x; x_n *= x * x; x *= x * x; x_n *= x;    break; }
+
+        default:
+        {
+            unsigned int ii = 0u;
+            unsigned int nn = n_div_16 % 16u;
+
+            for( ; ii < nn ; ++ii ) x_n *= x;
+
+            x *= x; x *= x; x *= x; x *= x;
+            nn = ( n_div_16 - nn ) >> 4u;
+
+            for( ii = 0u ; ii < nn ; ++ii ) x_n *= x;
+        }
+    };
+
+    return x_n;
+    #endif /* defined( __OPENCL_VERSION__ ) */
+}
+
+#endif /* XFIELDS_HEADERS_POWER_H_H__ */
+
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_COMPLEX_ERROR_FUNCTION_H
+#define XFIELDS_COMPLEX_ERROR_FUNCTION_H
+
+/** \file complex_error_function.h
+  * \note always include headers/constants.h, headers/power_n.h, and
+  *       headers/sincos.h first! */
+
+#include <stdbool.h>  //only_for_context cpu_serial cpu_openmp
+#include <math.h>     //only_for_context cpu_serial cpu_openmp
+
+/* These parameters correspond to the original algorithm developed by Gautschi
+ * with a target accuracy of < 0.5 x 10^{-10} in the *absolute* error. Upstream
+ * cernlib had switched to more aggressive parameters targeting approx. a
+ * *relative* error > 0.5 x 10^{-14} instead -> see the values in comments
+ * after the defines. In order to properly use them, you also have to define
+ *
+ * FADDEEVA_NO_GZ_WEIGHT_FN
+ *
+ * as compile parameter / compiler flag, this sets g(z) = 1 for all z. */
+
+#if !defined( FADDEEVA_X_LIMIT )
+    #define FADDEEVA_X_LIMIT 5.33           /* CERNLib value: 8.3 */
+#endif /* !defined( FADDEEVA_X_LIMIT ) */
+
+#if !defined( FADDEEVA_Y_LIMIT )
+    #define FADDEEVA_Y_LIMIT 4.29           /* CERNLib value: 7.4 */
+#endif /* !defined( FADDEEVA_Y_LIMIT ) */
+
+#if !defined( FADDEEVA_H0 )
+    #define FADDEEVA_H0 1.6                 /* CERNLib value: 1.6, unchanged */
+#endif /* !defined( FADDEEVA_H0 ) */
+
+#if !defined( FADDEEVA_NU_0 )
+    #define FADDEEVA_NU_0 10                /* CERNLib value: 10, unchanged */
+#endif /* !defined( FADDEEVA_NU_0 ) */
+
+#if !defined( FADDEEVA_NU_1 )
+    #define FADDEEVA_NU_1 21                /* CERNLib value: 26 */
+#endif /* !defined( FADDEEVA_NU_1 ) */
+
+#if !defined( FADDEEVA_N0 )
+    #define FADDEEVA_N0 7                   /* CERNLib value: 7, unchanged */
+#endif /* !defined( FADDEEVA_N0 ) */
+
+#if !defined( FADDEEVA_N1 )
+    #define FADDEEVA_N1 23                  /* CERNLib value: 16 */
+#endif /* !defined( FADDEEVA_N1 ) */
+
+#if !defined( FADDEEVA_CONT_FRAC_K )
+    #define FADDEEVA_CONT_FRAC_K 9          /* CERNLib value: 9, unchanged */
+#endif /* !defined( FADDEEVA_CONT_FRAC_K ) */
+
+/* ************************************************************************* */
+
+/** \fn void cerrf_q1( double const, double const, double*, double* )
+ *  \brief calculates the Faddeeva function w(z) for z = x + i * y in Q1
+ *
+ *  \param[in] x real component of argument z
+ *  \param[in] y imaginary component of argument z
+ *  \param[out] out_x pointer to real component of result
+ *  \param[out] out_y pointer to imanginary component of result
+ *
+ *  \warning This function assumes that x and y are > 0 i.e., that z is
+ *           from the first quadrant Q1 of the complex plane. Use cerrf if
+ *           you need a more general function
+ *
+ *  \note    Based upon the algorithm developed by W. Gautschi 1970,
+ *           "Efficient Computation of the Complex Error Function",
+ *           SIAM Journal on Numerical Analysis, Vol. 7, Issue 1. 1970,
+ *           pages 187-198, https://epubs.siam.org/doi/10.1137/0707012
+ */
+
+ static inline void cerrf_q1(
+    double const x, double const y,
+    double*  restrict  out_x,
+    double*  restrict  out_y )
+{
+    /* This implementation corresponds closely to the previously used
+     * "CERNLib C" version, translated from the FORTRAN function written at
+     * CERN by K. Koelbig, Program C335, 1970. The main difference to
+     * Gautschi's formulation is a split in the main loop and the introduction
+     * of arrays to store the intermediate results as a consequence of this.
+     * The version implemented here should perform roughly equally well or even
+     * slightly better on modern out-of-order super-scalar CPUs but has
+     * drastically improved performance on GPUs and GPU-like systems.
+     *
+     * See also M. Bassetti and G.A. Erskine,
+     * "Closed expression for the electric field of a two-dimensional Gaussian
+     *  charge density", CERN-ISR-TH/80-06; */
+
+    double inv_h2   = ( double )1.0;
+    double y_plus_h = y;
+    double temp, Rx, Ry, Sx, Sy, Wx, Wy, h2_n, nn;
+
+    int nu = ( int )FADDEEVA_CONT_FRAC_K;
+    int N  = 0;
+    int n  = 0;
+
+    bool use_taylor_sum;
+    Ry = Sx = Sy = h2_n = ( double )0.0;
+
+    /* R_0 ... rectangle with width FADDEEVA_X_LIMIT and
+     *         height FADDEEVA_Y_LIMIT. Inside R_0, w(z) is calculated using
+     *         a truncated Taylor expansion. Outside, a Gauss--Hermite
+     *         quadrature in the guise of a continuos fraction is used */
+
+    use_taylor_sum = ( ( y < ( double )FADDEEVA_Y_LIMIT ) &&
+                       ( x < ( double )FADDEEVA_X_LIMIT ) );
+
+	if( use_taylor_sum )
+    {
+        #if !defined( FADDEEVA_NO_GZ_WEIGHT_FN )
+        /* calculate g(z) = sqrt( 1 - (x/x0)^2 ) * ( 1 - y/y0 ) */
+        temp  = x * ( ( double )1. / ( double )FADDEEVA_X_LIMIT );
+        temp  = ( ( double )1.0 +  temp ) * ( ( double )1.0 - temp );
+        temp  = sqrt( temp );
+        temp *= ( double )1. - y * ( ( double )1. / ( double )FADDEEVA_Y_LIMIT );
+        /*now: temp = g(z) */
+        #else /* !defined( FADDEEVA_NO_GZ_WEIGHT_FN ) */
+        temp = ( double )1.;
+        #endif /* defined( FADDEEVA_NO_GZ_WEIGHT_FN ) */
+
+        nu   = ( int )FADDEEVA_NU_0 + ( int )( ( double )FADDEEVA_NU_1 * temp );
+
+        N         = ( int )FADDEEVA_N0 + ( int )( ( double )FADDEEVA_N1 * temp );
+        h2_n      = ( double )FADDEEVA_H0 * temp; /* h(z) = h_0 * g(z) */
+        y_plus_h += h2_n; /* y_plus_h = y + h(z) */
+        h2_n     *= ( double )2.; /* now: h2_n = 2 * h(z) */
+        inv_h2    = ( double )1. / h2_n;
+        h2_n      = power_n( h2_n, N - 1 ); /* finally: h2_n = (2*h(z))^(N-1) */
+    }
+
+    /* If h(z) is so close to 0 that it is practically 0, there is no
+     * point in doing the extra work for the Taylor series -> in that
+     * very unlikely case, use the continuos fraction & verify result! */
+    use_taylor_sum &= ( h2_n > ( double )REAL_EPSILON );
+
+    Rx = 0;
+    #ifdef FADDEEVA_SPECIAL_Y_0
+    Rx = ( y > ( double )REAL_EPSILON )
+       ? ( double )0.0 : exp( -x * x ) / ( double )TWO_OVER_SQRT_PI;
+    #endif
+
+    n = nu;
+    nn = ( double )n;
+
+    /* z outside of R_0: continuos fraction / Gauss - Hermite quadrature
+     * z inside  of R_0: first iterations of recursion until n == N */
+    for( ; n > N ; --n, nn -= ( double )1.0 )
+    {
+        Wx     = y_plus_h + nn * Rx;
+        Wy     = x - nn * Ry;
+        temp   = ( Wx * Wx ) + ( Wy * Wy );
+        Rx     = ( double )0.5 * Wx;
+        Ry     = ( double )0.5 * Wy;
+        temp   = ( double )1.0 / temp;
+        Rx    *= temp;
+        Ry    *= temp;
+    }
+
+    /* loop rejects everything if z is not in R_0 because then n == 0 already;
+     * otherwise, N iterations until taylor expansion is summed up */
+    for( ; n > 0 ; --n, nn -= ( double )1.0 )
+    {
+        Wx     = y_plus_h + nn * Rx;
+        Wy     = x - nn * Ry;
+        temp   = ( Wx * Wx ) + ( Wy * Wy );
+        Rx     = ( double )0.5 * Wx;
+        Ry     = ( double )0.5 * Wy;
+        temp   = ( double )1.0 / temp;
+        Rx    *= temp;
+        Ry    *= temp;
+
+        Wx     = h2_n + Sx;
+        h2_n  *= inv_h2;
+        Sx     = Rx * Wx - Ry * Sy;
+        Sy     = Ry * Wx + Rx * Sy;
+    }
+
+    if( use_taylor_sum )
+    {
+        Wx = ( double )TWO_OVER_SQRT_PI * Sx;
+        Wy = ( double )TWO_OVER_SQRT_PI * Sy;
+    }
+    else
+    {
+        Wx = ( double )TWO_OVER_SQRT_PI * Rx;
+        Wy = ( double )TWO_OVER_SQRT_PI * Ry;
+    }
+
+    *out_x = Wx;
+    *out_y = Wy;
+}
+
+/** \fn void cerrf( double const x, double const y, double* out_x, double* out_y )
+ *  \brief calculates the Faddeeva function w(z) for general z = x + i * y
+ *
+ *   Calls cerrf_q1 internally for |x| and |y| on quadrant Q1 and
+ *   transforms the result to Q2, Q3, and Q4 before returning them via
+ *   out_x and out_y.
+ *
+ *  \param[in] x real component of argument z
+ *  \param[in] y imaginary component of argument z
+ *  \param[out] out_x pointer to real component of result
+ *  \param[out] out_y pointer to imanginary component of result
+ *
+ */
+
+ static inline void cerrf( double x, double y,
+    double*  restrict  out_x, double*  restrict  out_y )
+{
+    double const sign_x = ( double )( ( x >= ( double )0. ) - ( x < ( double )0. ) );
+    double const sign_y = ( double )( ( y >= ( double )0. ) - ( y < ( double )0. ) );
+    double Wx, Wy;
+
+    x *= sign_x;
+    y *= sign_y;
+
+    cerrf_q1( x, y, &Wx, &Wy );
+
+    if( sign_y < ( double )0.0 )  /* Quadrants Q3 and Q4 */
+    {
+        double const exp_arg  = ( y - x ) * ( y + x );
+        double const trig_arg = ( double )2. * x * y;
+        double const exp_factor = ( double )2. * exp( exp_arg );
+        double sin_arg, cos_arg;
+
+        xsuite_sincos( trig_arg, &sin_arg, &cos_arg );
+        Wx = exp_factor * cos_arg - Wx;
+        Wy = exp_factor * sin_arg + Wy;
+    }
+
+    *out_x = Wx;
+    *out_y = sign_x * Wy; /* Takes care of Quadrants Q2 and Q3 */
+}
+
+#endif /* XFIELDS_COMPLEX_ERROR_FUNCTION_H */
+
+
+#define NOFIELDMAP
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIEDLS_BIGUASSIIAN_H
+#define XFIEDLS_BIGUASSIIAN_H
+
+// for quick test with gcc
+//#include "constants.h" //only_for_context none
+//#include "complex_error_function.h" //only_for_context none
+
+ static inline
+void get_transv_field_gauss_round(
+    double sigma, double Delta_x, double Delta_y,
+    double x, double y,
+    double* Ex,
+    double* Ey)
+{
+  double r2, temp;
+
+  r2 = (x-Delta_x)*(x-Delta_x)+(y-Delta_y)*(y-Delta_y);
+  if (r2<1e-20) temp = sqrt(r2)/(2.*PI*EPSILON_0*sigma); //linearised
+  else          temp = (1-exp(-0.5*r2/(sigma*sigma)))/(2.*PI*EPSILON_0*r2);
+
+  (*Ex) = temp * (x-Delta_x);
+  (*Ey) = temp * (y-Delta_y);
+}
+
+ static inline
+void get_transv_field_gauss_ellip(
+        double sigma_x,  double sigma_y,
+        double Delta_x,  double Delta_y,
+        const double x,
+	const double y,
+        double* Ex_out,
+        double* Ey_out)
+{
+  double sigmax = sigma_x;
+  double sigmay = sigma_y;
+
+  // I always go to the first quadrant and then apply the signs a posteriori
+  // numerically more stable (see http://inspirehep.net/record/316705/files/slac-pub-5582.pdf)
+
+  double abx = fabs(x - Delta_x);
+  double aby = fabs(y - Delta_y);
+
+  //printf("x = %.2e y = %.2e abx = %.2e aby = %.2e", xx, yy, abx, aby);
+
+  double S, factBE, Ex, Ey;
+  double etaBE_re, etaBE_im, zetaBE_re, zetaBE_im;
+  double w_etaBE_re, w_etaBE_im, w_zetaBE_re, w_zetaBE_im;
+  double expBE;
+
+  if (sigmax>sigmay){
+    S = sqrt(2.*(sigmax*sigmax-sigmay*sigmay));
+    factBE = 1./(2.*EPSILON_0*SQRT_PI*S);
+
+    etaBE_re = sigmay/sigmax*abx;
+    etaBE_im = sigmax/sigmay*aby;
+
+    zetaBE_re = abx;
+    zetaBE_im = aby;
+
+    //w_zetaBE_re, w_zetaBE_im = wfun(zetaBE_re/S, zetaBE_im/S)
+    cerrf(zetaBE_re/S, zetaBE_im/S , &(w_zetaBE_re), &(w_zetaBE_im));
+    //w_etaBE_re, w_etaBE_im = wfun(etaBE_re/S, etaBE_im/S)
+    cerrf(etaBE_re/S, etaBE_im/S , &(w_etaBE_re), &(w_etaBE_im));
+
+    expBE = exp(-abx*abx/(2*sigmax*sigmax)-aby*aby/(2*sigmay*sigmay));
+
+    Ex = factBE*(w_zetaBE_im - w_etaBE_im*expBE);
+    Ey = factBE*(w_zetaBE_re - w_etaBE_re*expBE);
+  }
+  else if (sigmax<sigmay){
+    S = sqrt(2.*(sigmay*sigmay-sigmax*sigmax));
+    factBE = 1./(2.*EPSILON_0*SQRT_PI*S);
+
+    etaBE_re = sigmax/sigmay*aby;
+    etaBE_im = sigmay/sigmax*abx;
+
+    zetaBE_re = aby;
+    zetaBE_im = abx;
+
+    //w_zetaBE_re, w_zetaBE_im = wfun(zetaBE_re/S, zetaBE_im/S)
+    cerrf(zetaBE_re/S, zetaBE_im/S , &(w_zetaBE_re), &(w_zetaBE_im));
+    //w_etaBE_re, w_etaBE_im = wfun(etaBE_re/S, etaBE_im/S)
+    cerrf(etaBE_re/S, etaBE_im/S , &(w_etaBE_re), &(w_etaBE_im));
+
+    expBE = exp(-aby*aby/(2*sigmay*sigmay)-abx*abx/(2*sigmax*sigmax));
+
+    Ey = factBE*(w_zetaBE_im - w_etaBE_im*expBE);
+    Ex = factBE*(w_zetaBE_re - w_etaBE_re*expBE);
+  }
+  else{
+    //printf("Round beam not implemented!\n");
+    //exit(1);
+    Ex = Ey = 0.;
+  }
+
+  if((x - Delta_x)<0) Ex=-Ex;
+  if((y - Delta_y)<0) Ey=-Ey;
+
+  (*Ex_out) = Ex;
+  (*Ey_out) = Ey;
+}
+
+ static inline
+void get_Ex_Ey_gauss(
+             const double  x,
+             const double  y,
+             const double  sigma_x,
+             const double  sigma_y,
+             const double  min_sigma_diff,
+             double* Ex_ptr,
+             double* Ey_ptr){
+
+	if (fabs(sigma_x-sigma_y)< min_sigma_diff){
+	    double sigma = 0.5*(sigma_x+sigma_y);
+	    	get_transv_field_gauss_round(sigma, 0., 0., x, y, Ex_ptr, Ey_ptr);
+	}
+	else{
+	    get_transv_field_gauss_ellip(
+	            sigma_x, sigma_y, 0., 0., x, y, Ex_ptr, Ey_ptr);
+
+	}
+}
+
+
+ static inline void compute_Gx_Gy(
+        const double  x,
+        const double  y,
+        const double  sigma_x,
+        const double  sigma_y,
+        const double  min_sigma_diff,
+        const double  Ex,
+        const double  Ey,
+        double* Gx_ptr,
+        double* Gy_ptr){
+
+    double Gx, Gy;
+
+    if (fabs(sigma_x-sigma_y) < min_sigma_diff){
+
+        const double sigma = 0.5*(sigma_x+sigma_y);
+        Gx = 1/(2.*(x*x+y*y))*(y*Ey-x*Ex+1./(2*PI*EPSILON_0*sigma*sigma)
+                            *x*x*exp(-(x*x+y*y)/(2.*sigma*sigma)));
+        Gy = 1./(2*(x*x+y*y))*(x*Ex-y*Ey+1./(2*PI*EPSILON_0*sigma*sigma)
+                            *y*y*exp(-(x*x+y*y)/(2.*sigma*sigma)));
+    }
+    else{
+
+        const double Sig_11 = sigma_x*sigma_x;
+        const double Sig_33 = sigma_y*sigma_y;
+
+        Gx =-1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)
+                   *(sigma_y/sigma_x*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
+        Gy =1./(2*(Sig_11-Sig_33))*(x*Ex+y*Ey+1./(2*PI*EPSILON_0)*
+                      (sigma_x/sigma_y*exp(-x*x/(2*Sig_11)-y*y/(2*Sig_33))-1.));
+
+    }
+
+    *Gx_ptr = Gx;
+    *Gy_ptr = Gy;
+}
+
+#endif
+
+#ifndef NOFIELDMAP
+
+#ifndef XFIEDLS_BIGUASSIIAN_H_FIELDMAP
+#define XFIEDLS_BIGUASSIIAN_H_FIELDMAP
+
+ static inline
+void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
+           BiGaussianFieldMapData fmap,
+                    const double  x,
+                    const double  y,
+                          double* dphi_dx,
+                          double* dphi_dy){
+
+    const double sigma_x = BiGaussianFieldMapData_get_sigma_x(fmap);
+    const double sigma_y = BiGaussianFieldMapData_get_sigma_y(fmap);
+    const double mean_x = BiGaussianFieldMapData_get_mean_x(fmap);
+    const double mean_y = BiGaussianFieldMapData_get_mean_y(fmap);
+    const double min_sigma_diff = BiGaussianFieldMapData_get_min_sigma_diff(fmap);
+
+    double Ex, Ey;
+    get_Ex_Ey_gauss(
+             x-mean_x,
+             y-mean_y,
+             sigma_x,
+             sigma_y,
+             min_sigma_diff,
+             &Ex,
+             &Ey);
+
+    *dphi_dx = -Ex;
+    *dphi_dy = -Ey;
+}
+#endif
+#endif
+
+#undef NOFIELDMAP
+// copyright ################################# //
+// This file is part of the Xfields Package.   //
+// Copyright (c) CERN, 2021.                   //
+// ########################################### //
+
+#ifndef XFIELDS_BEAMBEAM_H
+#define XFIELDS_BEAMBEAM_H
+
+#if !defined(mysign)
+    #define mysign(a) (((a) >= 0) - ((a) < 0))
+#endif
+
+ static inline
+void BeamBeamBiGaussian2D_track_local_particle(
+        BeamBeamBiGaussian2DData el, LocalParticle* part0){
+
+    double const ref_shift_x = BeamBeamBiGaussian2DData_get_ref_shift_x(el);
+    double const ref_shift_y = BeamBeamBiGaussian2DData_get_ref_shift_y(el);
+
+    double const other_beam_shift_x = BeamBeamBiGaussian2DData_get_other_beam_shift_x(el);
+    double const other_beam_shift_y = BeamBeamBiGaussian2DData_get_other_beam_shift_y(el);
+
+    double const post_subtract_px = BeamBeamBiGaussian2DData_get_post_subtract_px(el);
+    double const post_subtract_py = BeamBeamBiGaussian2DData_get_post_subtract_py(el);
+
+    double const other_beam_q0 = BeamBeamBiGaussian2DData_get_other_beam_q0(el);
+    double const other_beam_beta0 = BeamBeamBiGaussian2DData_get_other_beam_beta0(el);
+
+    double const other_beam_num_particles = BeamBeamBiGaussian2DData_get_other_beam_num_particles(el);
+
+    double const other_beam_Sigma_11 = BeamBeamBiGaussian2DData_get_other_beam_Sigma_11(el);
+    double const other_beam_Sigma_13 = BeamBeamBiGaussian2DData_get_other_beam_Sigma_13(el);
+    double const other_beam_Sigma_33 = BeamBeamBiGaussian2DData_get_other_beam_Sigma_33(el);
+
+    double const min_sigma_diff = BeamBeamBiGaussian2DData_get_min_sigma_diff(el);
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+
+        double const x = LocalParticle_get_x(part);
+        double const y = LocalParticle_get_y(part);
+        double const part_q0 = LocalParticle_get_q0(part);
+        double const part_mass0 = LocalParticle_get_mass0(part);
+        double const part_chi = LocalParticle_get_chi(part);
+        double const part_beta0 = LocalParticle_get_beta0(part);
+        double const part_gamma0 = LocalParticle_get_gamma0(part);
+
+        double const x_bar = x - ref_shift_x - other_beam_shift_x;
+        double const y_bar = y - ref_shift_y - other_beam_shift_y;
+
+        // Move to rotated frame to account for transverse coupling (if needed)
+        double x_hat, y_hat, costheta, sintheta, Sig_11_hat, Sig_33_hat;
+        if (fabs(other_beam_Sigma_13) > 1e-13) {
+            double const R = other_beam_Sigma_11 - other_beam_Sigma_33;
+            double const W = other_beam_Sigma_11 + other_beam_Sigma_33;
+            double const T = R * R + 4 * other_beam_Sigma_13 * other_beam_Sigma_13;
+            double const sqrtT = sqrt(T);
+            double const signR = mysign(R);
+            double const cos2theta = signR*R/sqrtT;
+            costheta = sqrt(0.5*(1.+cos2theta));
+            sintheta = signR*mysign(other_beam_Sigma_13)*sqrt(0.5*(1.-cos2theta));
+            x_hat = x_bar*costheta +y_bar*sintheta;
+            y_hat = -x_bar*sintheta +y_bar*costheta;
+            Sig_11_hat = 0.5*(W+signR*sqrtT);
+            Sig_33_hat = 0.5*(W-signR*sqrtT);
+        }
+        else{
+            sintheta = 0;
+            costheta = 1;
+            x_hat = x_bar;
+            y_hat = y_bar;
+            Sig_11_hat = other_beam_Sigma_11;
+            Sig_33_hat = other_beam_Sigma_33;
+        }
+
+        // Get transverse fields
+        double Ex, Ey; // Ex = -dphi/dx, Ey = -dphi/dy
+        get_Ex_Ey_gauss(x_hat, y_hat,
+            sqrt(Sig_11_hat), sqrt(Sig_33_hat),
+            min_sigma_diff,
+            &Ex, &Ey);
+
+        const double charge_mass_ratio = part_chi*QELEM*part_q0
+                    /(part_mass0*QELEM/(C_LIGHT*C_LIGHT));
+        const double factor = (charge_mass_ratio
+                    * other_beam_num_particles * other_beam_q0 * QELEM
+                    / (part_gamma0*part_beta0*C_LIGHT*C_LIGHT)
+                    * (1+other_beam_beta0 * part_beta0)
+                    / (other_beam_beta0 + part_beta0));
+
+        double const dpx_hat = factor * Ex;
+        double const dpy_hat = factor * Ey;
+
+        double const dpx = dpx_hat*costheta - dpy_hat*sintheta;
+        double const dpy = dpx_hat*sintheta + dpy_hat*costheta;
+
+        LocalParticle_add_to_px(part, dpx - post_subtract_px);
+        LocalParticle_add_to_py(part, dpy - post_subtract_py);
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+}
+
+#endif
+
+
+             
+            void BeamBeamBiGaussian2D_track_particles(
+               BeamBeamBiGaussian2DData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      BeamBeamBiGaussian2D_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_XYShiftData
+#define XOBJ_TYPEDEF_XYShiftData
+typedef   struct XYShiftData_s * XYShiftData;
+ static inline XYShiftData XYShiftData_getp(XYShiftData restrict  obj){
   int64_t offset=0;
+  return (XYShiftData)(( char*) obj+offset);
+}
+ static inline double XYShiftData_get_dx(const XYShiftData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void XYShiftData_set_dx(XYShiftData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* XYShiftData_getp_dx(XYShiftData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double XYShiftData_get_dy(const XYShiftData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void XYShiftData_set_dy(XYShiftData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* XYShiftData_getp_dy(XYShiftData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_XYSHIFT_H
+#define XTRACK_XYSHIFT_H
+
+ static inline
+void XYShift_track_local_particle(XYShiftData el, LocalParticle* part0){
+
+    double const minus_dx = -(XYShiftData_get_dx(el));
+    double const minus_dy = -(XYShiftData_get_dy(el));
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+    	LocalParticle_add_to_x(part, minus_dx );
+    	LocalParticle_add_to_y(part, minus_dy );
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+}
+
+#endif
+
+
+             
+            void XYShift_track_particles(
+               XYShiftData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      XYShift_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_DriftData
+#define XOBJ_TYPEDEF_DriftData
+typedef   struct DriftData_s * DriftData;
+ static inline DriftData DriftData_getp(DriftData restrict  obj){
+  int64_t offset=0;
+  return (DriftData)(( char*) obj+offset);
+}
+ static inline double DriftData_get_length(const DriftData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void DriftData_set_length(DriftData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* DriftData_getp_length(DriftData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_DRIFT_H
+#define XTRACK_DRIFT_H
+
+ static inline
+void Drift_track_local_particle(DriftData el, LocalParticle* part0){
+
+    double const length = DriftData_get_length(el);
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+
+        double const rpp    = LocalParticle_get_rpp(part);
+        double const rv0v    = 1./LocalParticle_get_rvv(part);
+        double const xp     = LocalParticle_get_px(part) * rpp;
+        double const yp     = LocalParticle_get_py(part) * rpp;
+        double const dzeta  = 1 - rv0v * ( 1. + ( xp*xp + yp*yp ) / 2. );
+
+        LocalParticle_add_to_x(part, xp * length );
+        LocalParticle_add_to_y(part, yp * length );
+        LocalParticle_add_to_s(part, length);
+        LocalParticle_add_to_zeta(part, length * dzeta );
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+}
+
+#endif
+
+
+             
+            void Drift_track_particles(
+               DriftData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      Drift_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_ElensData
+#define XOBJ_TYPEDEF_ElensData
+typedef   struct ElensData_s * ElensData;
+ static inline ElensData ElensData_getp(ElensData restrict  obj){
+  int64_t offset=0;
+  return (ElensData)(( char*) obj+offset);
+}
+ static inline double ElensData_get_current(const ElensData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ElensData_set_current(ElensData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ElensData_getp_current(ElensData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ElensData_get_inner_radius(const ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ElensData_set_inner_radius(ElensData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ElensData_getp_inner_radius(ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ElensData_get_outer_radius(const ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ElensData_set_outer_radius(ElensData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ElensData_getp_outer_radius(ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ElensData_get_elens_length(const ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ElensData_set_elens_length(ElensData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ElensData_getp_elens_length(ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ElensData_get_voltage(const ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ElensData_set_voltage(ElensData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ElensData_getp_voltage(ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ElensData_get_residual_kick_x(const ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ElensData_set_residual_kick_x(ElensData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ElensData_getp_residual_kick_x(ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ElensData_get_residual_kick_y(const ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ElensData_set_residual_kick_y(ElensData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=48;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ElensData_getp_residual_kick_y(ElensData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_ELENS_H
+#define XTRACK_ELENS_H
+
+ static inline
+void Elens_track_local_particle(ElensData el, LocalParticle* part0){
+
+    double const elens_length = ElensData_get_elens_length(el);
+    double const inner_radius = ElensData_get_inner_radius(el);
+    double const outer_radius = ElensData_get_outer_radius(el);
+    double const current = ElensData_get_current(el);
+    double const voltage = ElensData_get_voltage(el);
+    double const residual_kick_x = ElensData_get_residual_kick_x(el);
+    double const residual_kick_y = ElensData_get_residual_kick_y(el);
+
+
+    // double const cos_z = SRotationData_get_cos_z(el);
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+
+      // EPSILON_0, PI, C_LIGHT,
+
+        // electron mass
+        double const EMASS  = 510998.928;
+        // speed of light
+
+        #if !defined( C_LIGHT )
+            #define   C_LIGHT ( 299792458.0 )
+        #endif /* !defined( C_LIGHT ) */
+
+        #if !defined( EPSILON_0 )
+            #define   EPSILON_0 (8.854187817620e-12)
+        #endif /* !defined( EPSILON_0 ) */
+
+        #if !defined( PI )
+            #define PI (3.1415926535897932384626433832795028841971693993751)
+        #endif /* !defined( PI ) */
+
+        double x      = LocalParticle_get_x(part);
+        double y      = LocalParticle_get_y(part);
+
+        // delta
+        // double delta  = LocalParticle_get_delta(part);
+        // charge ratio: q/q0
+        // double qratio = LocalParticle_get_charge_ratio(part);
+        // chi = q/q0 * m0/m
+        double const chi    = LocalParticle_get_chi(part);
+        // reference particle momentum
+        double const p0c    = LocalParticle_get_p0c(part);
+        // particle momentum
+        // double pc     = (1+delta)*(chi/qratio)*(p0c);
+        // reference particle charge
+        double const q0     = LocalParticle_get_q0(part);
+
+        // rpp = P0/P
+        double const rpp     = LocalParticle_get_rpp(part);
+
+
+        // transverse radius
+        double r      = sqrt(x*x + y*y);
+
+        double rvv    = LocalParticle_get_rvv(part);
+        double beta0  = LocalParticle_get_beta0(part);
+
+        // # magnetic rigidity
+        double const Brho0  = p0c/(q0*C_LIGHT);
+
+        // # Electron properties
+        // total electron energy
+        double const etot_e       = voltage + EMASS;
+        // // electron momentum
+        double const p_e          = sqrt(etot_e*etot_e - EMASS*EMASS);
+        // // relativistic beta of electron
+        double const beta_e       = p_e/etot_e;
+        //
+        // // # relativistic beta  of protons
+        double beta_p = rvv*beta0;
+
+        // keep the formulas more compact
+        double const r1 = inner_radius;
+        double const r2 = outer_radius;
+
+        // # geometric factor frr uniform distribution
+        double frr = 0.;
+
+        //
+        if( r < r1 )
+        {
+          frr = 0.;
+        }
+        else if ( r > r2 )
+        {
+          frr = 1.;
+        }
+        else
+        {
+          frr = ((r*r - r1*r1)/(r2*r2 - r1*r1));
+        }
+
+
+        // # calculate the kick at r2 (maximum kick)
+        double theta_max = ((1.0/(4.0*PI*EPSILON_0)));
+        theta_max = theta_max*(2*elens_length*current);
+
+        // for the moment: e-beam in the opposite direction from proton beam
+        // generalize later
+        theta_max = theta_max*(1+beta_e*beta_p);
+
+        theta_max = theta_max/(outer_radius*Brho0*beta_e*beta_p);
+        theta_max = theta_max/(C_LIGHT*C_LIGHT);
+        // theta max is now completed
+        // theta_max = (-1)*theta_max/(rpp*chi);
+
+
+        // now the actual kick the particle receives
+
+        double theta_pxpy = 0.;
+        double dpx = 0.;
+        double dpy = 0.;
+        //
+
+
+        if ( r > r1 )
+        {
+          theta_pxpy = (-1)*frr*theta_max*(outer_radius/r)*(1/(rpp*chi));
+          dpx        = x*theta_pxpy/r;
+          dpy        = y*theta_pxpy/r;
+        }
+        else
+        {
+          // if the particle is not inside the e-beam, it will only
+          // be subject to the residual kick
+          dpx = residual_kick_x;
+          dpy = residual_kick_y;
+        }
+
+
+        LocalParticle_add_to_px(part, dpx );
+        LocalParticle_add_to_py(part, dpy );
+
+        // we can update the particle properties or add to the particle properties
+        // LocalParticle_add_to_px(part, dpx);
+        // LocalParticle_add_to_py(part, dpy);
+
+        // LocalParticle_set_py(part, py_hat);
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+}
+
+#endif
+
+
+             
+            void Elens_track_particles(
+               ElensData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      Elens_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_RFMultipoleData
+#define XOBJ_TYPEDEF_RFMultipoleData
+typedef   struct RFMultipoleData_s * RFMultipoleData;
+ static inline RFMultipoleData RFMultipoleData_getp(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  return (RFMultipoleData)(( char*) obj+offset);
+}
+ static inline int64_t RFMultipoleData_get_order(const RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_order(RFMultipoleData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* RFMultipoleData_getp_order(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline double RFMultipoleData_get_inv_factorial_order(const RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_inv_factorial_order(RFMultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* RFMultipoleData_getp_inv_factorial_order(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double RFMultipoleData_get_voltage(const RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_voltage(RFMultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* RFMultipoleData_getp_voltage(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double RFMultipoleData_get_frequency(const RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_frequency(RFMultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* RFMultipoleData_getp_frequency(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double RFMultipoleData_get_lag(const RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_lag(RFMultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* RFMultipoleData_getp_lag(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 RFMultipoleData_getp_knl(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
   return (ArrNFloat64)(( char*) obj+offset);
 }
- static inline int64_t ArrNFloat64_len(ArrNFloat64  obj){
+ static inline int64_t RFMultipoleData_len_knl(RFMultipoleData restrict  obj){
   int64_t offset=0;
+  offset+=72;
    int64_t* arr= ( int64_t*)(( char*) obj+offset);
   return arr[1];
 }
- static inline double ArrNFloat64_get(const ArrNFloat64  obj, int64_t i0){
+ static inline double RFMultipoleData_get_knl(const RFMultipoleData restrict  obj, int64_t i0){
   int64_t offset=0;
+  offset+=72;
   offset+=16+i0*8;
   return *( double*)(( char*) obj+offset);
 }
- static inline void ArrNFloat64_set(ArrNFloat64  obj, int64_t i0, double value){
+ static inline void RFMultipoleData_set_knl(RFMultipoleData restrict  obj, int64_t i0, double value){
   int64_t offset=0;
+  offset+=72;
   offset+=16+i0*8;
   *( double*)(( char*) obj+offset)=value;
 }
- static inline  double* ArrNFloat64_getp1(ArrNFloat64  obj, int64_t i0){
+ static inline  double* RFMultipoleData_getp1_knl(RFMultipoleData restrict  obj, int64_t i0){
   int64_t offset=0;
+  offset+=72;
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 RFMultipoleData_getp_ksl(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t RFMultipoleData_len_ksl(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double RFMultipoleData_get_ksl(const RFMultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_ksl(RFMultipoleData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* RFMultipoleData_getp1_ksl(RFMultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+48);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 RFMultipoleData_getp_pn(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t RFMultipoleData_len_pn(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double RFMultipoleData_get_pn(const RFMultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_pn(RFMultipoleData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* RFMultipoleData_getp1_pn(RFMultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+56);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 RFMultipoleData_getp_ps(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t RFMultipoleData_len_ps(RFMultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double RFMultipoleData_get_ps(const RFMultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void RFMultipoleData_set_ps(RFMultipoleData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* RFMultipoleData_getp1_ps(RFMultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+64);
   offset+=16+i0*8;
   return ( double*)(( char*) obj+offset);
 }
 #endif
-#ifndef XOBJ_TYPEDEF_SynchrotronRadiationRecordData
-#define XOBJ_TYPEDEF_SynchrotronRadiationRecordData
-typedef   struct SynchrotronRadiationRecordData_s * SynchrotronRadiationRecordData;
- static inline SynchrotronRadiationRecordData SynchrotronRadiationRecordData_getp(SynchrotronRadiationRecordData  obj){
-  int64_t offset=0;
-  return (SynchrotronRadiationRecordData)(( char*) obj+offset);
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_CONSTANTS_H
+#define XTRACK_CONSTANTS_H
+
+#if !defined( C_LIGHT )
+    #define   C_LIGHT ( 299792458.0 )
+#endif /* !defined( C_LIGHT ) */
+
+#if !defined( EPSILON_0 )
+    #define   EPSILON_0 (8.854187817620e-12)
+#endif /* !defined( EPSILON_0 ) */
+
+#if !defined( PI )
+    #define PI (3.1415926535897932384626433832795028841971693993751)
+#endif /* !defined( PI ) */
+
+#if !defined( MU_0 )
+    #define MU_0 (PI*4.0e-7)
+#endif /* !defined( MU_0 ) */
+
+#if !defined( DEG2RAD )
+    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
+#endif /* !defiend( DEG2RAD ) */
+
+#if !defined( RAD2DEG )
+    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
+#endif /* !defiend( RAD2DEG ) */
+
+#if !defined( SQRT_PI )
+    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
+#endif /* !defined( SQRT_PI ) */
+
+#if !defined( QELEM )
+    #define QELEM (1.60217662e-19)
+#endif /* !defined( QELEM ) */
+
+#endif /* XTRACK_CONSTANTS_H */
+
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_RFMULTIPOLE_H
+#define XTRACK_RFMULTIPOLE_H
+
+ static inline
+void RFMultipole_track_local_particle(RFMultipoleData el, LocalParticle* part0){
+
+      double const* knl = RFMultipoleData_getp1_knl(el, 0);
+      double const* ksl = RFMultipoleData_getp1_ksl(el, 0);
+      double const* pn = RFMultipoleData_getp1_pn(el, 0);
+      double const* ps = RFMultipoleData_getp1_ps(el, 0);
+    int64_t const order = RFMultipoleData_get_order(el);
+    double const frequency = RFMultipoleData_get_frequency(el);
+    double const voltage = RFMultipoleData_get_voltage(el);
+    double const lag = RFMultipoleData_get_lag(el);
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+        double const k = frequency * ( 2.0 * PI / C_LIGHT);
+
+        double const x = LocalParticle_get_x(part);
+        double const y = LocalParticle_get_y(part);
+        double const beta0  = LocalParticle_get_beta0(part);
+        double const zeta   = LocalParticle_get_zeta(part);
+        double const q      = LocalParticle_get_q0(part)
+                            * LocalParticle_get_charge_ratio(part);
+        double const ktau   = k * zeta / beta0;
+
+        double dpx = 0.0;
+        double dpy = 0.0;
+        double dptr = 0.0;
+        double zre = 1.0;
+        double zim = 0.0;
+
+        double factorial = 1.0;
+        for (int64_t kk = 0; kk <= order; kk++)
+        {
+
+            if (kk>0){
+                factorial *= kk;
+            }
+
+            double const pn_kk = DEG2RAD * pn[kk] - ktau;
+            double const ps_kk = DEG2RAD * ps[kk] - ktau;
+
+            double const bal_n_kk = knl[kk]/factorial;
+            double const bal_s_kk = ksl[kk]/factorial;
+
+            double const cn = cos(pn_kk);
+            double const cs = cos(ps_kk);
+            double const sn = sin(pn_kk);
+            double const ss = sin(ps_kk);
+
+            dpx += cn * (bal_n_kk * zre) - cs * (bal_s_kk * zim);
+            dpy += cs * (bal_s_kk * zre) + cn * (bal_n_kk * zim);
+
+            double const zret = zre * x - zim * y;
+            zim = zim * x + zre * y;
+            zre = zret;
+
+            dptr += sn * (bal_n_kk * zre) - ss * (bal_s_kk * zim);
+        }
+
+        double const cav_energy = q * voltage * sin(lag * DEG2RAD - ktau);
+        double const p0c = LocalParticle_get_p0c(part);
+        double const rfmultipole_energy = - q * ( (k * p0c) * dptr );
+
+        double const chi    = LocalParticle_get_chi(part);
+
+        double const px_kick = - chi * dpx;
+        double const py_kick =   chi * dpy;
+        double const energy_kick = cav_energy + rfmultipole_energy;
+
+        LocalParticle_add_to_px(part, px_kick);
+        LocalParticle_add_to_py(part, py_kick);
+        LocalParticle_add_to_energy(part, energy_kick, 1);
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
 }
- static inline RecordIndex SynchrotronRadiationRecordData_getp__index(SynchrotronRadiationRecordData  obj){
+
+#endif
+
+
+             
+            void RFMultipole_track_particles(
+               RFMultipoleData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      RFMultipole_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_WireData
+#define XOBJ_TYPEDEF_WireData
+typedef   struct WireData_s * WireData;
+ static inline WireData WireData_getp(WireData restrict  obj){
+  int64_t offset=0;
+  return (WireData)(( char*) obj+offset);
+}
+ static inline double WireData_get_L_phy(const WireData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void WireData_set_L_phy(WireData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* WireData_getp_L_phy(WireData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double WireData_get_L_int(const WireData restrict  obj){
   int64_t offset=0;
   offset+=8;
-  return (RecordIndex)(( char*) obj+offset);
+  return *( double*)(( char*) obj+offset);
 }
- static inline int64_t SynchrotronRadiationRecordData_get__index_capacity(const SynchrotronRadiationRecordData  obj){
+ static inline void WireData_set_L_int(WireData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* WireData_getp_L_int(WireData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double WireData_get_current(const WireData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void WireData_set_current(WireData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* WireData_getp_current(WireData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double WireData_get_xma(const WireData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void WireData_set_xma(WireData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* WireData_getp_xma(WireData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double WireData_get_yma(const WireData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void WireData_set_yma(WireData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* WireData_getp_yma(WireData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_CONSTANTS_H
+#define XTRACK_CONSTANTS_H
+
+#if !defined( C_LIGHT )
+    #define   C_LIGHT ( 299792458.0 )
+#endif /* !defined( C_LIGHT ) */
+
+#if !defined( EPSILON_0 )
+    #define   EPSILON_0 (8.854187817620e-12)
+#endif /* !defined( EPSILON_0 ) */
+
+#if !defined( PI )
+    #define PI (3.1415926535897932384626433832795028841971693993751)
+#endif /* !defined( PI ) */
+
+#if !defined( MU_0 )
+    #define MU_0 (PI*4.0e-7)
+#endif /* !defined( MU_0 ) */
+
+#if !defined( DEG2RAD )
+    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
+#endif /* !defiend( DEG2RAD ) */
+
+#if !defined( RAD2DEG )
+    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
+#endif /* !defiend( RAD2DEG ) */
+
+#if !defined( SQRT_PI )
+    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
+#endif /* !defined( SQRT_PI ) */
+
+#if !defined( QELEM )
+    #define QELEM (1.60217662e-19)
+#endif /* !defined( QELEM ) */
+
+#endif /* XTRACK_CONSTANTS_H */
+
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_WIRE_H
+#define XTRACK_WIRE_H
+
+ static inline
+void Wire_track_local_particle(WireData el, LocalParticle* part0){
+
+    // Data from wire
+    double const L_phy = WireData_get_L_phy(el);
+    double const L_int = WireData_get_L_int(el);
+    double const current = WireData_get_current(el);
+    
+    double const xma = WireData_get_xma(el);
+    double const yma = WireData_get_yma(el);
+
+
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+
+        // constants : EPSILON_0, MU_0, PI, C_LIGHT,
+    
+    
+        // Data from particle 
+        double x      = LocalParticle_get_x(part);
+        double y      = LocalParticle_get_y(part);
+        double D_x    = x-xma;
+        double D_y    = y-yma;
+        double R2     = D_x*D_x + D_y*D_y;
+
+        
+        // chi = q/q0 * m0/m
+        // p0c : reference particle momentum
+        // q0  : reference particle charge
+        //double const chi    = LocalParticle_get_chi(part);
+        double const p0c    = LocalParticle_get_p0c(part);
+        double const q0     = LocalParticle_get_q0(part);
+
+    
+        // Computing the kick
+        double const L1   = L_int + L_phy;
+        double const L2   = L_int - L_phy;
+        double const N    = MU_0*current*q0/(4*PI*p0c/C_LIGHT);
+            
+        double dpx  =  -N*D_x*(sqrt(L1*L1 + 4.0*R2) - sqrt(L2*L2 + 4.0*R2))/R2;
+        double dpy  =  -N*D_y*(sqrt(L1*L1 + 4.0*R2) - sqrt(L2*L2 + 4.0*R2))/R2;
+    
+    
+        // Update the particle properties
+        LocalParticle_add_to_px(part, dpx );
+        LocalParticle_add_to_py(part, dpy );
+
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+}
+
+#endif
+
+
+             
+            void Wire_track_particles(
+               WireData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      Wire_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_DipoleEdgeData
+#define XOBJ_TYPEDEF_DipoleEdgeData
+typedef   struct DipoleEdgeData_s * DipoleEdgeData;
+ static inline DipoleEdgeData DipoleEdgeData_getp(DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  return (DipoleEdgeData)(( char*) obj+offset);
+}
+ static inline double DipoleEdgeData_get_r21(const DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void DipoleEdgeData_set_r21(DipoleEdgeData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* DipoleEdgeData_getp_r21(DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double DipoleEdgeData_get_r43(const DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void DipoleEdgeData_set_r43(DipoleEdgeData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* DipoleEdgeData_getp_r43(DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double DipoleEdgeData_get_hgap(const DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void DipoleEdgeData_set_hgap(DipoleEdgeData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* DipoleEdgeData_getp_hgap(DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double DipoleEdgeData_get_h(const DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void DipoleEdgeData_set_h(DipoleEdgeData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* DipoleEdgeData_getp_h(DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double DipoleEdgeData_get_e1(const DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void DipoleEdgeData_set_e1(DipoleEdgeData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* DipoleEdgeData_getp_e1(DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double DipoleEdgeData_get_fint(const DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void DipoleEdgeData_set_fint(DipoleEdgeData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* DipoleEdgeData_getp_fint(DipoleEdgeData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_DIPOLEEDGE_H
+#define XTRACK_DIPOLEEDGE_H
+
+ static inline
+void DipoleEdge_track_local_particle(DipoleEdgeData el, LocalParticle* part0){
+    
+    double const r21 = DipoleEdgeData_get_r21(el);
+    double const r43 = DipoleEdgeData_get_r43(el);
+	    
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+	double const x = LocalParticle_get_x(part);
+	double const y = LocalParticle_get_y(part);
+
+	LocalParticle_add_to_px(part, r21*x);
+	LocalParticle_add_to_py(part, r43*y);
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+}
+
+#endif
+
+
+             
+            void DipoleEdge_track_particles(
+               DipoleEdgeData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      DipoleEdge_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_ParticlesMonitorData
+#define XOBJ_TYPEDEF_ParticlesMonitorData
+typedef   struct ParticlesMonitorData_s * ParticlesMonitorData;
+ static inline ParticlesMonitorData ParticlesMonitorData_getp(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  return (ParticlesMonitorData)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_start_at_turn(const ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=8;
   return *( int64_t*)(( char*) obj+offset);
 }
- static inline void SynchrotronRadiationRecordData_set__index_capacity(SynchrotronRadiationRecordData  obj, int64_t value){
+ static inline void ParticlesMonitorData_set_start_at_turn(ParticlesMonitorData restrict  obj, int64_t value){
   int64_t offset=0;
   offset+=8;
   *( int64_t*)(( char*) obj+offset)=value;
 }
- static inline  int64_t* SynchrotronRadiationRecordData_getp__index_capacity(SynchrotronRadiationRecordData  obj){
+ static inline  int64_t* ParticlesMonitorData_getp_start_at_turn(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=8;
   return ( int64_t*)(( char*) obj+offset);
 }
- static inline uint32_t SynchrotronRadiationRecordData_get__index_num_recorded(const SynchrotronRadiationRecordData  obj){
+ static inline int64_t ParticlesMonitorData_get_stop_at_turn(const ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=16;
-  return *( uint32_t*)(( char*) obj+offset);
+  return *( int64_t*)(( char*) obj+offset);
 }
- static inline void SynchrotronRadiationRecordData_set__index_num_recorded(SynchrotronRadiationRecordData  obj, uint32_t value){
+ static inline void ParticlesMonitorData_set_stop_at_turn(ParticlesMonitorData restrict  obj, int64_t value){
   int64_t offset=0;
   offset+=16;
-  *( uint32_t*)(( char*) obj+offset)=value;
+  *( int64_t*)(( char*) obj+offset)=value;
 }
- static inline  uint32_t* SynchrotronRadiationRecordData_getp__index_num_recorded(SynchrotronRadiationRecordData  obj){
+ static inline  int64_t* ParticlesMonitorData_getp_stop_at_turn(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=16;
-  return ( uint32_t*)(( char*) obj+offset);
+  return ( int64_t*)(( char*) obj+offset);
 }
- static inline uint32_t SynchrotronRadiationRecordData_get__index__dummy(const SynchrotronRadiationRecordData  obj){
+ static inline int64_t ParticlesMonitorData_get_part_id_start(const ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=24;
-  return *( uint32_t*)(( char*) obj+offset);
+  return *( int64_t*)(( char*) obj+offset);
 }
- static inline void SynchrotronRadiationRecordData_set__index__dummy(SynchrotronRadiationRecordData  obj, uint32_t value){
+ static inline void ParticlesMonitorData_set_part_id_start(ParticlesMonitorData restrict  obj, int64_t value){
   int64_t offset=0;
   offset+=24;
-  *( uint32_t*)(( char*) obj+offset)=value;
+  *( int64_t*)(( char*) obj+offset)=value;
 }
- static inline  uint32_t* SynchrotronRadiationRecordData_getp__index__dummy(SynchrotronRadiationRecordData  obj){
+ static inline  int64_t* ParticlesMonitorData_getp_part_id_start(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=24;
-  return ( uint32_t*)(( char*) obj+offset);
+  return ( int64_t*)(( char*) obj+offset);
 }
- static inline int64_t SynchrotronRadiationRecordData_get__index_buffer_id(const SynchrotronRadiationRecordData  obj){
+ static inline int64_t ParticlesMonitorData_get_part_id_end(const ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=32;
   return *( int64_t*)(( char*) obj+offset);
 }
- static inline void SynchrotronRadiationRecordData_set__index_buffer_id(SynchrotronRadiationRecordData  obj, int64_t value){
+ static inline void ParticlesMonitorData_set_part_id_end(ParticlesMonitorData restrict  obj, int64_t value){
   int64_t offset=0;
   offset+=32;
   *( int64_t*)(( char*) obj+offset)=value;
 }
- static inline  int64_t* SynchrotronRadiationRecordData_getp__index_buffer_id(SynchrotronRadiationRecordData  obj){
+ static inline  int64_t* ParticlesMonitorData_getp_part_id_end(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=32;
   return ( int64_t*)(( char*) obj+offset);
 }
- static inline ArrNFloat64 SynchrotronRadiationRecordData_getp_photon_energy(SynchrotronRadiationRecordData  obj){
+ static inline int64_t ParticlesMonitorData_get_ebe_mode(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_ebe_mode(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=40;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_ebe_mode(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_n_records(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_n_records(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=48;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_n_records(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_n_repetitions(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_n_repetitions(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=56;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_n_repetitions(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_repetition_period(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_repetition_period(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=64;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_repetition_period(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ParticlesData ParticlesMonitorData_getp_data(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
   offset+=72;
+  return (ParticlesData)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_data__capacity(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data__capacity(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=80;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_data__capacity(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_data__num_active_particles(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data__num_active_particles(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=88;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_data__num_active_particles(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=88;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_data__num_lost_particles(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data__num_lost_particles(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=96;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_data__num_lost_particles(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=96;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_get_data_start_tracking_at_element(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_start_tracking_at_element(ParticlesMonitorData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=104;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp_data_start_tracking_at_element(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=104;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline double ParticlesMonitorData_get_data_q0(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_q0(ParticlesMonitorData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=112;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp_data_q0(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=112;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double ParticlesMonitorData_get_data_mass0(const ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=120;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_mass0(ParticlesMonitorData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=120;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp_data_mass0(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=120;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_p0c(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=320;
   return (ArrNFloat64)(( char*) obj+offset);
 }
- static inline int64_t SynchrotronRadiationRecordData_len_photon_energy(SynchrotronRadiationRecordData  obj){
+ static inline int64_t ParticlesMonitorData_len_data_p0c(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
-  offset+=72;
+  offset+=320;
    int64_t* arr= ( int64_t*)(( char*) obj+offset);
   return arr[1];
 }
- static inline double SynchrotronRadiationRecordData_get_photon_energy(const SynchrotronRadiationRecordData  obj, int64_t i0){
+ static inline double ParticlesMonitorData_get_data_p0c(const ParticlesMonitorData restrict  obj, int64_t i0){
   int64_t offset=0;
-  offset+=72;
+  offset+=320;
   offset+=16+i0*8;
   return *( double*)(( char*) obj+offset);
 }
- static inline void SynchrotronRadiationRecordData_set_photon_energy(SynchrotronRadiationRecordData  obj, int64_t i0, double value){
+ static inline void ParticlesMonitorData_set_data_p0c(ParticlesMonitorData restrict  obj, int64_t i0, double value){
   int64_t offset=0;
-  offset+=72;
+  offset+=320;
   offset+=16+i0*8;
   *( double*)(( char*) obj+offset)=value;
 }
- static inline  double* SynchrotronRadiationRecordData_getp1_photon_energy(SynchrotronRadiationRecordData  obj, int64_t i0){
+ static inline  double* ParticlesMonitorData_getp1_data_p0c(ParticlesMonitorData restrict  obj, int64_t i0){
   int64_t offset=0;
-  offset+=72;
+  offset+=320;
   offset+=16+i0*8;
   return ( double*)(( char*) obj+offset);
 }
- static inline ArrNInt64 SynchrotronRadiationRecordData_getp_at_element(SynchrotronRadiationRecordData  obj){
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_gamma0(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+40);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t SynchrotronRadiationRecordData_len_at_element(SynchrotronRadiationRecordData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+40);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t SynchrotronRadiationRecordData_get_at_element(const SynchrotronRadiationRecordData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+40);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void SynchrotronRadiationRecordData_set_at_element(SynchrotronRadiationRecordData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+40);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* SynchrotronRadiationRecordData_getp1_at_element(SynchrotronRadiationRecordData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+40);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 SynchrotronRadiationRecordData_getp_at_turn(SynchrotronRadiationRecordData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  return (ArrNInt64)(( char*) obj+offset);
-}
- static inline int64_t SynchrotronRadiationRecordData_len_at_turn(SynchrotronRadiationRecordData  obj){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-   int64_t* arr= ( int64_t*)(( char*) obj+offset);
-  return arr[1];
-}
- static inline int64_t SynchrotronRadiationRecordData_get_at_turn(const SynchrotronRadiationRecordData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
-}
- static inline void SynchrotronRadiationRecordData_set_at_turn(SynchrotronRadiationRecordData  obj, int64_t i0, int64_t value){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
-}
- static inline  int64_t* SynchrotronRadiationRecordData_getp1_at_turn(SynchrotronRadiationRecordData  obj, int64_t i0){
-  int64_t offset=0;
-  offset+=*( int64_t*)(( char*) obj+offset+48);
-  offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
-}
- static inline ArrNInt64 SynchrotronRadiationRecordData_getp_particle_id(SynchrotronRadiationRecordData  obj){
-  int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+56);
-  return (ArrNInt64)(( char*) obj+offset);
+  return (ArrNFloat64)(( char*) obj+offset);
 }
- static inline int64_t SynchrotronRadiationRecordData_len_particle_id(SynchrotronRadiationRecordData  obj){
+ static inline int64_t ParticlesMonitorData_len_data_gamma0(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+56);
    int64_t* arr= ( int64_t*)(( char*) obj+offset);
   return arr[1];
 }
- static inline int64_t SynchrotronRadiationRecordData_get_particle_id(const SynchrotronRadiationRecordData  obj, int64_t i0){
+ static inline double ParticlesMonitorData_get_data_gamma0(const ParticlesMonitorData restrict  obj, int64_t i0){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+56);
   offset+=16+i0*8;
-  return *( int64_t*)(( char*) obj+offset);
+  return *( double*)(( char*) obj+offset);
 }
- static inline void SynchrotronRadiationRecordData_set_particle_id(SynchrotronRadiationRecordData  obj, int64_t i0, int64_t value){
+ static inline void ParticlesMonitorData_set_data_gamma0(ParticlesMonitorData restrict  obj, int64_t i0, double value){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+56);
   offset+=16+i0*8;
-  *( int64_t*)(( char*) obj+offset)=value;
+  *( double*)(( char*) obj+offset)=value;
 }
- static inline  int64_t* SynchrotronRadiationRecordData_getp1_particle_id(SynchrotronRadiationRecordData  obj, int64_t i0){
+ static inline  double* ParticlesMonitorData_getp1_data_gamma0(ParticlesMonitorData restrict  obj, int64_t i0){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+56);
   offset+=16+i0*8;
-  return ( int64_t*)(( char*) obj+offset);
+  return ( double*)(( char*) obj+offset);
 }
- static inline ArrNFloat64 SynchrotronRadiationRecordData_getp_particle_delta(SynchrotronRadiationRecordData  obj){
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_beta0(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+64);
   return (ArrNFloat64)(( char*) obj+offset);
 }
- static inline int64_t SynchrotronRadiationRecordData_len_particle_delta(SynchrotronRadiationRecordData  obj){
+ static inline int64_t ParticlesMonitorData_len_data_beta0(ParticlesMonitorData restrict  obj){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+64);
    int64_t* arr= ( int64_t*)(( char*) obj+offset);
   return arr[1];
 }
- static inline double SynchrotronRadiationRecordData_get_particle_delta(const SynchrotronRadiationRecordData  obj, int64_t i0){
+ static inline double ParticlesMonitorData_get_data_beta0(const ParticlesMonitorData restrict  obj, int64_t i0){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+64);
   offset+=16+i0*8;
   return *( double*)(( char*) obj+offset);
 }
- static inline void SynchrotronRadiationRecordData_set_particle_delta(SynchrotronRadiationRecordData  obj, int64_t i0, double value){
+ static inline void ParticlesMonitorData_set_data_beta0(ParticlesMonitorData restrict  obj, int64_t i0, double value){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+64);
   offset+=16+i0*8;
   *( double*)(( char*) obj+offset)=value;
 }
- static inline  double* SynchrotronRadiationRecordData_getp1_particle_delta(SynchrotronRadiationRecordData  obj, int64_t i0){
+ static inline  double* ParticlesMonitorData_getp1_data_beta0(ParticlesMonitorData restrict  obj, int64_t i0){
   int64_t offset=0;
+  offset+=72;
   offset+=*( int64_t*)(( char*) obj+offset+64);
   offset+=16+i0*8;
   return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_s(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_s(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_s(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_s(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_s(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_x(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_x(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_x(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_x(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_x(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+80);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_y(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_y(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_y(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_y(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_y(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+88);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_px(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_px(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_px(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_px(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_px(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+96);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_py(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_py(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_py(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_py(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_py(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+104);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_zeta(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_zeta(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_zeta(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_zeta(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_zeta(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+112);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_ptau(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_ptau(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_ptau(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_ptau(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_ptau(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+120);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_delta(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_delta(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_delta(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_delta(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_delta(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+128);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_rpp(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_rpp(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_rpp(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_rpp(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_rpp(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+136);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_rvv(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_rvv(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_rvv(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_rvv(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_rvv(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+144);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_chi(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_chi(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_chi(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_chi(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_chi(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+152);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_charge_ratio(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_charge_ratio(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_charge_ratio(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_charge_ratio(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_charge_ratio(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+160);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 ParticlesMonitorData_getp_data_weight(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_weight(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double ParticlesMonitorData_get_data_weight(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_weight(ParticlesMonitorData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ParticlesMonitorData_getp1_data_weight(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+168);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesMonitorData_getp_data_particle_id(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_particle_id(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesMonitorData_get_data_particle_id(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_particle_id(ParticlesMonitorData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp1_data_particle_id(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+176);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesMonitorData_getp_data_at_element(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_at_element(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesMonitorData_get_data_at_element(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_at_element(ParticlesMonitorData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp1_data_at_element(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+184);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesMonitorData_getp_data_at_turn(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_at_turn(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesMonitorData_get_data_at_turn(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_at_turn(ParticlesMonitorData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp1_data_at_turn(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+192);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesMonitorData_getp_data_state(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_state(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesMonitorData_get_data_state(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_state(ParticlesMonitorData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp1_data_state(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+200);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNInt64 ParticlesMonitorData_getp_data_parent_particle_id(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  return (ArrNInt64)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data_parent_particle_id(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline int64_t ParticlesMonitorData_get_data_parent_particle_id(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  offset+=16+i0*8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data_parent_particle_id(ParticlesMonitorData restrict  obj, int64_t i0, int64_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  offset+=16+i0*8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* ParticlesMonitorData_getp1_data_parent_particle_id(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+208);
+  offset+=16+i0*8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s1(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data__rng_s1(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesMonitorData_get_data__rng_s1(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data__rng_s1(ParticlesMonitorData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s1(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+216);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s2(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data__rng_s2(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesMonitorData_get_data__rng_s2(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data__rng_s2(ParticlesMonitorData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s2(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+224);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s3(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data__rng_s3(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesMonitorData_get_data__rng_s3(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data__rng_s3(ParticlesMonitorData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s3(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+232);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+ static inline ArrNUint32 ParticlesMonitorData_getp_data__rng_s4(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  return (ArrNUint32)(( char*) obj+offset);
+}
+ static inline int64_t ParticlesMonitorData_len_data__rng_s4(ParticlesMonitorData restrict  obj){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline uint32_t ParticlesMonitorData_get_data__rng_s4(const ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*4;
+  return *( uint32_t*)(( char*) obj+offset);
+}
+ static inline void ParticlesMonitorData_set_data__rng_s4(ParticlesMonitorData restrict  obj, int64_t i0, uint32_t value){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*4;
+  *( uint32_t*)(( char*) obj+offset)=value;
+}
+ static inline  uint32_t* ParticlesMonitorData_getp1_data__rng_s4(ParticlesMonitorData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=72;
+  offset+=*( int64_t*)(( char*) obj+offset+240);
+  offset+=16+i0*4;
+  return ( uint32_t*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_MONITORS_H
+#define XTRACK_MONITORS_H
+
+ static inline
+void ParticlesMonitor_track_local_particle(ParticlesMonitorData el,
+                       LocalParticle* part0){
+
+    int64_t const start_at_turn = ParticlesMonitorData_get_start_at_turn(el);
+    int64_t const stop_at_turn = ParticlesMonitorData_get_stop_at_turn(el);
+    int64_t const part_id_start = ParticlesMonitorData_get_part_id_start(el);
+    int64_t const part_id_end= ParticlesMonitorData_get_part_id_end(el);
+    int64_t const ebe_mode = ParticlesMonitorData_get_ebe_mode(el);
+    int64_t const n_repetitions = ParticlesMonitorData_get_n_repetitions(el);
+    int64_t const repetition_period = ParticlesMonitorData_get_repetition_period(el);
+    ParticlesData data = ParticlesMonitorData_getp_data(el);
+
+    int64_t n_turns_record = stop_at_turn - start_at_turn;
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+    int64_t at_turn;
+    if (ebe_mode){
+        at_turn = LocalParticle_get_at_element(part);
+    }
+    else{
+        at_turn = LocalParticle_get_at_turn(part);
+    }
+    if (n_repetitions == 1){
+        if (at_turn>=start_at_turn && at_turn<stop_at_turn){
+            int64_t const particle_id = LocalParticle_get_particle_id(part);
+            if (particle_id<part_id_end && particle_id>=part_id_start){
+                int64_t const store_at =
+                    n_turns_record * (particle_id - part_id_start)
+                    + at_turn - start_at_turn;
+                LocalParticle_to_Particles(part, data, store_at, 0);
+            }
+        }
+    }
+    else if (n_repetitions > 1){
+        int64_t const i_frame = (at_turn - start_at_turn) / repetition_period;
+        if (i_frame < n_repetitions
+                && at_turn >= start_at_turn + i_frame*repetition_period
+                && at_turn < stop_at_turn + i_frame*repetition_period
+            ){
+            int64_t const particle_id = LocalParticle_get_particle_id(part);
+            if (particle_id<part_id_end && particle_id>=part_id_start){
+                int64_t const store_at =
+                    n_turns_record * (part_id_end  - part_id_start) * i_frame
+                    + n_turns_record * (particle_id - part_id_start)
+                    + (at_turn - i_frame * repetition_period) - start_at_turn;
+                LocalParticle_to_Particles(part, data, store_at, 0);
+            }
+        }
+    }
+
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+
+}
+
+#endif
+
+
+             
+            void ParticlesMonitor_track_particles(
+               ParticlesMonitorData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      ParticlesMonitor_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_ReferenceEnergyIncreaseData
+#define XOBJ_TYPEDEF_ReferenceEnergyIncreaseData
+typedef   struct ReferenceEnergyIncreaseData_s * ReferenceEnergyIncreaseData;
+ static inline ReferenceEnergyIncreaseData ReferenceEnergyIncreaseData_getp(ReferenceEnergyIncreaseData restrict  obj){
+  int64_t offset=0;
+  return (ReferenceEnergyIncreaseData)(( char*) obj+offset);
+}
+ static inline double ReferenceEnergyIncreaseData_get_Delta_p0c(const ReferenceEnergyIncreaseData restrict  obj){
+  int64_t offset=0;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void ReferenceEnergyIncreaseData_set_Delta_p0c(ReferenceEnergyIncreaseData restrict  obj, double value){
+  int64_t offset=0;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* ReferenceEnergyIncreaseData_getp_Delta_p0c(ReferenceEnergyIncreaseData restrict  obj){
+  int64_t offset=0;
+  return ( double*)(( char*) obj+offset);
+}
+#endif
+// copyright ############################### //
+// This file is part of the Xtrack Package.  //
+// Copyright (c) CERN, 2021.                 //
+// ######################################### //
+
+#ifndef XTRACK_REFERENCEENERGYINCREASE_H
+#define XTRACK_REFERENCEENERGYINCREASE_H
+
+ static inline
+void ReferenceEnergyIncrease_track_local_particle(ReferenceEnergyIncreaseData el,
+		                                  LocalParticle* part0){
+
+    double const Delta_p0c = ReferenceEnergyIncreaseData_get_Delta_p0c(el);
+
+
+   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
+//   #pragma omp parallel for                                       //only_for_context cpu_openmp
+   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
+    //#pragma omp simd
+    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
+      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
+      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
+
+        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
+        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
+        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
+
+//        LocalParticle* part = part0;//only_for_context opencl cuda
+
+	LocalParticle_update_p0c(part,
+		LocalParticle_get_p0c(part) + Delta_p0c);
+
+     } //only_for_context cpu_serial cpu_openmp
+    }  //only_for_context cpu_serial cpu_openmp
+   }   //only_for_context cpu_serial cpu_openmp
+
+
+}
+#endif
+
+
+             
+            void ReferenceEnergyIncrease_track_particles(
+               ReferenceEnergyIncreaseData el,
+
+                             ParticlesData particles,
+
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
+
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
+
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      ReferenceEnergyIncrease_track_local_particle(el, &lpart);
+
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
+            }
+        }
+
+#ifndef XOBJ_TYPEDEF_RecordIdentifier
+#define XOBJ_TYPEDEF_RecordIdentifier
+typedef   struct RecordIdentifier_s * RecordIdentifier;
+ static inline RecordIdentifier RecordIdentifier_getp(RecordIdentifier restrict  obj){
+  int64_t offset=0;
+  return (RecordIdentifier)(( char*) obj+offset);
+}
+ static inline int64_t RecordIdentifier_get_buffer_id(const RecordIdentifier restrict  obj){
+  int64_t offset=0;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void RecordIdentifier_set_buffer_id(RecordIdentifier restrict  obj, int64_t value){
+  int64_t offset=0;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* RecordIdentifier_getp_buffer_id(RecordIdentifier restrict  obj){
+  int64_t offset=0;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t RecordIdentifier_get_offset(const RecordIdentifier restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void RecordIdentifier_set_offset(RecordIdentifier restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* RecordIdentifier_getp_offset(RecordIdentifier restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+#endif
+
+ static inline
+  int8_t* RecordIdentifier_getp_record(RecordIdentifier record_id, LocalParticle* part){
+      int8_t* io_buffer = LocalParticle_get_io_buffer(part);
+    if (io_buffer == NULL){
+        return NULL;
+    }
+
+    int64_t buffer_id = RecordIdentifier_get_buffer_id(record_id);
+      int64_t* found_id = (  int64_t*)io_buffer;
+    if (buffer_id != (*found_id)){
+        printf("Error: buffer_id mismatch!\n");
+        return NULL;
+    }
+
+    int64_t offset = RecordIdentifier_get_offset(record_id);
+
+    return io_buffer + offset;
+    }
+
+
+#ifndef XOBJ_TYPEDEF_MultipoleData
+#define XOBJ_TYPEDEF_MultipoleData
+typedef   struct MultipoleData_s * MultipoleData;
+ static inline MultipoleData MultipoleData_getp(MultipoleData restrict  obj){
+  int64_t offset=0;
+  return (MultipoleData)(( char*) obj+offset);
+}
+ static inline int64_t MultipoleData_get_order(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_order(MultipoleData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=8;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* MultipoleData_getp_order(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=8;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline double MultipoleData_get_inv_factorial_order(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_inv_factorial_order(MultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=16;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* MultipoleData_getp_inv_factorial_order(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=16;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double MultipoleData_get_length(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_length(MultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=24;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* MultipoleData_getp_length(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=24;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double MultipoleData_get_hxl(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_hxl(MultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=32;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* MultipoleData_getp_hxl(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=32;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline double MultipoleData_get_hyl(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_hyl(MultipoleData restrict  obj, double value){
+  int64_t offset=0;
+  offset+=40;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* MultipoleData_getp_hyl(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=40;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline int64_t MultipoleData_get_radiation_flag(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_radiation_flag(MultipoleData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=48;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* MultipoleData_getp_radiation_flag(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=48;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 MultipoleData_getp_knl(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t MultipoleData_len_knl(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=80;
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double MultipoleData_get_knl(const MultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=80;
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_knl(MultipoleData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=80;
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* MultipoleData_getp1_knl(MultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=80;
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline ArrNFloat64 MultipoleData_getp_ksl(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  return (ArrNFloat64)(( char*) obj+offset);
+}
+ static inline int64_t MultipoleData_len_ksl(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+   int64_t* arr= ( int64_t*)(( char*) obj+offset);
+  return arr[1];
+}
+ static inline double MultipoleData_get_ksl(const MultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  return *( double*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set_ksl(MultipoleData restrict  obj, int64_t i0, double value){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  *( double*)(( char*) obj+offset)=value;
+}
+ static inline  double* MultipoleData_getp1_ksl(MultipoleData restrict  obj, int64_t i0){
+  int64_t offset=0;
+  offset+=*( int64_t*)(( char*) obj+offset+72);
+  offset+=16+i0*8;
+  return ( double*)(( char*) obj+offset);
+}
+ static inline RecordIdentifier MultipoleData_getp__internal_record_id(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return (RecordIdentifier)(( char*) obj+offset);
+}
+ static inline int64_t MultipoleData_get__internal_record_id_buffer_id(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set__internal_record_id_buffer_id(MultipoleData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=56;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* MultipoleData_getp__internal_record_id_buffer_id(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=56;
+  return ( int64_t*)(( char*) obj+offset);
+}
+ static inline int64_t MultipoleData_get__internal_record_id_offset(const MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return *( int64_t*)(( char*) obj+offset);
+}
+ static inline void MultipoleData_set__internal_record_id_offset(MultipoleData restrict  obj, int64_t value){
+  int64_t offset=0;
+  offset+=64;
+  *( int64_t*)(( char*) obj+offset)=value;
+}
+ static inline  int64_t* MultipoleData_getp__internal_record_id_offset(MultipoleData restrict  obj){
+  int64_t offset=0;
+  offset+=64;
+  return ( int64_t*)(( char*) obj+offset);
 }
 #endif
 
@@ -9554,6 +11771,7 @@ int64_t synrad_emit_photons(LocalParticle *part, double curv /* 1/m */,
  static inline
 void Multipole_track_local_particle(MultipoleData el, LocalParticle* part0){
 
+    #ifndef XTRACK_MULTIPOLE_NO_SYNRAD
     int64_t radiation_flag = MultipoleData_get_radiation_flag(el);
 
     // Extract record and record_index
@@ -9565,6 +11783,7 @@ void Multipole_track_local_particle(MultipoleData el, LocalParticle* part0){
             record_index = SynchrotronRadiationRecordData_getp__index(record);
         }
     }
+    #endif
 
 
    int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
@@ -9610,9 +11829,10 @@ void Multipole_track_local_particle(MultipoleData el, LocalParticle* part0){
 
 
         double const length = MultipoleData_get_length(el); // m
-        double const curv = sqrt(dpx*dpx + dpy*dpy) / length;
 
+        #ifndef XTRACK_MULTIPOLE_NO_SYNRAD
         // Radiation at entrance
+        double const curv = sqrt(dpx*dpx + dpy*dpy) / length;
         if (radiation_flag > 0 && length > 0){
             double const L_path = 0.5*length*(1 + (hxl*x - hyl*y)/length); //CHECK!!!!
             if (radiation_flag == 1){
@@ -9622,6 +11842,7 @@ void Multipole_track_local_particle(MultipoleData el, LocalParticle* part0){
                 synrad_emit_photons(part, curv, L_path, record_index, record);
             }
         }
+        #endif
 
         dpx = -chi * dpx; // rad
         dpy =  chi * dpy; // rad
@@ -9654,6 +11875,7 @@ void Multipole_track_local_particle(MultipoleData el, LocalParticle* part0){
         LocalParticle_add_to_py(part, dpy);
 
         // Radiation at exit
+        #ifndef XTRACK_MULTIPOLE_NO_SYNRAD
         if (radiation_flag > 0 && length > 0){
             double const L_path = 0.5*length*(1 + (hxl*x - hyl*y)/length); //CHECK!!!!
             if (radiation_flag == 1){
@@ -9663,6 +11885,7 @@ void Multipole_track_local_particle(MultipoleData el, LocalParticle* part0){
                 synrad_emit_photons(part, curv, L_path, record_index, record);
             }
         }
+        #endif
 
      } //only_for_context cpu_serial cpu_openmp
     }  //only_for_context cpu_serial cpu_openmp
@@ -9671,1206 +11894,36 @@ void Multipole_track_local_particle(MultipoleData el, LocalParticle* part0){
 }
 
 #endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
 
-#ifndef XTRACK_CONSTANTS_H
-#define XTRACK_CONSTANTS_H
 
-#if !defined( C_LIGHT )
-    #define   C_LIGHT ( 299792458.0 )
-#endif /* !defined( C_LIGHT ) */
+             
+            void Multipole_track_particles(
+               MultipoleData el,
 
-#if !defined( EPSILON_0 )
-    #define   EPSILON_0 (8.854187817620e-12)
-#endif /* !defined( EPSILON_0 ) */
+                             ParticlesData particles,
 
-#if !defined( PI )
-    #define PI (3.1415926535897932384626433832795028841971693993751)
-#endif /* !defined( PI ) */
+                             int64_t flag_increment_at_element,
+                  int8_t* io_buffer){
+            LocalParticle lpart;
+            lpart.io_buffer = io_buffer;
 
-#if !defined( MU_0 )
-    #define MU_0 (PI*4.0e-7)
-#endif /* !defined( MU_0 ) */
+            int64_t part_id = 0;                    //only_for_context cpu_serial cpu_openmp
+//            int64_t part_id = blockDim.x * blockIdx.x + threadIdx.x; //only_for_context cuda
+//            int64_t part_id = get_global_id(0);                    //only_for_context opencl
 
-#if !defined( DEG2RAD )
-    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
-#endif /* !defiend( DEG2RAD ) */
+            int64_t part_capacity = ParticlesData_get__capacity(particles);
+            if (part_id<part_capacity){
+                Particles_to_LocalParticle(particles, &lpart, part_id);
+                if (check_is_active(&lpart)>0){
+      Multipole_track_local_particle(el, &lpart);
 
-#if !defined( RAD2DEG )
-    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
-#endif /* !defiend( RAD2DEG ) */
-
-#if !defined( SQRT_PI )
-    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
-#endif /* !defined( SQRT_PI ) */
-
-#if !defined( QELEM )
-    #define QELEM (1.60217662e-19)
-#endif /* !defined( QELEM ) */
-
-#endif /* XTRACK_CONSTANTS_H */
-
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_RFMULTIPOLE_H
-#define XTRACK_RFMULTIPOLE_H
-
- static inline
-void RFMultipole_track_local_particle(RFMultipoleData el, LocalParticle* part0){
-
-      double const* knl = RFMultipoleData_getp1_knl(el, 0);
-      double const* ksl = RFMultipoleData_getp1_ksl(el, 0);
-      double const* pn = RFMultipoleData_getp1_pn(el, 0);
-      double const* ps = RFMultipoleData_getp1_ps(el, 0);
-    int64_t const order = RFMultipoleData_get_order(el);
-    double const frequency = RFMultipoleData_get_frequency(el);
-    double const voltage = RFMultipoleData_get_voltage(el);
-    double const lag = RFMultipoleData_get_lag(el);
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-        double const k = frequency * ( 2.0 * PI / C_LIGHT);
-
-        double const x = LocalParticle_get_x(part);
-        double const y = LocalParticle_get_y(part);
-        double const beta0  = LocalParticle_get_beta0(part);
-        double const zeta   = LocalParticle_get_zeta(part);
-        double const q      = LocalParticle_get_q0(part)
-                            * LocalParticle_get_charge_ratio(part);
-        double const ktau   = k * zeta / beta0;
-
-        double dpx = 0.0;
-        double dpy = 0.0;
-        double dptr = 0.0;
-        double zre = 1.0;
-        double zim = 0.0;
-
-        double factorial = 1.0;
-        for (int64_t kk = 0; kk <= order; kk++)
-        {
-
-            if (kk>0){
-                factorial *= kk;
-            }
-
-            double const pn_kk = DEG2RAD * pn[kk] - ktau;
-            double const ps_kk = DEG2RAD * ps[kk] - ktau;
-
-            double const bal_n_kk = knl[kk]/factorial;
-            double const bal_s_kk = ksl[kk]/factorial;
-
-            double const cn = cos(pn_kk);
-            double const cs = cos(ps_kk);
-            double const sn = sin(pn_kk);
-            double const ss = sin(ps_kk);
-
-            dpx += cn * (bal_n_kk * zre) - cs * (bal_s_kk * zim);
-            dpy += cs * (bal_s_kk * zre) + cn * (bal_n_kk * zim);
-
-            double const zret = zre * x - zim * y;
-            zim = zim * x + zre * y;
-            zre = zret;
-
-            dptr += sn * (bal_n_kk * zre) - ss * (bal_s_kk * zim);
-        }
-
-        double const cav_energy = q * voltage * sin(lag * DEG2RAD - ktau);
-        double const p0c = LocalParticle_get_p0c(part);
-        double const rfmultipole_energy = - q * ( (k * p0c) * dptr );
-
-        double const chi    = LocalParticle_get_chi(part);
-
-        double const px_kick = - chi * dpx;
-        double const py_kick =   chi * dpy;
-        double const energy_kick = cav_energy + rfmultipole_energy;
-
-        LocalParticle_add_to_px(part, px_kick);
-        LocalParticle_add_to_py(part, py_kick);
-        LocalParticle_add_to_energy(part, energy_kick, 1);
-
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-
-}
-
-#endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_REFERENCEENERGYINCREASE_H
-#define XTRACK_REFERENCEENERGYINCREASE_H
-
- static inline
-void ReferenceEnergyIncrease_track_local_particle(ReferenceEnergyIncreaseData el,
-		                                  LocalParticle* part0){
-
-    double const Delta_p0c = ReferenceEnergyIncreaseData_get_Delta_p0c(el);
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-	LocalParticle_update_p0c(part,
-		LocalParticle_get_p0c(part) + Delta_p0c);
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-
-}
-#endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_SROTATION_H
-#define XTRACK_SROTATION_H
-
- static inline
-void SRotation_track_local_particle(SRotationData el, LocalParticle* part0){
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-    	double const sin_z = SRotationData_get_sin_z(el);
-    	double const cos_z = SRotationData_get_cos_z(el);
-
-    	double const x  = LocalParticle_get_x(part);
-    	double const y  = LocalParticle_get_y(part);
-    	double const px = LocalParticle_get_px(part);
-    	double const py = LocalParticle_get_py(part);
-
-    	double const x_hat  =  cos_z * x  + sin_z * y;
-    	double const y_hat  = -sin_z * x  + cos_z * y;
-
-    	double const px_hat =  cos_z * px + sin_z * py;
-    	double const py_hat = -sin_z * px + cos_z * py;
-
-
-    	LocalParticle_set_x(part, x_hat);
-    	LocalParticle_set_y(part, y_hat);
-
-    	LocalParticle_set_px(part, px_hat);
-    	LocalParticle_set_py(part, py_hat);
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-
-}
-
-#endif
-// copyright ################################# //
-// This file is part of the Xfields Package.   //
-// Copyright (c) CERN, 2021.                   //
-// ########################################### //
-
-#if !defined( C_LIGHT )
-    #define   C_LIGHT ( 299792458.0 )
-#endif
-
-#if !defined( EPSILON_0 )
-    #define   EPSILON_0 (8.854187817620e-12)
-#endif
-
-#if !defined( PI )
-    #define PI (3.1415926535897932384626433832795028841971693993751)
-#endif
-
-#if !defined( DEG2RAD )
-    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
-#endif
-
-#if !defined( RAD2DEG )
-    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
-#endif
-
-#if !defined( SQRT_PI )
-    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
-#endif
-
-#if !defined( QELEM )
-    #define QELEM (1.60217662e-19)
-#endif
-
-#if !defined( TWO_OVER_SQRT_PI )
-    #define TWO_OVER_SQRT_PI (1.128379167095512573896158903121545171688101258657997713688171443418)
-#endif
-
-#if !defined( SQRT_TWO )
-    #define SQRT_TWO (1.414213562373095048801688724209698078569671875376948073176679738)
-#endif
-
-#if !defined( REAL_EPSILON )
-    #define REAL_EPSILON 2.22044604925031e-16
-#endif /* !defined( REAL_EPSILON ) */
-
-// copyright ################################# //
-// This file is part of the Xfields Package.   //
-// Copyright (c) CERN, 2021.                   //
-// ########################################### //
-
-#ifndef XFIELDS_SINCOS_H__
-#define XFIELDS_SINCOS_H__
-
-#include <math.h> //only_for_context cpu_serial cpu_openmp
-
-/* Define XSUITE_NO_SINCOS as a compiler parameter to never use the inline
- * wrapper function below (the compiler may still decide to use sincos - like
- * intrinsic, but usually enforcing that math functions have to update
- * errno should put an end to this.
- *
- * If XSUITE_NO_SINCOS is not set, then a best-effort attempt is made to
- * use it on platforms that support it (i.e. gnu compiler, no ANSI standards,
- * relaxed errno handling for math functions.
- */
-
-#if ( !defined( XSUITE_NO_SINCOS ) ) && ( defined( __OPENCL_C_VERSION__ ) )
- static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
-    *sin_result = sincos( arg, cos_result ); }
-
-#elif ( !defined( XSUITE_NO_SINCOS ) ) && \
-      ( ( defined( __CUDA_ARCH__ ) ) || \
-        ( defined( __GNUC__ ) && !defined( __clang__ ) && \
-         !defined( __STRICT_ANSI__ ) && !defined( __INTEL_COMPILER ) && \
-         defined( __NO_MATH_ERRNO__ ) ) )
- static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
-    sincos( arg, sin_result, cos_result ); }
-
-#else
- static inline void xsuite_sincos( double const arg,
-    double*   sin_result, double*   cos_result ) {
-    *sin_result = sin( arg );
-    *cos_result = cos( arg ); }
-
-#endif /* XSUITE_NO_SINCOS */
-#endif /* XFIELDS_SINCOS_H__ */
-
-// copyright ################################# //
-// This file is part of the Xfields Package.   //
-// Copyright (c) CERN, 2021.                   //
-// ########################################### //
-
-#ifndef XFIELDS_HEADERS_POWER_H_H__
-#define XFIELDS_HEADERS_POWER_H_H__
-
-/** \file power_n.h
- *  \note always include constants first!!! */
-
- static inline double power_n( double x, unsigned int n )
-{
-    #if defined( __OPENCL_VERSION__ )
-    return pown( x, n );
-    #else
-
-    double x_n = x;
-
-    unsigned int const n_div_16 = n >> 4u;
-    unsigned int const n_mod_16 = n - ( n_div_16 << 4u );
-
-    switch( n_mod_16 )
-    {
-        case  0u: { x_n = ( double )1.0; break; }
-        case  1u: { break; }
-        case  2u: { x_n *= x;                                       break; }
-        case  3u: { x_n *= x * x;                                   break; }
-        case  4u: { x_n *= x;     x_n *= x_n;                       break; }
-        case  5u: { x_n *= x;     x_n *= x_n * x;                   break; }
-        case  6u: { x_n *= x * x; x_n *= x_n;                       break; }
-        case  7u: { x_n *= x * x; x_n *= x_n * x;                   break; }
-        case  8u: { x_n *= x;     x_n *= x_n;     x_n *= x_n;       break; }
-        case  9u: { x_n *= x * x; x_n *= x_n * x_n;                 break; }
-        case 10u: { x_n *= x * x; x_n *= x_n * x_n * x;             break; }
-        case 11u: { x_n *= x;     x_n *= x_n * x; x_n *= x_n * x;   break; }
-        case 12u: { x_n *= x * x; x_n *= x_n;     x_n *= x_n;       break; }
-        case 13u: { x_n *= x * x; x_n *= x_n;     x_n *= x_n * x;   break; }
-        case 14u: { x_n *= x * x; x_n *= x_n * x; x_n *= x_n;       break; }
-        case 15u: { x_n *= x;     x_n *= x_n * x; x_n *= x_n * x_n; break; }
-        default:  { x_n = ( double )0.0; }
-    };
-
-    if( n_div_16 > 0u ){ x *= x; x *= x; x *= x; x *= x; }
-
-    switch( n_div_16 )
-    {
-        case  0u: { x_n  = ( n_mod_16 != 0u ) ? x_n : ( double )1.0; break; }
-        case  1u: { x_n *= x;                                           break; }
-        case  2u: { x   *= x; x_n *= x;                                 break; }
-        case  3u: { x_n *= x * x * x;                                   break; }
-        case  4u: { x   *= x; x *= x; x_n *= x;                         break; }
-        case  5u: { x_n *= x; x *= x; x *= x; x_n *= x;                 break; }
-        case  6u: { x   *= x * x; x *= x; x_n *= x;                     break; }
-        case  7u: { x_n *= x; x *= x * x; x *= x; x_n *= x;             break; }
-        case  8u: { x *= x; x *= x; x*= x; x_n *= x;                    break; }
-        case  9u: { x *= x * x; x *= x * x; x_n *= x;                   break; }
-        case 10u: { x_n *= x; x *= x * x; x *= x * x; x_n *= x;         break; }
-        case 11u: { x_n *= x * x; x *= x * x; x *= x * x; x_n *= x;     break; }
-        case 12u: { x *= x; x *= x; x_n *= x; x *= x; x_n *= x;         break; }
-        case 13u: { x_n *= x; x *= x; x *= x; x_n *= x; x *= x;
-                    x_n *= x; break; }
-
-        case 14u: { x_n *= x * x; x *= x; x *= x; x_n *= x; x *= x;
-                    x_n *= x; break; }
-
-        case 15u: { x *= x * x; x_n *= x * x; x *= x * x; x_n *= x;    break; }
-
-        default:
-        {
-            unsigned int ii = 0u;
-            unsigned int nn = n_div_16 % 16u;
-
-            for( ; ii < nn ; ++ii ) x_n *= x;
-
-            x *= x; x *= x; x *= x; x *= x;
-            nn = ( n_div_16 - nn ) >> 4u;
-
-            for( ii = 0u ; ii < nn ; ++ii ) x_n *= x;
-        }
-    };
-
-    return x_n;
-    #endif /* defined( __OPENCL_VERSION__ ) */
-}
-
-#endif /* XFIELDS_HEADERS_POWER_H_H__ */
-
-// copyright ################################# //
-// This file is part of the Xfields Package.   //
-// Copyright (c) CERN, 2021.                   //
-// ########################################### //
-
-#ifndef XFIELDS_COMPLEX_ERROR_FUNCTION_H
-#define XFIELDS_COMPLEX_ERROR_FUNCTION_H
-
-/** \file complex_error_function.h
-  * \note always include headers/constants.h, headers/power_n.h, and
-  *       headers/sincos.h first! */
-
-#include <stdbool.h>  //only_for_context cpu_serial cpu_openmp
-#include <math.h>     //only_for_context cpu_serial cpu_openmp
-
-/* These parameters correspond to the original algorithm developed by Gautschi
- * with a target accuracy of < 0.5 x 10^{-10} in the *absolute* error. Upstream
- * cernlib had switched to more aggressive parameters targeting approx. a
- * *relative* error > 0.5 x 10^{-14} instead -> see the values in comments
- * after the defines. In order to properly use them, you also have to define
- *
- * FADDEEVA_NO_GZ_WEIGHT_FN
- *
- * as compile parameter / compiler flag, this sets g(z) = 1 for all z. */
-
-#if !defined( FADDEEVA_X_LIMIT )
-    #define FADDEEVA_X_LIMIT 5.33           /* CERNLib value: 8.3 */
-#endif /* !defined( FADDEEVA_X_LIMIT ) */
-
-#if !defined( FADDEEVA_Y_LIMIT )
-    #define FADDEEVA_Y_LIMIT 4.29           /* CERNLib value: 7.4 */
-#endif /* !defined( FADDEEVA_Y_LIMIT ) */
-
-#if !defined( FADDEEVA_H0 )
-    #define FADDEEVA_H0 1.6                 /* CERNLib value: 1.6, unchanged */
-#endif /* !defined( FADDEEVA_H0 ) */
-
-#if !defined( FADDEEVA_NU_0 )
-    #define FADDEEVA_NU_0 10                /* CERNLib value: 10, unchanged */
-#endif /* !defined( FADDEEVA_NU_0 ) */
-
-#if !defined( FADDEEVA_NU_1 )
-    #define FADDEEVA_NU_1 21                /* CERNLib value: 26 */
-#endif /* !defined( FADDEEVA_NU_1 ) */
-
-#if !defined( FADDEEVA_N0 )
-    #define FADDEEVA_N0 7                   /* CERNLib value: 7, unchanged */
-#endif /* !defined( FADDEEVA_N0 ) */
-
-#if !defined( FADDEEVA_N1 )
-    #define FADDEEVA_N1 23                  /* CERNLib value: 16 */
-#endif /* !defined( FADDEEVA_N1 ) */
-
-#if !defined( FADDEEVA_CONT_FRAC_K )
-    #define FADDEEVA_CONT_FRAC_K 9          /* CERNLib value: 9, unchanged */
-#endif /* !defined( FADDEEVA_CONT_FRAC_K ) */
-
-/* ************************************************************************* */
-
-/** \fn void cerrf_q1( double const, double const, double*, double* )
- *  \brief calculates the Faddeeva function w(z) for z = x + i * y in Q1
- *
- *  \param[in] x real component of argument z
- *  \param[in] y imaginary component of argument z
- *  \param[out] out_x pointer to real component of result
- *  \param[out] out_y pointer to imanginary component of result
- *
- *  \warning This function assumes that x and y are > 0 i.e., that z is
- *           from the first quadrant Q1 of the complex plane. Use cerrf if
- *           you need a more general function
- *
- *  \note    Based upon the algorithm developed by W. Gautschi 1970,
- *           "Efficient Computation of the Complex Error Function",
- *           SIAM Journal on Numerical Analysis, Vol. 7, Issue 1. 1970,
- *           pages 187-198, https://epubs.siam.org/doi/10.1137/0707012
- */
-
- static inline void cerrf_q1(
-    double const x, double const y,
-    double*   out_x,
-    double*   out_y )
-{
-    /* This implementation corresponds closely to the previously used
-     * "CERNLib C" version, translated from the FORTRAN function written at
-     * CERN by K. Koelbig, Program C335, 1970. The main difference to
-     * Gautschi's formulation is a split in the main loop and the introduction
-     * of arrays to store the intermediate results as a consequence of this.
-     * The version implemented here should perform roughly equally well or even
-     * slightly better on modern out-of-order super-scalar CPUs but has
-     * drastically improved performance on GPUs and GPU-like systems.
-     *
-     * See also M. Bassetti and G.A. Erskine,
-     * "Closed expression for the electric field of a two-dimensional Gaussian
-     *  charge density", CERN-ISR-TH/80-06; */
-
-    double inv_h2   = ( double )1.0;
-    double y_plus_h = y;
-    double temp, Rx, Ry, Sx, Sy, Wx, Wy, h2_n, nn;
-
-    int nu = ( int )FADDEEVA_CONT_FRAC_K;
-    int N  = 0;
-    int n  = 0;
-
-    bool use_taylor_sum;
-    Ry = Sx = Sy = h2_n = ( double )0.0;
-
-    /* R_0 ... rectangle with width FADDEEVA_X_LIMIT and
-     *         height FADDEEVA_Y_LIMIT. Inside R_0, w(z) is calculated using
-     *         a truncated Taylor expansion. Outside, a Gauss--Hermite
-     *         quadrature in the guise of a continuos fraction is used */
-
-    use_taylor_sum = ( ( y < ( double )FADDEEVA_Y_LIMIT ) &&
-                       ( x < ( double )FADDEEVA_X_LIMIT ) );
-
-	if( use_taylor_sum )
-    {
-        #if !defined( FADDEEVA_NO_GZ_WEIGHT_FN )
-        /* calculate g(z) = sqrt( 1 - (x/x0)^2 ) * ( 1 - y/y0 ) */
-        temp  = x * ( ( double )1. / ( double )FADDEEVA_X_LIMIT );
-        temp  = ( ( double )1.0 +  temp ) * ( ( double )1.0 - temp );
-        temp  = sqrt( temp );
-        temp *= ( double )1. - y * ( ( double )1. / ( double )FADDEEVA_Y_LIMIT );
-        /*now: temp = g(z) */
-        #else /* !defined( FADDEEVA_NO_GZ_WEIGHT_FN ) */
-        temp = ( double )1.;
-        #endif /* defined( FADDEEVA_NO_GZ_WEIGHT_FN ) */
-
-        nu   = ( int )FADDEEVA_NU_0 + ( int )( ( double )FADDEEVA_NU_1 * temp );
-
-        N         = ( int )FADDEEVA_N0 + ( int )( ( double )FADDEEVA_N1 * temp );
-        h2_n      = ( double )FADDEEVA_H0 * temp; /* h(z) = h_0 * g(z) */
-        y_plus_h += h2_n; /* y_plus_h = y + h(z) */
-        h2_n     *= ( double )2.; /* now: h2_n = 2 * h(z) */
-        inv_h2    = ( double )1. / h2_n;
-        h2_n      = power_n( h2_n, N - 1 ); /* finally: h2_n = (2*h(z))^(N-1) */
-    }
-
-    /* If h(z) is so close to 0 that it is practically 0, there is no
-     * point in doing the extra work for the Taylor series -> in that
-     * very unlikely case, use the continuos fraction & verify result! */
-    use_taylor_sum &= ( h2_n > ( double )REAL_EPSILON );
-
-    Rx = 0;
-    #ifdef FADDEEVA_SPECIAL_Y_0
-    Rx = ( y > ( double )REAL_EPSILON )
-       ? ( double )0.0 : exp( -x * x ) / ( double )TWO_OVER_SQRT_PI;
-    #endif
-
-    n = nu;
-    nn = ( double )n;
-
-    /* z outside of R_0: continuos fraction / Gauss - Hermite quadrature
-     * z inside  of R_0: first iterations of recursion until n == N */
-    for( ; n > N ; --n, nn -= ( double )1.0 )
-    {
-        Wx     = y_plus_h + nn * Rx;
-        Wy     = x - nn * Ry;
-        temp   = ( Wx * Wx ) + ( Wy * Wy );
-        Rx     = ( double )0.5 * Wx;
-        Ry     = ( double )0.5 * Wy;
-        temp   = ( double )1.0 / temp;
-        Rx    *= temp;
-        Ry    *= temp;
-    }
-
-    /* loop rejects everything if z is not in R_0 because then n == 0 already;
-     * otherwise, N iterations until taylor expansion is summed up */
-    for( ; n > 0 ; --n, nn -= ( double )1.0 )
-    {
-        Wx     = y_plus_h + nn * Rx;
-        Wy     = x - nn * Ry;
-        temp   = ( Wx * Wx ) + ( Wy * Wy );
-        Rx     = ( double )0.5 * Wx;
-        Ry     = ( double )0.5 * Wy;
-        temp   = ( double )1.0 / temp;
-        Rx    *= temp;
-        Ry    *= temp;
-
-        Wx     = h2_n + Sx;
-        h2_n  *= inv_h2;
-        Sx     = Rx * Wx - Ry * Sy;
-        Sy     = Ry * Wx + Rx * Sy;
-    }
-
-    if( use_taylor_sum )
-    {
-        Wx = ( double )TWO_OVER_SQRT_PI * Sx;
-        Wy = ( double )TWO_OVER_SQRT_PI * Sy;
-    }
-    else
-    {
-        Wx = ( double )TWO_OVER_SQRT_PI * Rx;
-        Wy = ( double )TWO_OVER_SQRT_PI * Ry;
-    }
-
-    *out_x = Wx;
-    *out_y = Wy;
-}
-
-/** \fn void cerrf( double const x, double const y, double* out_x, double* out_y )
- *  \brief calculates the Faddeeva function w(z) for general z = x + i * y
- *
- *   Calls cerrf_q1 internally for |x| and |y| on quadrant Q1 and
- *   transforms the result to Q2, Q3, and Q4 before returning them via
- *   out_x and out_y.
- *
- *  \param[in] x real component of argument z
- *  \param[in] y imaginary component of argument z
- *  \param[out] out_x pointer to real component of result
- *  \param[out] out_y pointer to imanginary component of result
- *
- */
-
- static inline void cerrf( double x, double y,
-    double*   out_x, double*   out_y )
-{
-    double const sign_x = ( double )( ( x >= ( double )0. ) - ( x < ( double )0. ) );
-    double const sign_y = ( double )( ( y >= ( double )0. ) - ( y < ( double )0. ) );
-    double Wx, Wy;
-
-    x *= sign_x;
-    y *= sign_y;
-
-    cerrf_q1( x, y, &Wx, &Wy );
-
-    if( sign_y < ( double )0.0 )  /* Quadrants Q3 and Q4 */
-    {
-        double const exp_arg  = ( y - x ) * ( y + x );
-        double const trig_arg = ( double )2. * x * y;
-        double const exp_factor = ( double )2. * exp( exp_arg );
-        double sin_arg, cos_arg;
-
-        xsuite_sincos( trig_arg, &sin_arg, &cos_arg );
-        Wx = exp_factor * cos_arg - Wx;
-        Wy = exp_factor * sin_arg + Wy;
-    }
-
-    *out_x = Wx;
-    *out_y = sign_x * Wy; /* Takes care of Quadrants Q2 and Q3 */
-}
-
-#endif /* XFIELDS_COMPLEX_ERROR_FUNCTION_H */
-
-
-// copyright ################################# //
-// This file is part of the Xfields Package.   //
-// Copyright (c) CERN, 2021.                   //
-// ########################################### //
-
-#ifndef XFIEDLS_BIGUASSIIAN_H
-#define XFIEDLS_BIGUASSIIAN_H
-
-// for quick test with gcc
-//#include "constants.h" //only_for_context none
-//#include "complex_error_function.h" //only_for_context none
-
- static inline
-void get_transv_field_gauss_round(
-    double sigma, double Delta_x, double Delta_y,
-    double x, double y,
-    double* Ex,
-    double* Ey)
-{
-  double r2, temp;
-
-  r2 = (x-Delta_x)*(x-Delta_x)+(y-Delta_y)*(y-Delta_y);
-  if (r2<1e-20) temp = sqrt(r2)/(2.*PI*EPSILON_0*sigma); //linearised
-  else          temp = (1-exp(-0.5*r2/(sigma*sigma)))/(2.*PI*EPSILON_0*r2);
-
-  (*Ex) = temp * (x-Delta_x);
-  (*Ey) = temp * (y-Delta_y);
-}
-
- static inline
-void get_transv_field_gauss_ellip(
-        double sigma_x,  double sigma_y,
-        double Delta_x,  double Delta_y,
-        const double x,
-	const double y,
-        double* Ex_out,
-        double* Ey_out)
-{
-  double sigmax = sigma_x;
-  double sigmay = sigma_y;
-
-  // I always go to the first quadrant and then apply the signs a posteriori
-  // numerically more stable (see http://inspirehep.net/record/316705/files/slac-pub-5582.pdf)
-
-  double abx = fabs(x - Delta_x);
-  double aby = fabs(y - Delta_y);
-
-  //printf("x = %.2e y = %.2e abx = %.2e aby = %.2e", xx, yy, abx, aby);
-
-  double S, factBE, Ex, Ey;
-  double etaBE_re, etaBE_im, zetaBE_re, zetaBE_im;
-  double w_etaBE_re, w_etaBE_im, w_zetaBE_re, w_zetaBE_im;
-  double expBE;
-
-  if (sigmax>sigmay){
-    S = sqrt(2.*(sigmax*sigmax-sigmay*sigmay));
-    factBE = 1./(2.*EPSILON_0*SQRT_PI*S);
-
-    etaBE_re = sigmay/sigmax*abx;
-    etaBE_im = sigmax/sigmay*aby;
-
-    zetaBE_re = abx;
-    zetaBE_im = aby;
-
-    //w_zetaBE_re, w_zetaBE_im = wfun(zetaBE_re/S, zetaBE_im/S)
-    cerrf(zetaBE_re/S, zetaBE_im/S , &(w_zetaBE_re), &(w_zetaBE_im));
-    //w_etaBE_re, w_etaBE_im = wfun(etaBE_re/S, etaBE_im/S)
-    cerrf(etaBE_re/S, etaBE_im/S , &(w_etaBE_re), &(w_etaBE_im));
-
-    expBE = exp(-abx*abx/(2*sigmax*sigmax)-aby*aby/(2*sigmay*sigmay));
-
-    Ex = factBE*(w_zetaBE_im - w_etaBE_im*expBE);
-    Ey = factBE*(w_zetaBE_re - w_etaBE_re*expBE);
-  }
-  else if (sigmax<sigmay){
-    S = sqrt(2.*(sigmay*sigmay-sigmax*sigmax));
-    factBE = 1./(2.*EPSILON_0*SQRT_PI*S);
-
-    etaBE_re = sigmax/sigmay*aby;
-    etaBE_im = sigmay/sigmax*abx;
-
-    zetaBE_re = aby;
-    zetaBE_im = abx;
-
-    //w_zetaBE_re, w_zetaBE_im = wfun(zetaBE_re/S, zetaBE_im/S)
-    cerrf(zetaBE_re/S, zetaBE_im/S , &(w_zetaBE_re), &(w_zetaBE_im));
-    //w_etaBE_re, w_etaBE_im = wfun(etaBE_re/S, etaBE_im/S)
-    cerrf(etaBE_re/S, etaBE_im/S , &(w_etaBE_re), &(w_etaBE_im));
-
-    expBE = exp(-aby*aby/(2*sigmay*sigmay)-abx*abx/(2*sigmax*sigmax));
-
-    Ey = factBE*(w_zetaBE_im - w_etaBE_im*expBE);
-    Ex = factBE*(w_zetaBE_re - w_etaBE_re*expBE);
-  }
-  else{
-    //printf("Round beam not implemented!\n");
-    //exit(1);
-    Ex = Ey = 0.;
-  }
-
-  if((x - Delta_x)<0) Ex=-Ex;
-  if((y - Delta_y)<0) Ey=-Ey;
-
-  (*Ex_out) = Ex;
-  (*Ey_out) = Ey;
-}
-
- static inline
-void get_Ex_Ey_gauss(
-             const double  x,
-             const double  y,
-             const double  sigma_x,
-             const double  sigma_y,
-             const double  min_sigma_diff,
-             double* Ex_ptr,
-             double* Ey_ptr){
-
-	if (fabs(sigma_x-sigma_y)< min_sigma_diff){
-	    double sigma = 0.5*(sigma_x+sigma_y);
-	    	get_transv_field_gauss_round(sigma, 0., 0., x, y, Ex_ptr, Ey_ptr);
-	}
-	else{
-	    get_transv_field_gauss_ellip(
-	            sigma_x, sigma_y, 0., 0., x, y, Ex_ptr, Ey_ptr);
-
-	}
-}
-
-#ifndef NOFIELDMAP
-
- static inline
-void BiGaussianFieldMap_get_dphi_dx_dphi_dy(
-           BiGaussianFieldMapData fmap,
-                    const double  x,
-                    const double  y,
-                          double* dphi_dx,
-                          double* dphi_dy){
-
-    const double sigma_x = BiGaussianFieldMapData_get_sigma_x(fmap);
-    const double sigma_y = BiGaussianFieldMapData_get_sigma_y(fmap);
-    const double mean_x = BiGaussianFieldMapData_get_mean_x(fmap);
-    const double mean_y = BiGaussianFieldMapData_get_mean_y(fmap);
-    const double min_sigma_diff = BiGaussianFieldMapData_get_min_sigma_diff(fmap);
-
-    double Ex, Ey;
-    get_Ex_Ey_gauss(
-             x-mean_x,
-             y-mean_y,
-             sigma_x,
-             sigma_y,
-             min_sigma_diff,
-             &Ex,
-             &Ey);
-
-    *dphi_dx = -Ex;
-    *dphi_dy = -Ey;
-}
-#endif
-
-#endif
-
-// copyright ################################# //
-// This file is part of the Xfields Package.   //
-// Copyright (c) CERN, 2021.                   //
-// ########################################### //
-
-#ifndef XFIELDS_QGAUSSIAN 
-#define XFIELDS_QGAUSSIAN 
-
- static inline
-double LongitudinalProfileQGaussian_line_density_scalar(
-		LongitudinalProfileQGaussianData prof, double z){
-
-    const double number_of_particles = 
-	    LongitudinalProfileQGaussianData_get_number_of_particles(prof);
-    const double q = LongitudinalProfileQGaussianData_get__q_param(prof);
-    const double cq = LongitudinalProfileQGaussianData_get__cq_param(prof);
-    const double q_tol = LongitudinalProfileQGaussianData_get__q_tol(prof);
-    const double z0 = LongitudinalProfileQGaussianData_get__z0(prof);
-    const double beta_param = LongitudinalProfileQGaussianData_get__beta_param(prof);
-    const double sqrt_beta_param = 
-	    LongitudinalProfileQGaussianData_get__sqrt_beta_param(prof);
-    const double z_min = LongitudinalProfileQGaussianData_get__support_min(prof);
-    const double z_max = LongitudinalProfileQGaussianData_get__support_max(prof);
-
-    const double factor = number_of_particles*sqrt_beta_param/cq; 
-
-
-    if (fabs(q-1.) < q_tol){
-	if (z<z_max && z>z_min){
-	    double z_m_z0 = z - z0;
-		return factor*exp(-beta_param*z_m_z0*z_m_z0 );
-	}
-	else{
-		return 0; 
-	}
-    }
-    else{
-    	double exponent = 1./(1.-q);
-	if (z<z_max && z>z_min){
-	    double z_m_z0 = z - z0;
-    		double q_exp_arg =  -(beta_param*z_m_z0*z_m_z0 );
-    		double q_exp_res = pow(
-	    	 (1.+(1.-q)*q_exp_arg), exponent );
-    		return factor*q_exp_res;
-	}
-	else{
-		return 0; 
-	}
-    }
-}
-
-
-
- 
-void line_density_qgauss(LongitudinalProfileQGaussianData prof,
-		               const int64_t n,
-		    const double* z, 
-		          double* res){
-
-//   #pragma omp parallel for //only_for_context cpu_openmp 
-for (int ii=0; ii<n; ii++){ //autovectorized
-
-
-       res[ii] = LongitudinalProfileQGaussian_line_density_scalar(prof, z[ii]);
-  
-}//end autovectorized
-
-}
-
-#endif
-
-// copyright ################################# //
-// This file is part of the Xfields Package.   //
-// Copyright (c) CERN, 2021.                   //
-// ########################################### //
-
-#ifndef XFIELDS_SPACECHARGEBIGAUSSIAN_H
-#define XFIELDS_SPACECHARGEBIGAUSSIAN_H
-
- static inline
-void SpaceChargeBiGaussian_track_local_particle(
-		 SpaceChargeBiGaussianData el, LocalParticle* part0){
-
-    const double length = SpaceChargeBiGaussianData_get_length(el);
-    BiGaussianFieldMapData fmap = SpaceChargeBiGaussianData_getp_fieldmap(el);
-    LongitudinalProfileQGaussianData prof = 
-	    SpaceChargeBiGaussianData_getp_longitudinal_profile(el);
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-	double const x = LocalParticle_get_x(part);
-	double const y = LocalParticle_get_y(part);
-	double const z = LocalParticle_get_zeta(part);
-
-	double const q0 = LocalParticle_get_q0(part);
-	double const mass0 = LocalParticle_get_mass0(part);
-	double const chi = LocalParticle_get_chi(part);
-	double const beta0 = LocalParticle_get_beta0(part);
-	double const gamma0 = LocalParticle_get_gamma0(part);
-	
-   	double dphi_dx, dphi_dy;
-	BiGaussianFieldMap_get_dphi_dx_dphi_dy(fmap, x, y,
-                          &dphi_dx, &dphi_dy);
-
-	const double lambda_z = 
-		LongitudinalProfileQGaussian_line_density_scalar(prof, z);
-
-        const double charge_mass_ratio = 
-		             chi*QELEM*q0/(mass0*QELEM/(C_LIGHT*C_LIGHT));
-        const double factor = -(charge_mass_ratio*q0*QELEM
-                                *length*(1.-beta0*beta0)
-                                /(gamma0*beta0*beta0*C_LIGHT*C_LIGHT));
-
-	LocalParticle_add_to_px(part, factor*lambda_z*dphi_dx);
-	LocalParticle_add_to_py(part, factor*lambda_z*dphi_dy);
-
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-}
-
-
-#endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_CONSTANTS_H
-#define XTRACK_CONSTANTS_H
-
-#if !defined( C_LIGHT )
-    #define   C_LIGHT ( 299792458.0 )
-#endif /* !defined( C_LIGHT ) */
-
-#if !defined( EPSILON_0 )
-    #define   EPSILON_0 (8.854187817620e-12)
-#endif /* !defined( EPSILON_0 ) */
-
-#if !defined( PI )
-    #define PI (3.1415926535897932384626433832795028841971693993751)
-#endif /* !defined( PI ) */
-
-#if !defined( MU_0 )
-    #define MU_0 (PI*4.0e-7)
-#endif /* !defined( MU_0 ) */
-
-#if !defined( DEG2RAD )
-    #define DEG2RAD (0.0174532925199432957692369076848861271344287188854)
-#endif /* !defiend( DEG2RAD ) */
-
-#if !defined( RAD2DEG )
-    #define RAD2DEG (57.29577951308232087679815481410517033240547246656442)
-#endif /* !defiend( RAD2DEG ) */
-
-#if !defined( SQRT_PI )
-    #define SQRT_PI (1.7724538509055160272981674833411451827975494561224)
-#endif /* !defined( SQRT_PI ) */
-
-#if !defined( QELEM )
-    #define QELEM (1.60217662e-19)
-#endif /* !defined( QELEM ) */
-
-#endif /* XTRACK_CONSTANTS_H */
-
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_WIRE_H
-#define XTRACK_WIRE_H
-
- static inline
-void Wire_track_local_particle(WireData el, LocalParticle* part0){
-
-    // Data from wire
-    double const L_phy = WireData_get_L_phy(el);
-    double const L_int = WireData_get_L_int(el);
-    double const current = WireData_get_current(el);
-    
-    double const xma = WireData_get_xma(el);
-    double const yma = WireData_get_yma(el);
-
-
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-
-        // constants : EPSILON_0, MU_0, PI, C_LIGHT,
-    
-    
-        // Data from particle 
-        double x      = LocalParticle_get_x(part);
-        double y      = LocalParticle_get_y(part);
-        double D_x    = x-xma;
-        double D_y    = y-yma;
-        double R2     = D_x*D_x + D_y*D_y;
-
-        
-        // chi = q/q0 * m0/m
-        // p0c : reference particle momentum
-        // q0  : reference particle charge
-        //double const chi    = LocalParticle_get_chi(part);
-        double const p0c    = LocalParticle_get_p0c(part);
-        double const q0     = LocalParticle_get_q0(part);
-
-    
-        // Computing the kick
-        double const L1   = L_int + L_phy;
-        double const L2   = L_int - L_phy;
-        double const N    = MU_0*current*q0/(4*PI*p0c/C_LIGHT);
-            
-        double dpx  =  -N*D_x*(sqrt(L1*L1 + 4.0*R2) - sqrt(L2*L2 + 4.0*R2))/R2;
-        double dpy  =  -N*D_y*(sqrt(L1*L1 + 4.0*R2) - sqrt(L2*L2 + 4.0*R2))/R2;
-    
-    
-        // Update the particle properties
-        LocalParticle_add_to_px(part, dpx );
-        LocalParticle_add_to_py(part, dpy );
-
-
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-}
-
-#endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_XYSHIFT_H
-#define XTRACK_XYSHIFT_H
-
- static inline
-void XYShift_track_local_particle(XYShiftData el, LocalParticle* part0){
-
-    double const minus_dx = -(XYShiftData_get_dx(el));
-    double const minus_dy = -(XYShiftData_get_dy(el));
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-    	LocalParticle_add_to_x(part, minus_dx );
-    	LocalParticle_add_to_y(part, minus_dy );
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-}
-
-#endif
-// copyright ############################### //
-// This file is part of the Xtrack Package.  //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_MONITORS_H
-#define XTRACK_MONITORS_H
-
- static inline
-void ParticlesMonitor_track_local_particle(ParticlesMonitorData el,
-                       LocalParticle* part0){
-
-    int64_t const start_at_turn = ParticlesMonitorData_get_start_at_turn(el);
-    int64_t const stop_at_turn = ParticlesMonitorData_get_stop_at_turn(el);
-    int64_t const part_id_start = ParticlesMonitorData_get_part_id_start(el);
-    int64_t const part_id_end= ParticlesMonitorData_get_part_id_end(el);
-    int64_t const ebe_mode = ParticlesMonitorData_get_ebe_mode(el);
-    int64_t const n_repetitions = ParticlesMonitorData_get_n_repetitions(el);
-    int64_t const repetition_period = ParticlesMonitorData_get_repetition_period(el);
-    ParticlesData data = ParticlesMonitorData_getp_data(el);
-
-    int64_t n_turns_record = stop_at_turn - start_at_turn;
-
-
-   int64_t const n_part = LocalParticle_get__num_active_particles(part0); //only_for_context cpu_serial cpu_openmp
-//   #pragma omp parallel for                                       //only_for_context cpu_openmp
-   for (int jj=0; jj<n_part; jj+=128){                 //only_for_context cpu_serial cpu_openmp
-    //#pragma omp simd
-    for (int iii=0; iii<128; iii++){                   //only_for_context cpu_serial cpu_openmp
-      int const ii = iii+jj;                                      //only_for_context cpu_serial cpu_openmp
-      if (ii<n_part){                                             //only_for_context cpu_serial cpu_openmp
-
-        LocalParticle lpart = *part0;//only_for_context cpu_serial cpu_openmp
-        LocalParticle* part = &lpart;//only_for_context cpu_serial cpu_openmp
-        part->ipart = ii;            //only_for_context cpu_serial cpu_openmp
-
-//        LocalParticle* part = part0;//only_for_context opencl cuda
-
-    int64_t at_turn;
-    if (ebe_mode){
-        at_turn = LocalParticle_get_at_element(part);
-    }
-    else{
-        at_turn = LocalParticle_get_at_turn(part);
-    }
-    if (n_repetitions == 1){
-        if (at_turn>=start_at_turn && at_turn<stop_at_turn){
-            int64_t const particle_id = LocalParticle_get_particle_id(part);
-            if (particle_id<part_id_end && particle_id>=part_id_start){
-                int64_t const store_at =
-                    n_turns_record * (particle_id - part_id_start)
-                    + at_turn - start_at_turn;
-                LocalParticle_to_Particles(part, data, store_at, 0);
+                }
+                if (check_is_active(&lpart)>0 && flag_increment_at_element){
+                        increment_at_element(&lpart);
+                }
             }
         }
-    }
-    else if (n_repetitions > 1){
-        int64_t const i_frame = (at_turn - start_at_turn) / repetition_period;
-        if (i_frame < n_repetitions
-                && at_turn >= start_at_turn + i_frame*repetition_period
-                && at_turn < stop_at_turn + i_frame*repetition_period
-            ){
-            int64_t const particle_id = LocalParticle_get_particle_id(part);
-            if (particle_id<part_id_end && particle_id>=part_id_start){
-                int64_t const store_at =
-                    n_turns_record * (part_id_end  - part_id_start) * i_frame
-                    + n_turns_record * (particle_id - part_id_start)
-                    + (at_turn - i_frame * repetition_period) - start_at_turn;
-                LocalParticle_to_Particles(part, data, store_at, 0);
-            }
-        }
-    }
 
-
-     } //only_for_context cpu_serial cpu_openmp
-    }  //only_for_context cpu_serial cpu_openmp
-   }   //only_for_context cpu_serial cpu_openmp
-
-
-
-}
-
-#endif
 
              
             void track_line(
@@ -11045,82 +12098,3 @@ void ParticlesMonitor_track_local_particle(ParticlesMonitorData el,
             }// if partid
         }//kernel
         
-// copyright ############################### //
-// This file is part of the Xpart Package.   //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_RNG_H
-#define XTRACK_RNG_H
-
-//#include <stdint.h> //only_for_context none
-
- static inline
-double rng_get (uint32_t *s1, uint32_t *s2, uint32_t *s3 )
-{
-#define MASK 0xffffffffUL
-#define TAUSWORTHE(s,a,b,c,d) ((((s) &c) <<d) &MASK) ^ (((((s) <<a) &MASK)^(s)) >>b)
-
-  *s1 = TAUSWORTHE (*s1, 13, 19, 4294967294UL, 12);
-  *s2 = TAUSWORTHE (*s2, 2, 25, 4294967288UL, 4);
-  *s3 = TAUSWORTHE (*s3, 3, 11, 4294967280UL, 17);
-
-  return ((*s1) ^ (*s2) ^ (*s3)) / 4294967296.0 ;
-}
-
- static inline
-void rng_set (uint32_t *s1, uint32_t *s2, uint32_t *s3, uint32_t s )
-{
-  if (s == 0)
-    s = 1;      /* default seed is 1 */
-
-#define LCG(n) ((69069 * (n)) & 0xffffffffUL)
-  *s1 = LCG (s);
-  if (*s1 < 2) *s1 += 2UL;
-  *s2 = LCG (*s1);
-  if (*s2 < 8) *s2 += 8UL;
-  *s3 = LCG (*s2);
-  if (*s3 < 16) *s3 += 16UL;
-
-  /* "warm it up" */
-  rng_get (s1, s2, s3);
-  rng_get (s1, s2, s3);
-  rng_get (s1, s2, s3);
-  rng_get (s1, s2, s3);
-  rng_get (s1, s2, s3);
-  rng_get (s1, s2, s3);
-  return;
-}
-
-#endif /* XTRACK_RNG_H */
-
-// copyright ############################### //
-// This file is part of the Xpart Package.   //
-// Copyright (c) CERN, 2021.                 //
-// ######################################### //
-
-#ifndef XTRACK_PARTICLES_RNG_H
-#define XTRACK_PARTICLES_RNG_H
-
- 
-void Particles_initialize_rand_gen(ParticlesData particles,
-	  uint32_t* seeds, int n_init){
-
-for (int ii=0; ii<n_init; ii++){ //autovectorized
-
-
-	 uint32_t s1, s2, s3, s;
-	 s = seeds[ii];
-
-	 rng_set(&s1, &s2, &s3, s);
-
-	 ParticlesData_set__rng_s1(particles, ii, s1);
-	 ParticlesData_set__rng_s2(particles, ii, s2);
-	 ParticlesData_set__rng_s3(particles, ii, s3);
-
-}//end autovectorized
-
-
-}
-
-#endif
