@@ -15,7 +15,6 @@ from pathlib import Path
 from time import sleep
 import random
 
-user     = 'ddicroce'                     # this should be read from a config json in the eos written by the boinc server
 name     = 'test'                         # study name
 
 filename = xt._pkg_root.parent.joinpath(
@@ -35,7 +34,7 @@ coords            = list(itertools.product(*[np.linspace(0, 1e-3, particles_per_
 particles_per_sub = 1000
 line = xt.Line.from_dict(input_data['line'])
 
-with xb.SubmitJobs(username=user, studyname=name) as job:
+with xb.SubmitJobs(studyname=name) as job:
     for i in range(0, len(coords), particles_per_sub):
         job_id   = job_id   = i // particles_per_sub
         job_name = f'{name}_{job_id}'

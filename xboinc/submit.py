@@ -3,14 +3,15 @@ import tarfile
 from pathlib import Path
 import tempfile
 import datetime
+import shutil
 
 from .eos import mv_from_eos, mv_to_eos
 from .sim_data import build_input_file
 from .default_tracker import get_default_tracker
+from .general import _pkg_root
 
 temp    = tempfile.TemporaryDirectory()
 tempdir = Path(temp.name).resolve()
-eosdir  = '/eos/user/d/ddicroce/xboinc/'
 
 def timestamp(ms=False):
     ms = -3 if ms else -7
@@ -18,13 +19,23 @@ def timestamp(ms=False):
 
 class SubmitJobs:
 
-    def __init__(self, username, studyname):
-        self._username = username
+    def __init__(self, studyname):
         self._studyname = studyname
         self._submitfile = f"{self._studyname}__{timestamp()}.tar.gz"
         self._json_files = []
         self._bin_files = []
         tempdir.mkdir(parents=True, exist_ok=True)
+        register_file = _pkg_root / 'register.json'
+        if not register_file.exists(): 
+            raise ValueError("User not yet registered. Register file not found in f'{register_file}'. Use xboinc.register() !")
+        with register_file.open('r') as f:
+            data = json.load(f)
+            if 'user' in data and 'folder' in data and 'domain' in data:
+                self._username     = data['user']
+                self._submitfolder = Path(data['folder'])
+                self._domain       = data['domain']
+            else:
+                raise ValueError("'user' or 'folder' fields not found in {}.".format(user_file))
 
     def __enter__(self, *args, **kwargs):
         return self
@@ -49,7 +60,12 @@ class SubmitJobs:
         with tarfile.open(tempdir / self._submitfile, "w:gz") as tar:
             for thisfile in self._json_files + self._bin_files:
                 tar.add(thisfile, arcname=thisfile.name)
-        mv_to_eos(tempdir / self._submitfile, eosdir)
+        if self._domain == 'eos' :
+            mv_to_eos(tempdir / self._submitfile, self._submitfolder)
+        elif self._domain == 'afs' :
+            shutil.copy(tempdir / self._submitfile, self._submitfolder)
+        else :
+            raise ValueError(f'Unkown domain {self._domain}')
         # TODO: check that tar contains all files
         for thisfile in self._json_files + self._bin_files:
             thisfile.unlink()
